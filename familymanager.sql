@@ -1,19 +1,46 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
-Source Server Version : 80013
+Source Server         : 127.0.0.1
+Source Server Version : 50637
 Source Host           : localhost:3306
 Source Database       : familymanager
 
 Target Server Type    : MYSQL
-Target Server Version : 80013
+Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-01-27 21:33:22
+Date: 2019-01-29 14:06:17
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for db_business_order
+-- ----------------------------
+DROP TABLE IF EXISTS `db_business_order`;
+CREATE TABLE `db_business_order` (
+  `id` varchar(50) NOT NULL,
+  `documentDate` varchar(30) DEFAULT NULL,
+  `documentNumber` varchar(50) DEFAULT NULL,
+  `documentType` varchar(1) DEFAULT NULL,
+  `income` varchar(50) DEFAULT NULL,
+  `expenditure` varchar(50) DEFAULT NULL,
+  `amount` varchar(30) DEFAULT NULL,
+  `classificationValue` varchar(50) DEFAULT NULL,
+  `handMan` varchar(50) DEFAULT NULL,
+  `remark` varchar(500) DEFAULT NULL,
+  `del` varchar(1) DEFAULT NULL,
+  `insertUserId` varchar(50) DEFAULT NULL,
+  `insertTime` datetime DEFAULT NULL,
+  `updateUserId` varchar(50) DEFAULT NULL,
+  `updateTime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of db_business_order
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for db_classification
@@ -127,26 +154,3 @@ CREATE TABLE `db_kind` (
 INSERT INTO `db_kind` VALUES ('4wvbwptevrnwq9m2qd7e', '账户类型', '3', '0', null, null, null, null);
 INSERT INTO `db_kind` VALUES ('ils5hnlfbysciwppvvpk', '支出类型', '1', '0', null, null, null, null);
 INSERT INTO `db_kind` VALUES ('wvrr4ax8uimvmtlo0p5p', '收入类型', '2', '0', null, null, null, null);
-
--- ----------------------------
--- Table structure for db_ordinary_account
--- ----------------------------
-DROP TABLE IF EXISTS `db_ordinary_account`;
-CREATE TABLE `db_ordinary_account` (
-  `id` varchar(50) NOT NULL,
-  `accountType` varchar(50) DEFAULT NULL,
-  `name` varchar(100) DEFAULT NULL,
-  `balance` varchar(30) DEFAULT NULL,
-  `agency` varchar(100) DEFAULT NULL,
-  `accountNumber` varchar(30) DEFAULT NULL,
-  `del` varchar(1) DEFAULT NULL,
-  `insertUserId` varchar(50) DEFAULT NULL,
-  `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) DEFAULT NULL,
-  `updateTime` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of db_ordinary_account
--- ----------------------------
