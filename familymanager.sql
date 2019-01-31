@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-01-29 14:06:17
+Date: 2019-01-31 18:03:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,6 +41,10 @@ CREATE TABLE `db_business_order` (
 -- ----------------------------
 -- Records of db_business_order
 -- ----------------------------
+INSERT INTO `db_business_order` VALUES ('0fe57900abaa413bad70', '2019-01-31 17:31:55', '72db30ba1b3a443d9fd9d59bbb1fac', '1', null, '13d9423e7d7e43ff9cb5', '9784.38', null, '', '新增加往来账户数据，增加往来金额9784.38元', '0', '', '2019-01-31 17:31:57', null, null);
+INSERT INTO `db_business_order` VALUES ('4b1c7077935043d9932b', '2019-01-31 16:50:18', 'd2de80cf0a084e10a18c06a218c93b', '2', '7bff2309924d4901b04f', null, '2504.44', null, '', '新增加普通账户数据，增加期初账户余额2504.44元', '0', '', '2019-01-31 16:50:19', null, null);
+INSERT INTO `db_business_order` VALUES ('c68f2ebb92cf43a29d3c', '2019-01-31 15:15:52', '737b43bb0fa34bbabf8859824f1fc5', '2', 'ab6eb76596b445e8945e', '', '15.5', '', '', '新增加普通账户数据，增加期初账户余额15.5元', '0', '', '2019-01-31 15:15:54', null, null);
+INSERT INTO `db_business_order` VALUES ('e47d820d6f324335a283', '2019-01-31 15:17:03', 'c8ec35a5186e4392ba385ed47d34ae', '1', '', '32d03305f76842debe3f', '10000', '', '', '新增加往来账户数据，增加往来金额10000元', '0', '', '2019-01-31 15:17:03', null, null);
 
 -- ----------------------------
 -- Table structure for db_classification
@@ -131,6 +135,10 @@ CREATE TABLE `db_contacts_account` (
 -- ----------------------------
 -- Records of db_contacts_account
 -- ----------------------------
+INSERT INTO `db_contacts_account` VALUES ('13d9423e7d7e43ff9cb5', '3ccf613441a546c9a355', '1', '蜡笔分期', '', '', '-9784.38', '1', '0', null, '2019-01-31 17:31:54', null, null);
+INSERT INTO `db_contacts_account` VALUES ('32d03305f76842debe3f', '08d7420d4ef949f4b929', '1', '蒲艳梅', '', '', '-10000', '1', '0', null, '2019-01-31 15:17:03', null, null);
+INSERT INTO `db_contacts_account` VALUES ('7bff2309924d4901b04f', '2c18b356a06645479aec', '0', '招商银行储蓄卡（蒲）', '中国招商银行', '', '2504.44', '2', '0', null, '2019-01-31 16:50:19', null, null);
+INSERT INTO `db_contacts_account` VALUES ('ab6eb76596b445e8945e', '2c18b356a06645479aec', '0', '现金（蒲）', '', '', '15.5', '1', '0', null, '2019-01-31 15:15:48', null, null);
 
 -- ----------------------------
 -- Table structure for db_kind
