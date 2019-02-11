@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-02-11 09:09:15
+Date: 2019-02-11 17:39:42
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -24,6 +24,7 @@ CREATE TABLE `db_business_order` (
   `documentDate` datetime DEFAULT NULL,
   `documentNumber` varchar(50) DEFAULT NULL,
   `documentType` varchar(1) DEFAULT NULL,
+  `businessType` varchar(2) DEFAULT NULL,
   `income` varchar(50) DEFAULT NULL,
   `expenditure` varchar(50) DEFAULT NULL,
   `amount` varchar(30) DEFAULT NULL,
@@ -41,25 +42,25 @@ CREATE TABLE `db_business_order` (
 -- ----------------------------
 -- Records of db_business_order
 -- ----------------------------
-INSERT INTO `db_business_order` VALUES ('0fe57900abaa413bad70', '2019-01-31 17:31:55', '72db30ba1b3a443d9fd9d59bbb1fac', '1', null, '13d9423e7d7e43ff9cb5', '9784.38', null, '', '新增加往来账户数据，增加往来金额9784.38元', '0', '', '2019-01-31 17:31:57', null, null);
-INSERT INTO `db_business_order` VALUES ('132821c74dc2444fae84', '2019-02-01 16:31:49', null, '1', null, 'da2a75ada2ba47d5869e', '13', 'c36e0925a8914c58bdf0', null, null, '0', '', '2019-02-01 16:31:58', null, null);
-INSERT INTO `db_business_order` VALUES ('2ebbcecfba794debbfec', '2019-02-01 09:51:33', 'd9990bc19bf24af99b38d6aabf03b7', '1', null, '2278469d550c42c6bbce', '3221.42', null, '', '新增加往来账户数据，增加往来金额3221.42元', '0', '', '2019-02-01 09:51:34', null, null);
-INSERT INTO `db_business_order` VALUES ('2fb3f1f1fb3b4af8af06', '2019-02-01 09:22:39', '73ae17b31668475db9bd4fb53ea3dd', '1', null, '77377f3e15054476920b', '2528.99', null, '', '新增加往来账户数据，增加往来金额2528.99元', '0', '', '2019-02-01 09:22:39', null, null);
-INSERT INTO `db_business_order` VALUES ('4b1c7077935043d9932b', '2019-01-31 16:50:18', 'd2de80cf0a084e10a18c06a218c93b', '2', '7bff2309924d4901b04f', null, '2504.44', null, '', '新增加普通账户数据，增加期初账户余额2504.44元', '0', '', '2019-01-31 16:50:19', null, null);
-INSERT INTO `db_business_order` VALUES ('52d18edc92934bb68f51', '2019-02-01 09:17:04', '07b5ac1dab3a4eab8bb55e54b292b5', '2', 'da2a75ada2ba47d5869e', null, '2', null, '', '新增加普通账户数据，增加期初账户余额2元', '0', '', '2019-02-01 09:17:05', null, null);
-INSERT INTO `db_business_order` VALUES ('6e58ca1d7bca4d56816c', '2019-02-01 15:18:00', '07b5ac1dab3a4eab8bb55e54b292b3', '2', '7bff2309924d4901b04f', null, '182', '92232c69f6f7447e8c02', null, '退订车票，正常退款。', '0', '', '2019-02-01 15:16:08', null, null);
-INSERT INTO `db_business_order` VALUES ('71b4483bc63d45bc907a', '2019-02-01 10:32:58', '457379ac5cd54ea6ba85cf9db0619c', '2', '7a9a9f774f3540009185', null, '60000', null, '', '新增加往来账户数据，增加往来金额60000元', '0', '', '2019-02-01 10:32:58', null, null);
-INSERT INTO `db_business_order` VALUES ('765b20c4ce5b42a69528', '2019-02-01 10:17:52', 'bf045b9b309b422a9937b357943d7d', '1', null, '59a97c012052470d9c9d', '24071.38', null, '', '新增加往来账户数据，增加往来金额24071.38元', '0', '', '2019-02-01 10:17:52', null, null);
-INSERT INTO `db_business_order` VALUES ('7f9ace8baf76419f9288', '2019-02-01 16:39:01', null, '2', '40e16fe4990f4ec4828f', null, '5718.34', 'f685de082fbf491cbca2', null, '\n                                ', '0', '', '2019-02-01 16:39:09', null, null);
-INSERT INTO `db_business_order` VALUES ('878ec43cb5ba485d8f48', '2019-02-01 16:38:02', 'c9c4879f2adb45a0aeee53308675b5', '2', '40e16fe4990f4ec4828f', null, '0', null, '', '新增加普通账户数据，增加期初账户余额0元', '0', '', '2019-02-01 16:38:02', null, null);
-INSERT INTO `db_business_order` VALUES ('8cc026d8e7544b7d9070', '2019-02-01 09:50:30', '25519cb3418d49baa92aac873eb24d', '1', null, 'f497490396f043388c96', '154.85', null, '', '新增加往来账户数据，增加往来金额154.85元', '0', '', '2019-02-01 09:50:30', null, null);
-INSERT INTO `db_business_order` VALUES ('c68f2ebb92cf43a29d3c', '2019-01-31 15:15:52', '737b43bb0fa34bbabf8859824f1fc5', '2', 'ab6eb76596b445e8945e', '', '15.5', '', '', '新增加普通账户数据，增加期初账户余额15.5元', '0', '', '2019-01-31 15:15:54', null, null);
-INSERT INTO `db_business_order` VALUES ('cd3cf92fdb974e3782b3', '2019-02-01 10:31:47', 'e4938fb05b3b440e91a9a6cbc0a919', '1', null, 'e090b22cc2674c81b22b', '65287.99', null, '', '新增加往来账户数据，增加往来金额65287.99元', '0', '', '2019-02-01 10:31:48', null, null);
-INSERT INTO `db_business_order` VALUES ('dc13807691114e6da37b', '2019-02-01 10:20:44', '4d16a3de2fb74da5bfba3397f4e392', '1', null, 'd396ccb5b98348539589', '9018.19', null, '', '新增加往来账户数据，增加往来金额9018.19元', '0', '', '2019-02-01 10:20:44', null, null);
-INSERT INTO `db_business_order` VALUES ('e47d820d6f324335a283', '2019-01-31 15:17:03', 'c8ec35a5186e4392ba385ed47d34ae', '1', '', '32d03305f76842debe3f', '10000', '', '', '新增加往来账户数据，增加往来金额10000元', '0', '', '2019-01-31 15:17:03', null, null);
-INSERT INTO `db_business_order` VALUES ('f4953fdd5b0d4ba08c43', '2019-02-01 15:26:00', null, '2', 'da2a75ada2ba47d5869e', null, '200', '55e56245d55d46f09305', null, '节日福利。', '0', '', '2019-02-01 15:27:14', null, null);
-INSERT INTO `db_business_order` VALUES ('f70640808e6343a8b482', '2019-02-01 10:35:00', 'fb2332f47d564f0199ce57b993ba5f', '2', 'c792e443655746ae9092', null, '3449.82', null, '', '新增加往来账户数据，增加往来金额3449.82元', '0', '', '2019-02-01 10:35:01', null, null);
-INSERT INTO `db_business_order` VALUES ('ff78770cd9f44637aadb', '2019-02-01 10:46:31', 'd5a0ca7da5b04482be86971c021ab7', '2', '9d6bfa4cbb8144feb7a0', null, '1500', null, '', '新增加往来账户数据，增加往来金额1500元', '0', '', '2019-02-01 10:46:31', null, null);
+INSERT INTO `db_business_order` VALUES ('0fe57900abaa413bad70', '2018-12-31 17:31:55', '72db30ba1b3a443d9fd9d59bbb1fac', '1', '1', null, '13d9423e7d7e43ff9cb5', '9784.38', null, '', '新增加往来账户数据，增加往来金额9784.38元', '0', '', '2019-01-31 17:31:57', null, null);
+INSERT INTO `db_business_order` VALUES ('132821c74dc2444fae84', '2019-02-01 16:31:49', null, '1', '1', null, 'da2a75ada2ba47d5869e', '13', 'c36e0925a8914c58bdf0', null, '', '0', '', '2019-02-01 16:31:58', null, null);
+INSERT INTO `db_business_order` VALUES ('2ebbcecfba794debbfec', '2018-12-31 09:51:33', 'd9990bc19bf24af99b38d6aabf03b7', '1', '1', null, '2278469d550c42c6bbce', '3221.42', null, '', '新增加往来账户数据，增加往来金额3221.42元', '0', '', '2019-02-01 09:51:34', null, null);
+INSERT INTO `db_business_order` VALUES ('2fb3f1f1fb3b4af8af06', '2018-12-31 09:22:39', '73ae17b31668475db9bd4fb53ea3dd', '1', '1', null, '77377f3e15054476920b', '2528.99', null, '', '新增加往来账户数据，增加往来金额2528.99元', '0', '', '2019-02-01 09:22:39', null, null);
+INSERT INTO `db_business_order` VALUES ('4b1c7077935043d9932b', '2018-12-31 16:50:18', 'd2de80cf0a084e10a18c06a218c93b', '2', '2', '7bff2309924d4901b04f', null, '2504.44', null, '', '新增加普通账户数据，增加期初账户余额2504.44元', '0', '', '2019-01-31 16:50:19', null, null);
+INSERT INTO `db_business_order` VALUES ('52d18edc92934bb68f51', '2018-12-31 09:17:04', '07b5ac1dab3a4eab8bb55e54b292b5', '2', '2', 'da2a75ada2ba47d5869e', null, '2', null, '', '新增加普通账户数据，增加期初账户余额2元', '0', '', '2019-02-01 09:17:05', null, null);
+INSERT INTO `db_business_order` VALUES ('6e58ca1d7bca4d56816c', '2019-02-01 15:18:00', '07b5ac1dab3a4eab8bb55e54b292b3', '2', '2', '7bff2309924d4901b04f', null, '182', '92232c69f6f7447e8c02', null, '退订车票，正常退款。', '0', '', '2019-02-01 15:16:08', null, null);
+INSERT INTO `db_business_order` VALUES ('71b4483bc63d45bc907a', '2018-12-31 10:32:58', '457379ac5cd54ea6ba85cf9db0619c', '2', '2', '7a9a9f774f3540009185', null, '60000', null, '', '新增加往来账户数据，增加往来金额60000元', '0', '', '2019-02-01 10:32:58', null, null);
+INSERT INTO `db_business_order` VALUES ('765b20c4ce5b42a69528', '2018-12-31 10:17:52', 'bf045b9b309b422a9937b357943d7d', '1', '1', null, '59a97c012052470d9c9d', '24071.38', null, '', '新增加往来账户数据，增加往来金额24071.38元', '0', '', '2019-02-01 10:17:52', null, null);
+INSERT INTO `db_business_order` VALUES ('7f9ace8baf76419f9288', '2019-02-01 16:39:01', null, '2', '2', '40e16fe4990f4ec4828f', null, '5718.34', 'f685de082fbf491cbca2', null, '\n                                ', '0', '', '2019-02-01 16:39:09', null, null);
+INSERT INTO `db_business_order` VALUES ('878ec43cb5ba485d8f48', '2018-12-31 16:38:02', 'c9c4879f2adb45a0aeee53308675b5', '2', '2', '40e16fe4990f4ec4828f', null, '0', null, '', '新增加普通账户数据，增加期初账户余额0元', '0', '', '2019-02-01 16:38:02', null, null);
+INSERT INTO `db_business_order` VALUES ('8cc026d8e7544b7d9070', '2018-12-31 09:50:30', '25519cb3418d49baa92aac873eb24d', '1', '1', null, 'f497490396f043388c96', '154.85', null, '', '新增加往来账户数据，增加往来金额154.85元', '0', '', '2019-02-01 09:50:30', null, null);
+INSERT INTO `db_business_order` VALUES ('c68f2ebb92cf43a29d3c', '2018-12-31 15:15:52', '737b43bb0fa34bbabf8859824f1fc5', '2', '2', 'ab6eb76596b445e8945e', '', '15.5', '', '', '新增加普通账户数据，增加期初账户余额15.5元', '0', '', '2019-01-31 15:15:54', null, null);
+INSERT INTO `db_business_order` VALUES ('cd3cf92fdb974e3782b3', '2018-12-31 10:31:47', 'e4938fb05b3b440e91a9a6cbc0a919', '1', '1', null, 'e090b22cc2674c81b22b', '65287.99', null, '', '新增加往来账户数据，增加往来金额65287.99元', '0', '', '2019-02-01 10:31:48', null, null);
+INSERT INTO `db_business_order` VALUES ('dc13807691114e6da37b', '2018-12-31 10:20:44', '4d16a3de2fb74da5bfba3397f4e392', '1', '1', null, 'd396ccb5b98348539589', '9018.19', null, '', '新增加往来账户数据，增加往来金额9018.19元', '0', '', '2019-02-01 10:20:44', null, null);
+INSERT INTO `db_business_order` VALUES ('e47d820d6f324335a283', '2018-12-31 15:17:03', 'c8ec35a5186e4392ba385ed47d34ae', '1', '1', '', '32d03305f76842debe3f', '10000', '', '', '新增加往来账户数据，增加往来金额10000元', '0', '', '2019-01-31 15:17:03', null, null);
+INSERT INTO `db_business_order` VALUES ('f4953fdd5b0d4ba08c43', '2019-02-01 15:26:00', null, '2', '2', 'da2a75ada2ba47d5869e', null, '200', '55e56245d55d46f09305', null, '节日福利。', '0', '', '2019-02-01 15:27:14', null, null);
+INSERT INTO `db_business_order` VALUES ('f70640808e6343a8b482', '2018-12-31 10:35:00', 'fb2332f47d564f0199ce57b993ba5f', '2', '2', 'c792e443655746ae9092', null, '3449.82', null, '', '新增加往来账户数据，增加往来金额3449.82元', '0', '', '2019-02-01 10:35:01', null, null);
+INSERT INTO `db_business_order` VALUES ('ff78770cd9f44637aadb', '2018-12-31 10:46:31', 'd5a0ca7da5b04482be86971c021ab7', '2', '2', '9d6bfa4cbb8144feb7a0', null, '1500', null, '', '新增加往来账户数据，增加往来金额1500元', '0', '', '2019-02-01 10:46:31', null, null);
 
 -- ----------------------------
 -- Table structure for db_classification
