@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80013
 File Encoding         : 65001
 
-Date: 2019-02-13 22:37:01
+Date: 2019-02-19 23:29:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,6 +28,7 @@ CREATE TABLE `t_cashflow` (
   `cortbar` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `ciioa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `cpfgas` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `cpteapte` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `poatot` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `poocrtba` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `cffoa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
@@ -72,7 +73,7 @@ CREATE TABLE `t_cashflow` (
 -- ----------------------------
 -- Records of t_cashflow
 -- ----------------------------
-INSERT INTO `t_cashflow` VALUES ('15558e9663d545fc803b25bd0b27e9bc', '438f598f513b4aff9c30c98dd791f342', '2018-11-03', '1', '2', '3', '6', '4', '5', '6', '15', '21', '7', '8', '9', '10', '11', '45', '12', '13', '14', '15', '54', '99', '16', '17', '18', '51', '19', '20', '21', '60', '111', '49', '42', '43', '44', '45', '46', '47', '48', '0', 'root', '2018-11-03 16:01:33', null, null);
+INSERT INTO `t_cashflow` VALUES ('97c3ccaec229479dbf15e04102809d71', '6748615f42494d1994132493e11e533c', '2017-12-31', '27496911763.93', '2970700.00', '1002042506.76', '28501924970.69', '-23674028345.02', '-1494029839.90', '-977573119.25', '-1171133009.07', '-27316764313.24', '1185160657.45', '428689925.73', '16044393.66', '3178975.35', '0.00', '6838717.21', '454752011.95', '-4345994375.04', '-758527469.42', '0.00', '-242972658.04', '-5347494502.50', '-4892742490.55', '2583504996.63', '13970240333.31', '249790820.18', '16803536150.12', '-9026776030.17', '-1687315669.57', '-103612784.10', '-10817704483.84', '5985831666.28', '1843903.36', null, null, null, null, '7118822327.03', '9398916063.57', '2280093736.54', '0', 'root', '2019-02-19 00:13:55', null, null);
 
 -- ----------------------------
 -- Table structure for t_cashflowstatement
@@ -7435,7 +7436,7 @@ CREATE TABLE `t_currentassets` (
 -- ----------------------------
 -- Records of t_currentassets
 -- ----------------------------
-INSERT INTO `t_currentassets` VALUES ('3ace4ed9ae824bf89d55864d5adbdd30', 'fbe7f85b431f4000ae4e0931cf7c30a3', '2013-12-31', '302431000000', '21606000000', '8699000000', '531000000', '327447000000', '0.00', '800726000000', '0.00', '7475000000', '0.00', '0.00', '0.00', '0.00', '0.00', '1468915000000.00', '0', 'root', '2018-12-08 22:26:16', null, null);
+INSERT INTO `t_currentassets` VALUES ('374bb2b1919848bb9ac7f1c7b8cc8389', '6748615f42494d1994132493e11e533c', '2017-12-31', '9567251447.17', '0.00', '17010864.91', '0.00', '0.00', '8296632.00', '4287869345.25', '705648237.18', '369000.00', '0.00', '5664279575.09', '13132486755.88', '21674229.74', '226104499.42', '33630990586.64', '0', 'root', '2019-02-17 17:00:40', null, null);
 
 -- ----------------------------
 -- Table structure for t_currentliabilities
@@ -7472,7 +7473,7 @@ CREATE TABLE `t_currentliabilities` (
 -- ----------------------------
 -- Records of t_currentliabilities
 -- ----------------------------
-INSERT INTO `t_currentliabilities` VALUES ('2d505bb00b0741dea33fe6c1bdf4587f', 'fbe7f85b431f4000ae4e0931cf7c30a3', '2013-12-31', '279016000000', '35538000000', '0.00', '545000000', '59884000000', '0.00', '1177592000000', '0.00', '5178000000', '3750000000', '11634000000', '0.00', '0.00', '0.00', '0.00', '1573137000000.00', '0', null, '2018-12-08 22:51:53', null, null);
+INSERT INTO `t_currentliabilities` VALUES ('140d357c6bfe40c7832f60c0671c4b51', '6748615f42494d1994132493e11e533c', '2017-12-31', '4546500000.00', '0.00', '0.00', '0.00', '0.00', '218260698.94', '13783518720.44', '4085055410.13', '332089438.85', '471300833.52', '109224191.34', '233840292.19', '4233670231.51', '4623271409.87', '929132424.50', '33565863651.29', '0', null, '2019-02-17 17:08:21', null, null);
 
 -- ----------------------------
 -- Table structure for t_industry
@@ -7549,7 +7550,7 @@ CREATE TABLE `t_noncurrentassets` (
 -- ----------------------------
 -- Records of t_noncurrentassets
 -- ----------------------------
-INSERT INTO `t_noncurrentassets` VALUES ('67668092ac8c42db8b773d58d482fe73', 'fbe7f85b431f4000ae4e0931cf7c30a3', '2013-12-31', '65134000000', '109256000000', '11573000000', '82000000', '0.00', '8072000000', '0.00', '0.00', '0.00', '0.00', '0.00', '91000000', '0.00', '0.00', '0.00', '4475000000', '4840000000', '203523000000.00', '0', null, '2018-12-08 22:32:49', null, null);
+INSERT INTO `t_noncurrentassets` VALUES ('80e5f7bd92124a379cb3c399f90cd84b', '6748615f42494d1994132493e11e533c', '2017-12-31', '4366267140.13', '0.00', '4169955032.23', '1187910374.48', '20910362.85', '2389592861.42', '7194396.45', '0.00', '9342453.56', '0.00', '0.00', '26604230717.78', '0.00', '0.00', '104373597.62', '218644796.38', '311389053.19', '39389810786.09', '0', null, '2019-02-17 17:05:07', null, null);
 
 -- ----------------------------
 -- Table structure for t_noncurrentliabilities
@@ -7564,6 +7565,7 @@ CREATE TABLE `t_noncurrentliabilities` (
   `ltp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `specialPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `estimatedLiabilities` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `deferredIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `ditl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `dncl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `tncl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
@@ -7578,7 +7580,7 @@ CREATE TABLE `t_noncurrentliabilities` (
 -- ----------------------------
 -- Records of t_noncurrentliabilities
 -- ----------------------------
-INSERT INTO `t_noncurrentliabilities` VALUES ('a8896dc43aae4533b5d816ef242c71e8', 'fbe7f85b431f4000ae4e0931cf7c30a3', '2013-12-31', '0.00', '8400000000', '0.00', '0.00', '2000000', '0.00', '4889000000', '13291000000.00', '0', null, '2018-12-08 23:00:28', null, null);
+INSERT INTO `t_noncurrentliabilities` VALUES ('2c7f72e4d1dd4feeb93ab8e89728ac1c', '6748615f42494d1994132493e11e533c', '2017-12-31', '24150040509.09', '498181700.69', '83259330.32', '2982734.34', '160075073.52', '61957615.22', '96998961.16', '0.00', '25053495924.34', '0', null, '2019-02-17 17:10:59', null, null);
 
 -- ----------------------------
 -- Table structure for t_ownersequity
@@ -7589,11 +7591,16 @@ CREATE TABLE `t_ownersequity` (
   `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
   `pic` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `oei` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `capitalReserve` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `oci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `lts` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `specialReserves` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `surplusReserve` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `grp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `undistributedProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `toeattpc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `mse` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `toe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
@@ -7606,7 +7613,7 @@ CREATE TABLE `t_ownersequity` (
 -- ----------------------------
 -- Records of t_ownersequity
 -- ----------------------------
-INSERT INTO `t_ownersequity` VALUES ('204d31de76764fbab2b894a15f93b55d', 'fbe7f85b431f4000ae4e0931cf7c30a3', '2013-12-31', '8905000000', '28693000000', '0.00', '4585000000', '12949000000', '30288000000', '85420000000.00', '0', 'root', '2018-12-08 23:12:20', null, null);
+INSERT INTO `t_ownersequity` VALUES ('62ab4ed253614477bc03c58096dff093', '6748615f42494d1994132493e11e533c', '2017-12-31', '3610525510.00', '0.00', '2987385831.55', '271446387.97', '0.00', '536142926.70', '268684135.56', '0.00', '5421602820.94', '13095787612.72', '1305654184.38', '14401441797.10', '0', 'root', '2019-02-17 19:10:21', null, null);
 
 -- ----------------------------
 -- Table structure for t_ownersequitychange
@@ -7662,25 +7669,32 @@ CREATE TABLE `t_profit` (
   `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
   `businessIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `interestIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `earnedPremium` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `faci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `toi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `operatingCost` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `btaa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `sellingExpenses` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `managementCost` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `financialCost` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `ail` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `toc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `fvci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `adi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `ifi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `iiojvajv` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `oii` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `exchangeGains` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `otherIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `operatingProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `noi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `noe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `paldoia` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `onoe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `totalProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `ite` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `netProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `natfoci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `tci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `eps` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `beps` varchar(20) COLLATE utf8_bin DEFAULT NULL,
   `deps` varchar(20) COLLATE utf8_bin DEFAULT NULL,
@@ -7695,6 +7709,7 @@ CREATE TABLE `t_profit` (
 -- ----------------------------
 -- Records of t_profit
 -- ----------------------------
+INSERT INTO `t_profit` VALUES ('276db4ddae4f421d8dd14efe289ce227', '6748615f42494d1994132493e11e533c', '2017-12-31', '32762821060.43', '0.00', '0.00', '0.00', '32762821060.43', '-29133524180.79', '-114327811.45', '-12322472.48', '-519273085.65', '-1386408811.64', '-270469780.76', '-31436326142.77', '2599125.34', '0.00', '8213301.24', '-7831092.42', '16044393.66', '0.00', '7191275.02', '1344498619.26', '34063638.35', '-43356838.30', '1335205419.31', '-207230696.66', '1127974722.65', '116832454.52', '1244807177.17', '0.3308', '0.3308', '0.3308', '0', 'root', '2019-02-18 22:19:22', null, null);
 
 -- ----------------------------
 -- Table structure for t_stockexchange
