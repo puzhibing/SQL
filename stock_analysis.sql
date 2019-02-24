@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 127.0.0.1
-Source Server Version : 50637
+Source Server         : localhost
+Source Server Version : 80013
 Source Host           : localhost:3306
 Source Database       : stock_analysis
 
 Target Server Type    : MYSQL
-Target Server Version : 50637
+Target Server Version : 80013
 File Encoding         : 65001
 
-Date: 2019-02-21 17:47:40
+Date: 2019-02-21 22:25:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,52 +20,52 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `t_cashflow`;
 CREATE TABLE `t_cashflow` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `crfsogas` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ort` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cortbar` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ciioa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cpfgas` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cpteapte` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `poatot` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `poocrtba` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cffoa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncffoa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `crfir` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `crfii` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncidofaiaaoaitpp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncrfdosaobu` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ocrtiahbr` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cioia` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cofaiaaocpfpi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cpfi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncpbsaobu` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `poocrtia` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cfooia` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncffia` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `crfi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `crfb` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ocrtfar` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ciofa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cfdr` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cpfdpoip` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `poocrtfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cfoofa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncfgbfra` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `teoerfocace` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cateotp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iboc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `eboce` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iboce` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `caceatboty` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `bocaceaeot` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `niicace` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `crfsogas` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ort` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cortbar` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ciioa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cpfgas` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cpteapte` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `poatot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `poocrtba` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cffoa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncffoa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `crfir` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `crfii` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncidofaiaaoaitpp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncrfdosaobu` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ocrtiahbr` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cioia` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cofaiaaocpfpi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cpfi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncpbsaobu` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `poocrtia` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cfooia` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncffia` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `crfi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `crfb` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ocrtfar` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ciofa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cfdr` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cpfdpoip` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `poocrtfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cfoofa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncfgbfra` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `teoerfocace` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cateotp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iboc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `eboce` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iboce` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `caceatboty` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `bocaceaeot` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `niicace` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -80,38 +80,38 @@ INSERT INTO `t_cashflow` VALUES ('97c3ccaec229479dbf15e04102809d71', '6748615f42
 -- ----------------------------
 DROP TABLE IF EXISTS `t_cashflowstatement`;
 CREATE TABLE `t_cashflowstatement` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `np` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `aip` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dofagadadopba` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `aoia` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `aoltpe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `loiffaiaaolta` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `losofa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `lofvc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `fc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ll` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ditad` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iiiditl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `lr` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `diori` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iiopi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `other` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncffoac` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dtc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `scbdwoy` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `flofa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cateotp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iboc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `eboce` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iboce` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `niicace` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `np` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `aip` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dofagadadopba` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `aoia` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `aoltpe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `loiffaiaaolta` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `losofa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lofvc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `fc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ll` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ditad` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iiiditl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lr` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `diori` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iiopi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `other` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncffoac` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dtc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `scbdwoy` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `flofa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cateotp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iboc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `eboce` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iboce` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `niicace` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -125,18 +125,18 @@ CREATE TABLE `t_cashflowstatement` (
 -- ----------------------------
 DROP TABLE IF EXISTS `t_company`;
 CREATE TABLE `t_company` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `chName` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `chShortName` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `enName` varchar(200) COLLATE utf8_bin DEFAULT NULL,
-  `enShortName` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `chName` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `chShortName` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `enName` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `enShortName` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `registerTime` date DEFAULT NULL,
-  `industry` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `url` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `industry` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `url` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -186,6 +186,7 @@ INSERT INTO `t_company` VALUES ('04198b9ecb8e49f99aaac958c60dc437', '华扬联�
 INSERT INTO `t_company` VALUES ('043dc9b86cb8413f81a3be0a0f657527', '深圳市英维克科技股份有限公司', '英维克', 'SHENZHEN ENVICOOL TECHNOLOGY CO., LTD.', '', '2016-12-29', null, 'www.envicool.com', '0', 'root', '2018-11-25 22:10:19', null, null);
 INSERT INTO `t_company` VALUES ('04409c832e714dcd9438fe7018f97d8e', '恒通物流股份有限公司', '恒通股份', 'HENGTONG LOGISTICS CO.,LTD.', 'HENGTONG LOGISTICS', null, null, 'http://www.hengtonggf.com/', '0', 'root', '2018-11-25 16:17:51', null, null);
 INSERT INTO `t_company` VALUES ('04a591b04099441bbee68a7fd4cfc265', '银亿股份有限公司', '银亿股份', 'YINYI CO,LTD', '', '2000-06-22', null, 'www.chinayinyi.cn', '0', 'root', '2018-11-25 22:05:26', null, null);
+INSERT INTO `t_company` VALUES ('04a9b2832b7d40419fb70593e306565c', '江苏苏盐井神股份有限公司', '苏盐井神', 'Jiang Su Suyan Jingshen Co.,Ltd', '-', null, null, 'www.jsjsyh.com', '0', 'root', '2019-02-21 22:09:25', null, null);
 INSERT INTO `t_company` VALUES ('04b80fff98634f2090ea9bc015292621', '江苏紫天传媒科技股份有限公司', '紫天科技', 'Jiangsu Zitian Media Technology Co.,?Ltd', '', '2011-12-29', null, 'www.ntdy.com.cn', '0', 'root', '2018-11-25 22:12:36', null, null);
 INSERT INTO `t_company` VALUES ('04ba6fc2f9b24015b92e94519cd37624', '扬州扬杰电子科技股份有限公司', '扬杰科技', 'Yangzhou Yangjie Electronic Technology Co.,Ltd.', '', '2014-01-23', null, 'www.21yangjie.com', '0', 'root', '2018-11-25 22:13:09', null, null);
 INSERT INTO `t_company` VALUES ('04de6fde654a4282a63f0972eb3644ba', '深圳赫美集团股份有限公司', '赫美集团', 'Shenzhen Hemei Group Co.,LTD.', '', '2010-02-09', null, 'www.hemei.cn', '0', 'root', '2018-11-25 22:07:39', null, null);
@@ -343,6 +344,7 @@ INSERT INTO `t_company` VALUES ('0fa4c39c2bab4ccb9d74f77fc8047f00', '贵州信�
 INSERT INTO `t_company` VALUES ('0fb416683ded453398d4a444bc58f288', '南极电商股份有限公司', '南极电商', 'NanJi E-Commerce Co., LTD', '', '2007-04-18', null, 'www.nanjids.com', '0', 'root', '2018-11-25 22:06:15', null, null);
 INSERT INTO `t_company` VALUES ('0fb9e27bf31f462399b28c99d761ffb9', '浪潮电子信息产业股份有限公司', '浪潮信息', 'Inspur Electronic Information Industry Co.,Ltd', '', '2000-06-08', null, 'www.inspur.com', '0', 'root', '2018-11-25 22:05:24', null, null);
 INSERT INTO `t_company` VALUES ('0fbaf1d06d284fecb277980939433d41', '厦门盈趣科技股份有限公司', '盈趣科技', 'Xiamen Intretech Inc.', '', '2018-01-15', null, 'www.intretech.com', '0', 'root', '2018-11-25 22:10:49', null, null);
+INSERT INTO `t_company` VALUES ('0fcc3105e982491c87ae2ce7549fd8f4', '中国长江航运集团南京油运股份有限公司', 'ST长油', 'NANJING TANKER CORPORATION', 'NJTC', null, null, 'http://njtc.sinotrans-csc.com/', '0', 'root', '2019-02-21 22:09:15', null, null);
 INSERT INTO `t_company` VALUES ('0fd5bff0ef174823b55ed128a39dbae1', '广东宝莱特医用科技股份有限公司', '宝莱特', 'GUANGDONG BIOLIGHT MEDITECH CO.,LTD.', '', '2011-07-19', null, 'www.blt.com.cn', '0', 'root', '2018-11-25 22:12:22', null, null);
 INSERT INTO `t_company` VALUES ('0ffa4e851b40472abe231dd121f2513c', '中国核工业建设股份有限公司', '中国核建', 'CHINA NUCLEAR ENGINEERING CORPORATION LIMITED', 'CNEC', null, null, 'http://ltd.cnecc.com', '0', 'root', '2018-11-25 16:16:50', null, null);
 INSERT INTO `t_company` VALUES ('0fff65a9874c4263b55f94a43fa295cd', '世纪天鸿教育科技股份有限公司', '世纪天鸿', 'Astro-century Education & Technology Co.,Ltd.', '', '2017-09-26', null, 'www.sjthedu.com', '0', 'root', '2018-11-25 22:14:54', null, null);
@@ -516,6 +518,7 @@ INSERT INTO `t_company` VALUES ('1cffd5001ca74fbd9b29ad0f5b3dbf91', '永艺家�
 INSERT INTO `t_company` VALUES ('1d18db97c2154190ba693bc38cf7f046', '合肥合锻智能制造股份有限公司', '合锻智能', 'Hefei Metalforming Intelligent Manufacturing Co., Ltd.', 'HFM', null, null, 'http://www.hfpress.com', '0', 'root', '2018-11-25 16:17:17', null, null);
 INSERT INTO `t_company` VALUES ('1d1ae20bb0a84c9b8f437a737c5be929', '渤海轮渡集团股份有限公司', '渤海轮渡', 'Bohai Ferry GROUP Co.,Ltd.', 'BHLD', null, null, 'http://www.bohailundu.cn', '0', 'root', '2018-11-25 16:17:45', null, null);
 INSERT INTO `t_company` VALUES ('1d1dd099269e47ada2249f94f0a02cf6', '湖南景峰医药股份有限公司', '景峰医药', 'Hunan Jingfeng Pharmaceutical Co.,Ltd.', '', '1999-02-03', null, 'www.hntane.com', '0', 'root', '2018-11-25 22:05:05', null, null);
+INSERT INTO `t_company` VALUES ('1d20c111c2bf4cd3b910fccfae85f7af', '南京威尔药业股份有限公司', '威尔药业', 'Nanjing Well Pharmaceutical Co.,Ltd.', 'Well Pharmaceutical ', null, null, 'http://www.well-js.com', '0', 'root', '2019-02-21 22:09:27', null, null);
 INSERT INTO `t_company` VALUES ('1d30abc7d70042a5adb069702ad54513', '广东汕头超声电子股份有限公司', '超声电子', 'GUANGDONG GOWORLD CO., LTD', '', '1997-10-08', null, 'www.gd-goworld.com', '0', 'root', '2018-11-25 22:04:51', null, null);
 INSERT INTO `t_company` VALUES ('1d56f8b5aacc42739ed2b67fe53b6781', '光正集团股份有限公司', '光正集团', 'Guangzheng Group Co.,Ltd.', '', '2010-12-17', null, 'www.gzss.cc', '0', 'root', '2018-11-25 22:08:42', null, null);
 INSERT INTO `t_company` VALUES ('1d7731fe15834908b7546d2358a0ee93', '北京东方中科集成科技股份有限公司', '东方中科', 'Beijing Oriental Jicheng Co.,Ltd', '', '2016-11-11', null, 'www.jicheng.net.cn', '0', 'root', '2018-11-25 22:10:14', null, null);
@@ -538,6 +541,7 @@ INSERT INTO `t_company` VALUES ('1ec840ff66d3474390992a957c7999b3', '南京普�
 INSERT INTO `t_company` VALUES ('1eceb60fdf7b46d392f2c15f79e07311', '骅威文化股份有限公司', '骅威文化', 'HUAWEI  CULTURE  CO.,LTD', '', '2010-11-17', null, 'www.huawei-stock.com', '0', 'root', '2018-11-25 22:08:35', null, null);
 INSERT INTO `t_company` VALUES ('1ed36464359644689f67f321406a2b5d', '北京东方新星石化工程股份有限公司', '东方新星', 'Beijing New Oriental Star Petrochemical Engineering Co., Ltd.', '', '2015-05-15', null, 'www.bnec.cn', '0', 'root', '2018-11-25 22:09:54', null, null);
 INSERT INTO `t_company` VALUES ('1ee20a056dc84dcea96d5993d9a1320b', '广东松发陶瓷股份有限公司', '松发股份', 'GUANGDONG SONGFA CERAMICS CO., LTD.', 'SONGFA', null, null, 'http://www.songfa.com/', '0', 'root', '2018-11-25 16:17:56', null, null);
+INSERT INTO `t_company` VALUES ('1ef828403f3c450f956f5a0cb13d622a', '招商局港口集团股份有限公司', '招港B', 'China Merchants Port Group Co., Ltd.', '', '1993-05-05', null, 'www.szcwh.com', '0', 'root', '2019-02-21 22:16:44', null, null);
 INSERT INTO `t_company` VALUES ('1f090ca26eb644e8acf68d52472c4653', '北京高盟新材料股份有限公司', '高盟新材', 'Beijing Comens New Materials Co.,Ltd.', '', '2011-04-07', null, 'www.co-mens.com', '0', 'root', '2018-11-25 22:12:03', null, null);
 INSERT INTO `t_company` VALUES ('1f2e00d9c5a547288ab37e0b425c7972', '华纺股份有限公司', '华纺股份', 'HUAFANG CO.,LTD', 'HUAFANG ', null, null, 'www.hfgf.cn', '0', 'root', '2018-11-25 16:13:34', null, null);
 INSERT INTO `t_company` VALUES ('1f32cf5e091440d496354ff1f50a74db', '平安银行股份有限公司', '平安银行', 'Ping An Bank Co., Ltd.', '', '1991-04-03', null, 'www.bank.pingan.com', '0', 'root', '2018-11-25 22:02:49', null, null);
@@ -555,6 +559,7 @@ INSERT INTO `t_company` VALUES ('1fad6b8f96df4f7d94068051e7347b4a', '湖南长�
 INSERT INTO `t_company` VALUES ('1fc19d6d21a240779ab6dac9159c0736', '申万宏源集团股份有限公司', '申万宏源', 'Shenwan Hongyuan Group Co.,Ltd', '', '2015-01-26', null, 'www.swhygh.com', '0', 'root', '2018-11-25 22:03:27', null, null);
 INSERT INTO `t_company` VALUES ('1fd3121068424cdeb1d008554e1b5c12', '深圳市英可瑞科技股份有限公司', '英可瑞', 'Shenzhen Increase Technology Co., Ltd.', '', '2017-11-01', null, 'www.szincrease.com', '0', 'root', '2018-11-25 22:15:18', null, null);
 INSERT INTO `t_company` VALUES ('1fd82b2bf95e44bdafb1c263f2d6dc6f', '杭州银行股份有限公司', '杭州银行', 'BANK OF HANGZHOU CO.,LTD.', 'BANK OF HANGZHOU', null, null, 'www.hzbank.com.cn', '0', 'root', '2018-11-25 16:16:04', null, null);
+INSERT INTO `t_company` VALUES ('1fe04f926baa46419a156caa2af4aca2', '贵州圣济堂医药产业股份有限公司', '圣济堂', 'GUIZHOU SALVAGE PHARMACEUTICAL CO.,LTD.', '-', null, null, 'http://www.chth.com.cn', '0', 'root', '2019-02-21 22:08:25', null, null);
 INSERT INTO `t_company` VALUES ('1fe0c07bcd9b40deb530c421c3924c02', '河北衡水老白干酒业股份有限公司', '老白干酒', 'HEBEI HENGSHUI LAOBAIGAN LIQUOR CO.，LTD.', 'lao bai gan jiu', null, null, 'www.hengshuilaobaigan.net', '0', 'root', '2018-11-25 16:14:02', null, null);
 INSERT INTO `t_company` VALUES ('1fe11ce4150345c39cc7d683cc83ee27', '深圳亚联发展科技股份有限公司', '亚联发展', 'Shenzhen Asia Link Technology Development Co.,Ltd.', '', '2009-12-09', null, 'www.asialink.com', '0', 'root', '2018-11-25 22:07:18', null, null);
 INSERT INTO `t_company` VALUES ('1ff0c9fc9452403792f380367a13c762', '荣安地产股份有限公司', '荣安地产', 'Rongan Property Co.,Ltd.', '', '1993-08-06', null, 'www.rongan.com.cn', '0', 'root', '2018-11-25 22:03:41', null, null);
@@ -578,6 +583,7 @@ INSERT INTO `t_company` VALUES ('21a14886b70141e484331f2939981827', '广东光�
 INSERT INTO `t_company` VALUES ('21b69d9c7a514f4999bd7bf60238eb3f', '麦趣尔集团股份有限公司', '麦趣尔', 'Maiquer Group CO.,LTD', '', '2014-01-28', null, 'www.maiquer.com', '0', 'root', '2018-11-25 22:09:43', null, null);
 INSERT INTO `t_company` VALUES ('21cee8f1bb0a43348af2078b83eb77d1', '中国全聚德(集团)股份有限公司', '全 聚 德', 'CHINA QUANJUDE(GROUP) CO.,LTD', '', '2007-11-20', null, 'www.quanjude.com.cn', '0', 'root', '2018-11-25 22:06:33', null, null);
 INSERT INTO `t_company` VALUES ('21e03cc8a25e4ebc8e6fe1c1ec05b006', '深圳市今天国际物流技术股份有限公司', '今天国际', 'NEW TREND INTERNATIONAL LOGIS-TECH CO.,LTD.', '', '2016-08-18', null, 'www.nti56.com', '0', 'root', '2018-11-25 22:14:11', null, null);
+INSERT INTO `t_company` VALUES ('21f73d030d6747babf3928ccb2dcfdad', '苏州龙杰特种纤维股份有限公司', '苏州龙杰', '-', '-', null, null, '-', '0', 'root', '2019-02-21 22:09:27', null, null);
 INSERT INTO `t_company` VALUES ('220f3196acdb4d17b17c9f237d9303bd', '深圳市赢合科技股份有限公司', '赢合科技', 'SHENZHEN YINGHE TECHNOLOGY CO.,LTD', '', '2015-05-14', null, 'www.yhwins.com/cn', '0', 'root', '2018-11-25 22:13:41', null, null);
 INSERT INTO `t_company` VALUES ('222843fe6918476c88ff83cb427156bf', '宁夏青龙管业股份有限公司', '青龙管业', 'Ningxia Qinglong Pipes Industry Co.,LTD.', '', '2010-08-03', null, 'www.qlgd.com.cn', '0', 'root', '2018-11-25 22:08:18', null, null);
 INSERT INTO `t_company` VALUES ('22394d8c364c46ed971299294274e873', '天津汽车模具股份有限公司', '天汽模', 'TIANJIN MOTOR DIES CO.,LTD.', '', '2010-11-25', null, 'www.tqm.com.cn', '0', 'root', '2018-11-25 22:08:37', null, null);
@@ -1067,6 +1073,7 @@ INSERT INTO `t_company` VALUES ('43e924bb73304a31a8d9ba2e97913606', '深圳市�
 INSERT INTO `t_company` VALUES ('43f33462ff684c72bf33c46c178561f6', '浙江和仁科技股份有限公司', '和仁科技', 'Heren Health Co.,Ltd.', '', '2016-10-18', null, 'www.herenit.com', '0', 'root', '2018-11-25 22:14:17', null, null);
 INSERT INTO `t_company` VALUES ('440589d1845347da926e89582aee2313', '山东墨龙石油机械股份有限公司', '山东墨龙', 'Shandong Molong Petroleum Machinery Co.,Ltd', '', '2010-10-21', null, 'www.molonggroup.com', '0', 'root', '2018-11-25 22:08:30', null, null);
 INSERT INTO `t_company` VALUES ('441ea14061be4486bc817ad94c35d293', '山西证券股份有限公司', '山西证券', 'SHANXI SECURITIES CO.,LTD.', '', '2010-11-15', null, 'www.i618.com.cn;www.sxzq.com', '0', 'root', '2018-11-25 22:08:34', null, null);
+INSERT INTO `t_company` VALUES ('4422af7f800f447a937df4cc506918bf', '宁波水表股份有限公司', '宁波水表', 'Ningbo Water Meter Co., LTD.', 'NWM', null, null, '-', '0', 'root', '2019-02-21 22:09:36', null, null);
 INSERT INTO `t_company` VALUES ('44274f55f8b24af69ff6a960df3a95a1', '四川美丰化工股份有限公司', '四川美丰', 'SICHUAN MEIFENG CHEMICAL INDUSTRY CO., LTD', '', '1997-06-17', null, 'www.scmeif.com', '0', 'root', '2018-11-25 22:04:32', null, null);
 INSERT INTO `t_company` VALUES ('44306209112f4da7b768a3855474010a', '天津普林电路股份有限公司', '天津普林', 'TIANJIN PRINTRONICS CIRCUIT CORPORATION', '', '2007-05-16', null, 'www.toppcb.com', '0', 'root', '2018-11-25 22:06:16', null, null);
 INSERT INTO `t_company` VALUES ('446277e2c3e84b2b906f24f105d2b8e7', '瑞康医药集团股份有限公司', '瑞康医药', 'Realcan Pharmaceutical Group Co.,Ltd.', '', '2011-06-10', null, 'www.realcan.cn', '0', 'root', '2018-11-25 22:09:02', null, null);
@@ -1651,6 +1658,7 @@ INSERT INTO `t_company` VALUES ('6d24c0f5e5e44fdfa9cae2388f073993', '南京熊�
 INSERT INTO `t_company` VALUES ('6d3a5008d95543b0abb70c48968f07b7', '山东赫达股份有限公司', '山东赫达', 'SHANDONG HEAD CO.,LTD.', '', '2016-08-26', null, 'www.sdhead.com', '0', 'root', '2018-11-25 22:10:11', null, null);
 INSERT INTO `t_company` VALUES ('6d5c5032a18d4f28a9e0954355290873', '无锡智能自控工程股份有限公司', '智能自控', 'Wuxi Smart Auto-control Engineering Co., Ltd.', '', '2017-06-05', null, 'www.wuxismart.com', '0', 'root', '2018-11-25 22:10:32', null, null);
 INSERT INTO `t_company` VALUES ('6d69193602f747739155f8fc665f91eb', '长航凤凰股份有限公司', '长航凤凰', 'Chang Jiang Shipping Group Phoenix Co.,Ltd', '', '1993-10-25', null, 'www.csc-hy.com.cn', '0', 'root', '2018-11-25 22:03:42', null, null);
+INSERT INTO `t_company` VALUES ('6d7002af90dc4b188fe48242259d6868', '江苏利通电子股份有限公司', '利通电子', 'Jiangsu Lettall Electronic Co.,Ltd.', 'lettall', null, null, 'www.lettall.com', '0', 'root', '2019-02-21 22:09:34', null, null);
 INSERT INTO `t_company` VALUES ('6d772a53d983400cbf2c0b311aeb8813', '苏州固锝电子股份有限公司', '苏州固锝', 'SUZHOU GOOD-ARK ELECTRONICS CO., LTD.', '', '2006-11-16', null, 'www.goodark.com', '0', 'root', '2018-11-25 22:05:57', null, null);
 INSERT INTO `t_company` VALUES ('6d9a82d234504e539d01f6a01cadd8c1', '凤凰光学股份有限公司', '凤凰光学', 'phenix optical company limited', 'phenix optical', null, null, 'http：//www.phenixoptics.com.cn', '0', 'root', '2018-11-25 16:11:58', null, null);
 INSERT INTO `t_company` VALUES ('6dc51c2ee1574992a96f6fd0ad8c5120', '崇达技术股份有限公司', '崇达技术', 'Suntak  Technology Co., Ltd.', '', '2016-10-12', null, 'www.suntakpcb.com', '0', 'root', '2018-11-25 22:10:12', null, null);
@@ -2046,6 +2054,7 @@ INSERT INTO `t_company` VALUES ('871f75021d6a4f219a2775a0cdf1bfd2', '福建凤�
 INSERT INTO `t_company` VALUES ('8744327e78554c3f9ab5749921641da9', '河南省交通规划设计研究院股份有限公司', '设研院', 'Henan Provincial Communications Planning & Design Institute Co., Ltd', '', '2017-12-12', null, 'www.hnrbi.com', '0', 'root', '2018-11-25 22:15:25', null, null);
 INSERT INTO `t_company` VALUES ('8746bbfe4b0a47a994c31fb43d7aa5c1', '上海飞科电器股份有限公司', '飞科电器', 'Shanghai Flyco Electrical Appliance Co., Ltd', 'flyco', null, null, 'www.flyco.com', '0', 'root', '2018-11-25 16:19:19', null, null);
 INSERT INTO `t_company` VALUES ('8749286e5aca47d49d94a2d988f2dd0b', '横店集团东磁股份有限公司', '横店东磁', 'Hengdian Group DMEGC Magnetics Co.,Ltd.', '', '2006-08-02', null, 'www.chinadmegc.com', '0', 'root', '2018-11-25 22:05:51', null, null);
+INSERT INTO `t_company` VALUES ('875fac6e75a240b680362270134cd20f', '青岛海容商用冷链股份有限公司', '海容冷链', 'Qingdao Hiron Commercial Cold Chain Co.,Ltd.', 'Hiron Cold Chain', null, null, 'http://www.chinahiron.com', '0', 'root', '2019-02-21 22:09:23', null, null);
 INSERT INTO `t_company` VALUES ('876163a6b79948bfac1e9c543ed5039c', '深圳市智动力精密技术股份有限公司', '智动力', 'Shenzhen CDL Precision Technology Co., Ltd.', '', '2017-08-04', null, 'www.szcdl.com', '0', 'root', '2018-11-25 22:15:08', null, null);
 INSERT INTO `t_company` VALUES ('8761f8e232e5480e8fead2c680bf74bc', '荣科科技股份有限公司', '荣科科技', 'Bringspring Science & Technology Co.,Ltd.', '', '2012-02-16', null, 'www.bringspring.com', '0', 'root', '2018-11-25 22:12:40', null, null);
 INSERT INTO `t_company` VALUES ('877bd9b10d6440cf94af304d8df357ef', '中化岩土集团股份有限公司', '中化岩土', 'China Zhonghua Geotechnical Engineering Group Co., Ltd.', '', '2011-01-28', null, 'www.cge.com.cn', '0', 'root', '2018-11-25 22:08:48', null, null);
@@ -2244,6 +2253,7 @@ INSERT INTO `t_company` VALUES ('95c0819fb58448a98d3ac0a2ec7148be', '重庆建�
 INSERT INTO `t_company` VALUES ('95dac0f5e3964ba5aa2350169c34b73f', '怀集登云汽配股份有限公司', '登云股份', 'Huaiji Dengyun Auto-parts (Holding) Co.,Ltd.', '', '2014-02-19', null, 'www.huaijivalve.com', '0', 'root', '2018-11-25 22:09:42', null, null);
 INSERT INTO `t_company` VALUES ('95e641d6cf964b4b9af0e4a71690e8a2', '天津九安医疗电子股份有限公司', '九安医疗', 'Andon Health Co.,Ltd.', '', '2010-06-10', null, 'www.jiuan.com', '0', 'root', '2018-11-25 22:08:09', null, null);
 INSERT INTO `t_company` VALUES ('95f063b88b7643aeadf3a82fe320d6fe', '博天环境集团股份有限公司', '博天环境', 'Poten Environment Group Co., Ltd.', '-', null, null, '-', '0', 'root', '2018-11-25 16:18:37', null, null);
+INSERT INTO `t_company` VALUES ('96055e78f78f4ac58e2df825bfc5d1ad', '青岛蔚蓝生物股份有限公司', '蔚蓝生物', 'Qingdao Vland Biotech INC ', 'Vland Biotech', null, null, 'http://www.vlandgroup.com', '0', 'root', '2019-02-21 22:09:38', null, null);
 INSERT INTO `t_company` VALUES ('9607532d632f4369a93c9e4561558578', '徐工集团工程机械股份有限公司', '徐工机械', 'XCMG Construction Machinery Co., Ltd.', '', '1996-08-28', null, 'www.xcmg.com', '0', 'root', '2018-11-25 22:03:34', null, null);
 INSERT INTO `t_company` VALUES ('961574bcde5e4b43816fa2c2091df01a', '吉林省金冠电气股份有限公司', '金冠股份', 'JILIN JINGUAN ELECTRIC CO.,LTD.', '', '2016-05-06', null, 'www.jljgdq.cn', '0', 'root', '2018-11-25 22:14:01', null, null);
 INSERT INTO `t_company` VALUES ('9623dc6a9a4640488ad532c3d7b4a2d7', '吉艾科技集团股份公司', '吉艾科技', 'GI Technologies Group Co.,Ltd.', '', '2012-04-10', null, 'www.gi-tech.cn', '0', 'root', '2018-11-25 22:12:46', null, null);
@@ -2609,6 +2619,7 @@ INSERT INTO `t_company` VALUES ('b00f9e7b269342a9b297845861850392', '新疆中�
 INSERT INTO `t_company` VALUES ('b01939244dee414d901dedf6e79456b4', '江苏中旗科技股份有限公司', '中旗股份', 'Jiangsu Flag Chemical Industry Co.,Ltd.', '', '2016-12-20', null, 'www.flagchem.com', '0', 'root', '2018-11-25 22:14:26', null, null);
 INSERT INTO `t_company` VALUES ('b0276b0e58184ca7bf0209bb0523250a', '浙江开山压缩机股份有限公司', '开山股份', 'Zhejiang Kaishan Compressor Co.,Ltd.', '', '2011-08-19', null, 'www.kaishancomp.com.cn', '0', 'root', '2018-11-25 22:12:27', null, null);
 INSERT INTO `t_company` VALUES ('b02cf979fa15456b89308e7a6b343ddf', '杭州微光电子股份有限公司', '微光股份', 'HANGZHOU WEIGUANG ELECTRONIC CO.,LTD.', '', '2016-06-22', null, 'www.wgmotor.com', '0', 'root', '2018-11-25 22:10:07', null, null);
+INSERT INTO `t_company` VALUES ('b052454f43d440e4a60c97c3833f76fc', '上海华培动力科技股份有限公司', '华培动力', 'Shanghai Sinotec Co.,Ltd', 'sinotec', null, null, 'www.sinotec.cn', '0', 'root', '2019-02-21 22:09:20', null, null);
 INSERT INTO `t_company` VALUES ('b058e113f0904f42983acaf316d04a92', '南方汇通股份有限公司', '南方汇通', 'SOUTH HUITON CO.,LTD', '', '1999-06-16', null, 'www.crrcgc.cc/ht', '0', 'root', '2018-11-25 22:05:09', null, null);
 INSERT INTO `t_company` VALUES ('b08089837d23449497aa6f922778c64f', '深圳市方直科技股份有限公司', '方直科技', 'SHENZHEN KINGSUN SCIENCE & TECHNOLOGY CO.,LTD', '', '2011-06-29', null, 'www.kingsunedu.com', '0', 'root', '2018-11-25 22:12:17', null, null);
 INSERT INTO `t_company` VALUES ('b087aa1188114051b25d589635d8dd20', '北京合康新能科技股份有限公司', '合康新能', 'Hiconics Eco-energy Technology Co., Ltd.', '', '2010-01-20', null, 'www.hiconics.com', '0', 'root', '2018-11-25 22:11:11', null, null);
@@ -2665,6 +2676,7 @@ INSERT INTO `t_company` VALUES ('b3f4cd74702a4447be255dfead5fdd3f', '江苏金�
 INSERT INTO `t_company` VALUES ('b3f956ed968942e18dfc3244c7485598', '广晟有色金属股份有限公司', '广晟有色', 'Rising Nonferrous Metals Share Co., Ltd.', 'RNM', null, null, 'www.gdnmi.com.cn', '0', 'root', '2018-11-25 16:12:47', null, null);
 INSERT INTO `t_company` VALUES ('b3fd6b475c324b90b2ba6dafa302daef', '山东益生种畜禽股份有限公司', '益生股份', 'SHAN DONG YISHENG LIVESTOCK&POULTRY BREEDING CO.,LTD.', '', '2010-08-10', null, 'www.yishenggufen.com', '0', 'root', '2018-11-25 22:08:18', null, null);
 INSERT INTO `t_company` VALUES ('b400cf36ae9f41d89293175a8eb577cc', '中南出版传媒集团股份有限公司', '中南传媒', 'China South Publishing & Media Group Co.,Ltd.', 'CNS', null, null, 'http://www.zncmjt.com/', '0', 'root', '2018-11-25 16:16:21', null, null);
+INSERT INTO `t_company` VALUES ('b4132462498b42719b5276cece24b73e', '中国外运股份有限公司', '中国外运', 'Sinotrans Limited', 'SINOTRANS', null, null, 'www.sinotrans.com', '0', 'root', '2019-02-21 22:09:10', null, null);
 INSERT INTO `t_company` VALUES ('b414f26143124253b7d5fe57226458dd', '完美世界股份有限公司', '完美世界', 'Perfect World Co., Ltd.', '', '2011-10-28', null, 'www.pwpic.com', '0', 'root', '2018-11-25 22:09:15', null, null);
 INSERT INTO `t_company` VALUES ('b41db2473b14479fb5dba92d45dddde7', '上海海欣集团股份有限公司', '海欣股份', 'SHANGHAI HAIXIN GROUP CO., LTD.', 'HX GROUP', null, null, 'http//www.haixin.com', '0', 'root', '2018-11-25 16:15:40', null, null);
 INSERT INTO `t_company` VALUES ('b44a386638a74aa48009a10f30f1af40', '中储发展股份有限公司', '中储股份', 'CMST Development Co.,Ltd.', 'CMST', null, null, 'www.cmstd.com.cn', '0', 'root', '2018-11-25 16:15:22', null, null);
@@ -2925,6 +2937,7 @@ INSERT INTO `t_company` VALUES ('c6829cc809504f2c97fd35b3a870a257', '维信诺�
 INSERT INTO `t_company` VALUES ('c694f2f558604cb382522ddff3bc0c45', '广东凯普生物科技股份有限公司', '凯普生物', 'Guangdong Hybribio Biotech Co.,Ltd.', '', '2017-04-12', null, 'www.hybribio.cn', '0', 'root', '2018-11-25 22:14:49', null, null);
 INSERT INTO `t_company` VALUES ('c6a31f0619e34361b82b429ae501ac00', '上海宽频科技股份有限公司', 'ST沪科', 'SHANGHAI BROADBAND TECHNOLOGY CO.,LTD.', 'SBT', null, null, 'www.600608.net', '0', 'root', '2018-11-25 16:14:21', null, null);
 INSERT INTO `t_company` VALUES ('c6a8a1f5750047fda7bcd4eebad04603', '高伟达软件股份有限公司', '高伟达', 'Global Infotech Co.,LTD.', '', '2015-05-28', null, 'www.git.com.cn', '0', 'root', '2018-11-25 22:13:44', null, null);
+INSERT INTO `t_company` VALUES ('c6ae76613b3841789b3887977a283a67', '安道麦股份有限公司', '安道麦B', 'ADAMA Ltd.', '', '1997-05-15', null, 'www.sanonda.cn', '0', 'root', '2019-02-21 22:16:43', null, null);
 INSERT INTO `t_company` VALUES ('c6bd571b1e764c6ea448fe754ded903a', '中核华原钛白股份有限公司', '中核钛白', 'CNNC HUA YUAN TITANIUM DIOXIDE CO.,LTD', '', '2007-08-03', null, 'www.tioxhua.com', '0', 'root', '2018-11-25 22:06:19', null, null);
 INSERT INTO `t_company` VALUES ('c6dc1c04d871476d9e4a30f0e6086b9e', '永悦科技股份有限公司', '永悦科技', 'YONGYUE SCIENCE&TECHNOLOGY CO.,LTD', 'YONGYUE ', null, null, 'http://www.fjyykj.com', '0', 'root', '2018-11-25 16:19:22', null, null);
 INSERT INTO `t_company` VALUES ('c6f039362a0d492db8b9fd563011fd4d', '重庆三峡水利电力(集团)股份有限公司', '三峡水利', 'Chongqing Three Gorges Water Conservancy And Electric Power Co.,Ltd.', 'TGWC', null, null, 'http://www.cqsxsl.com.cn', '0', 'root', '2018-11-25 16:12:07', null, null);
@@ -2932,6 +2945,7 @@ INSERT INTO `t_company` VALUES ('c6f78a69ec8c4dd882d74283e7d424b4', 'TCL集团�
 INSERT INTO `t_company` VALUES ('c6fe5845b9ae4bbfa30b3ff1df0bb527', '上海纳尔实业股份有限公司', '纳尔股份', 'SHANGHAI NAR INDUSTRIAL CO., LTD.', '', '2016-11-29', null, 'www.nar.com.cn', '0', 'root', '2018-11-25 22:10:16', null, null);
 INSERT INTO `t_company` VALUES ('c7111434af664dd281065da0e79d227b', '山东华鲁恒升化工股份有限公司', '华鲁恒升', 'SHANDONG HUALU-HENGSHENG CHEMICAL CO.，LTD', 'HUALU-HENGSHENG ', null, null, 'www.hl-hengsheng.com', '0', 'root', '2018-11-25 16:13:30', null, null);
 INSERT INTO `t_company` VALUES ('c72e7d98a27f4b889b55a279696d532d', '光明房地产集团股份有限公司', '光明地产', 'BRIGHT REAL ESTATE GROUP CO.,LIMITED', '-', null, null, 'www.bre600708.com', '0', 'root', '2018-11-25 16:14:53', null, null);
+INSERT INTO `t_company` VALUES ('c732b6a4c9a044e780827ff55294e1c9', '江苏紫金农村商业银行股份有限公司', '紫金银行', '-', '-', null, null, 'www.zjrcbank.com', '0', 'root', '2019-02-21 22:09:13', null, null);
 INSERT INTO `t_company` VALUES ('c7332848c3534e44bc3d772ab78e55d8', '杭州远方光电信息股份有限公司', '远方信息', 'Hangzhou Everfine Photo-E-Info Co.,Ltd.', '', '2012-03-29', null, 'www.everfine.cn', '0', 'root', '2018-11-25 22:12:45', null, null);
 INSERT INTO `t_company` VALUES ('c73623c24f1243408e008d85a46b4f5e', '东方集团股份有限公司', '东方集团', 'ORIENT GROUP INCORPORATION', 'OGI', null, null, 'http：//www.china-orient.com', '0', 'root', '2018-11-25 16:15:31', null, null);
 INSERT INTO `t_company` VALUES ('c74349fc8e14434c8b9403c78b3545e0', '江苏万林现代物流股份有限公司', '万林股份', '-', '-', null, null, 'www.china-wanlin.com', '0', 'root', '2018-11-25 16:17:39', null, null);
@@ -3072,6 +3086,7 @@ INSERT INTO `t_company` VALUES ('cf893302ebae4e03969a70871d6b7d3d', '江苏鹿�
 INSERT INTO `t_company` VALUES ('cfa4e6e85ee845c7b85a603a3e9d0f76', '中联重科股份有限公司', '中联重科', 'ZOOMLION HEAVY INDUSTRY SCIENCE AND TECHNOLOGY CO., LTD', '', '2000-10-12', null, 'www.zoomlion.com', '0', 'root', '2018-11-25 22:03:26', null, null);
 INSERT INTO `t_company` VALUES ('cfab176edea74756a2b6404951960a4a', '三全食品股份有限公司', '三全食品', 'SANQUAN FOOD CO.,LTD', '', '2008-02-20', null, 'www.sanquan.com', '0', 'root', '2018-11-25 22:06:43', null, null);
 INSERT INTO `t_company` VALUES ('cfae7cd8e6ca46688651152747fb5f7e', '江苏吉鑫风能科技股份有限公司', '吉鑫科技', 'Jiangsu SINOJIT Wind Energy Technology Co,.Ltd.', 'SINOJIT Technology', null, null, 'www.sinojit.com', '0', 'root', '2018-11-25 16:16:35', null, null);
+INSERT INTO `t_company` VALUES ('cfb8023e073c46ceaddc100e479dc53f', '无锡上机数控股份有限公司', '上机数控', 'Wuxi Shangji Automation Co., Ltd.', 'SJSK', null, null, 'www.wuxisj.com', '0', 'root', '2019-02-21 22:09:23', null, null);
 INSERT INTO `t_company` VALUES ('cfba4875ea9b4e5a820535b071e562d8', '成都新易盛通信技术股份有限公司', '新易盛', 'Eoptolink Technology Inc., Ltd', '', '2016-03-03', null, 'www.eoptolink.com', '0', 'root', '2018-11-25 22:13:57', null, null);
 INSERT INTO `t_company` VALUES ('cfbf3db193f7490a953c8c4a23b03d19', '烽火通信科技股份有限公司', '烽火通信', 'Fiberhome Telecommunication Technologies Co.,Ltd.', 'FiberHome', null, null, 'http://www.fiberhome.com', '0', 'root', '2018-11-25 16:13:45', null, null);
 INSERT INTO `t_company` VALUES ('cfcc8a526f854480b43a56ace709f988', '赤峰吉隆黄金矿业股份有限公司', '赤峰黄金', 'Chifeng Jilong Gold Mining Co.,Ltd.', 'CHIFENG GOLD', null, null, 'www.600988.com.cn', '0', 'root', '2018-11-25 16:16:15', null, null);
@@ -3093,6 +3108,7 @@ INSERT INTO `t_company` VALUES ('d077e19bf49343eabc2dce419257b0f1', '深圳广�
 INSERT INTO `t_company` VALUES ('d09281de18f84c2e93d43cb7e044d4ec', '中国神华能源股份有限公司', '中国神华', 'China Shenhua Energy Company Limited', 'CHINA SHENHUA', null, null, 'www.csec.com', '0', 'root', '2018-11-25 16:16:20', null, null);
 INSERT INTO `t_company` VALUES ('d0c874e2b91040a89b9d6773b522b05f', '江苏华西村股份有限公司', '华西股份', 'JIANGSU HUAXICUN CO., LTD.', '', '1999-08-10', null, 'www.jshuaxicun.com、www.v-capital.cn', '0', 'root', '2018-11-25 22:05:14', null, null);
 INSERT INTO `t_company` VALUES ('d0e05899cf8d40d8afd65690a5915d99', '宁夏新日恒力钢丝绳股份有限公司', '新日恒力', 'Ningxia Xinri Hengli Steel Wire Rope Co., Ltd', 'nswrc', null, null, 'www.xinrihengli.com', '0', 'root', '2018-11-25 16:12:21', null, null);
+INSERT INTO `t_company` VALUES ('d109b6779a3c4b2eb51a0a28568595ee', '中文天地出版传媒集团股份有限公司', '中文传媒', 'CHINESE UNIVERSE PUBLISHING AND MEDIA GROUP CO., LTD.', 'Chinese Media', null, null, 'http://www.600373.com.cn', '0', 'root', '2019-02-21 22:08:32', null, null);
 INSERT INTO `t_company` VALUES ('d10d695e93d84141a8c3a8f5711d389d', '安徽新华传媒股份有限公司', '皖新传媒', 'ANHUI XINHUA MEDIA CO., LTD', 'WANXIN MEDIA', null, null, 'www.ahsxhsd.com', '0', 'root', '2018-11-25 16:16:58', null, null);
 INSERT INTO `t_company` VALUES ('d11593efa97442c582a19ac7aba4ec2f', '乐山电力股份有限公司', '乐山电力', 'LESHAN ELECTRIC POWER CO.,LTD.', 'LEP', null, null, 'www.lsep.com.cn', '0', 'root', '2018-11-25 16:14:31', null, null);
 INSERT INTO `t_company` VALUES ('d1167d6b0a8d4ceba80164aacc72b844', '上海莱士血液制品股份有限公司', '上海莱士', 'Shanghai RAAS Blood Products Co.,Ltd.', '', '2008-06-23', null, 'www.raas-corp.com', '0', 'root', '2018-11-25 22:06:55', null, null);
@@ -3100,6 +3116,7 @@ INSERT INTO `t_company` VALUES ('d11832b9c45b46a0bf3de665662cfff6', '国城矿�
 INSERT INTO `t_company` VALUES ('d1779d0a950a4f6c8e3e639e2673f825', '江西洪城水业股份有限公司', '洪城水业', 'JIANGXI HONGCHENG WATERWORKS CO.,LTD.', 'HC WATERWORKS ', null, null, 'www.jxhcsy.com', '0', 'root', '2018-11-25 16:13:36', null, null);
 INSERT INTO `t_company` VALUES ('d17b1507dfaa42fb8a8d98bb410e23a8', '吉林敖东药业集团股份有限公司', '吉林敖东', 'Jilin Aodong Pharmaceutical Group Co., Ltd.', '', '1996-10-28', null, 'www.jlaod.com', '0', 'root', '2018-11-25 22:04:05', null, null);
 INSERT INTO `t_company` VALUES ('d186205b5eed4eb8906a520aba82814b', '南京全信传输科技股份有限公司', '全信股份', 'NANJING QUANXIN CABLE TECHNOLOGY CO.,LTD.', '', '2015-04-22', null, 'www.qx-kj.com', '0', 'root', '2018-11-25 22:13:37', null, null);
+INSERT INTO `t_company` VALUES ('d198a53664ff4eedaebe2a0a15662016', '日出东方控股股份有限公司', '日出东方', 'Solareast   Holdings  Co.,Ltd.', 'Solareast', null, null, 'www.solareast.com', '0', 'root', '2019-02-21 22:09:28', null, null);
 INSERT INTO `t_company` VALUES ('d198b76a76a6411e9acb2c8848d68ef2', '跨境通宝电子商务股份有限公司', '跨境通', 'Global Top E-Commerce Co.,Ltd.', '', '2011-12-08', null, 'www.kjtbao.com', '0', 'root', '2018-11-25 22:09:19', null, null);
 INSERT INTO `t_company` VALUES ('d1f2360e7b4549e49361c80f939feb4f', '华东建筑集团股份有限公司', '华建集团', 'Arcplus Group PLC', 'Arcplus', null, null, 'www.arcplus.com.cn', '0', 'root', '2018-11-25 16:14:27', null, null);
 INSERT INTO `t_company` VALUES ('d21b4a4c2aed4110a1162f81f30aad8e', '中国第一重型机械股份公司', '中国一重', 'China First Heavy lndustries', 'CFHI', null, null, 'www.cfhi.com', '0', 'root', '2018-11-25 16:16:22', null, null);
@@ -3181,6 +3198,8 @@ INSERT INTO `t_company` VALUES ('d7839122c0dc4178bab050f8cd799058', '江苏大�
 INSERT INTO `t_company` VALUES ('d7a75494577d472ea6f9c9e67eee8131', '北京万邦达环保技术股份有限公司', '万邦达', 'Beijing Water Business Doctor Co.,Ltd.', '', '2010-02-26', null, 'www.waterbd.cn', '0', 'root', '2018-11-25 22:11:13', null, null);
 INSERT INTO `t_company` VALUES ('d7d0924a02be466a8aabf884af34ad48', '奇精机械股份有限公司', '奇精机械', 'Qijing Machinery Co., Ltd.', 'Qijing Machinery', null, null, 'www.qijing-m.com', '0', 'root', '2018-11-25 16:18:48', null, null);
 INSERT INTO `t_company` VALUES ('d7dc3474bf6d43d68e1413d1db464f56', '合诚工程咨询集团股份有限公司', '合诚股份', 'HOLSIN ENGINEERING CONSULTING GROUP CO.,LTD.', 'HOLSIN', null, null, 'www.holsin.cn', '0', 'root', '2018-11-25 16:19:29', null, null);
+INSERT INTO `t_company` VALUES ('d7e17ae1c2f64d90bc6d55f7ec64376c', '福莱特玻璃集团股份有限公司', '福莱特', 'Flat Glass Group Co., Ltd.', 'Flat Glass Group', null, null, 'www.flatgroup.com.cn', '0', 'root', '2019-02-21 22:09:13', null, null);
+INSERT INTO `t_company` VALUES ('d7ecc3206e884c9d952a75d221d6a94d', '新疆冠农果茸股份有限公司', '冠农股份', 'XINGJIANG GUANNONG FRUIT & ANTLER  CO., LTD.', 'GUANNONG SHARE', null, null, 'http://www.gngf.cn', '0', 'root', '2019-02-21 22:08:26', null, null);
 INSERT INTO `t_company` VALUES ('d80def4c7c3c48fba6c0354c4ea5bc65', '深圳市麦捷微电子科技股份有限公司', '麦捷科技', 'Shenzhen Microgate Technology Co.,Ltd', '', '2012-05-23', null, 'www.szmicrogate.com', '0', 'root', '2018-11-25 22:12:50', null, null);
 INSERT INTO `t_company` VALUES ('d823f40ba0714e59b4310ba767dde86e', '华油惠博普科技股份有限公司', '惠博普', 'CHINA OIL HBP SCIENCE&TECHNOLOGY CO.,LTD', '', '2011-02-25', null, 'www.china-hbp.com', '0', 'root', '2018-11-25 22:08:52', null, null);
 INSERT INTO `t_company` VALUES ('d8395694683f400999c4a922666131b2', '河北常山生化药业股份有限公司', '常山药业', 'Hebei Changshan Biochemical Pharmaceutical Co., Ltd.', '', '2011-08-19', null, 'www.heparin.cn', '0', 'root', '2018-11-25 22:12:26', null, null);
@@ -3209,6 +3228,7 @@ INSERT INTO `t_company` VALUES ('d965801f8d6a41328faf09f990532b26', '浙江铁�
 INSERT INTO `t_company` VALUES ('d97808b5258840bbb10cfa8e3e5bebff', '新湖中宝股份有限公司', '新湖中宝', 'XINHU ZHONGBAO CO.,LTD', 'XINHU ZHONGBAO', null, null, 'www.600208.net', '0', 'root', '2018-11-25 16:12:32', null, null);
 INSERT INTO `t_company` VALUES ('d99433cbcbf940abade42fc7ff6758b1', '四川广安爱众股份有限公司', '广安爱众', 'SICHUAN GUANGAN AAA PUBLIC CO.,LTD .', 'AAA PUBLIC', null, null, 'http://www.sc-aaa.com/', '0', 'root', '2018-11-25 16:16:12', null, null);
 INSERT INTO `t_company` VALUES ('d9d123987e804d8d9ac4b17e97aee051', '西藏旅游股份有限公司', '*ST藏旅', 'TIBET TOURISM CO.,LTD', 'TIBET TOURISM', null, null, 'http://www.600749.com', '0', 'root', '2018-11-25 16:15:10', null, null);
+INSERT INTO `t_company` VALUES ('d9e9f342e04042b9b7af54c059912207', '明阳智慧能源集团股份公司', '明阳智能', 'Ming Yang Smart Energy Group Limited', 'Ming Yang Smart Energy', null, null, 'http://www.mywind.com.cn', '0', 'root', '2019-02-21 22:09:11', null, null);
 INSERT INTO `t_company` VALUES ('d9ed3d0adc7048e48960fca1d76b9be8', '上海新梅置业股份有限公司', 'ST新梅', 'SHANGHAI XINMEI REAL ESTATE CO., LTD.', 'Shanghai Xinmei', null, null, 'http://www.600732.com.cn/', '0', 'root', '2018-11-25 16:15:01', null, null);
 INSERT INTO `t_company` VALUES ('d9f8b1c64ff0496c9fefd3d706975aab', '无锡隆盛科技股份有限公司', '隆盛科技', 'Wuxi Longsheng Technology Co., Ltd', '', '2017-07-25', null, 'www.china-lsh.com', '0', 'root', '2018-11-25 22:15:05', null, null);
 INSERT INTO `t_company` VALUES ('da12d538548b4e108d4d3cbf9da32f14', '杭州泰格医药科技股份有限公司', '泰格医药', 'Hangzhou Tigermed Consulting Co.,Ltd.', '', '2012-08-17', null, 'www.tigermed.net', '0', 'root', '2018-11-25 22:13:02', null, null);
@@ -3289,6 +3309,7 @@ INSERT INTO `t_company` VALUES ('def00900d52a45c59635e523ef2d2d1d', '长沙开�
 INSERT INTO `t_company` VALUES ('def13d87f6c24c88b1e63345103f6d8b', '广东奥飞数据科技股份有限公司', '奥飞数据', 'Guangdong Aofei Data Technology Co., Ltd.', '', '2018-01-19', null, 'www.ofidc.com', '0', 'root', '2018-11-25 22:15:27', null, null);
 INSERT INTO `t_company` VALUES ('df20b1c9fcab478683eeb9f14851de06', '湖南华凯文化创意股份有限公司', '华凯创意', 'Hunan Huakai Cultural and Creative CO., LTD.', '', '2017-01-20', null, 'www.huakai.net', '0', 'root', '2018-11-25 22:14:32', null, null);
 INSERT INTO `t_company` VALUES ('df2e67ca31df4718a3aa4afba7d1849d', '好利来（中国）电子科技股份有限公司', '好利来', 'Hollyland (China) Electronics Technology Corp., Ltd.', '', '2014-09-12', null, 'www.hollyfuse.com', '0', 'root', '2018-11-25 22:09:47', null, null);
+INSERT INTO `t_company` VALUES ('df655f7bd3e444fd97f904c82bd9f40c', '青岛港国际股份有限公司', '青岛港', 'Qingdao Port International Co., Ltd.', 'Qingdao Port', null, null, 'www.qingdao-port.com', '0', 'root', '2019-02-21 22:09:06', null, null);
 INSERT INTO `t_company` VALUES ('df72eb9e5c4041e2863192d4a08ffd86', '四川九洲电器股份有限公司', '四川九洲', 'SICHUAN JIUZHOU ELECTRONIC CO., LTD', '', '1998-05-06', null, 'www.jiuzhoutech.com', '0', 'root', '2018-11-25 22:04:44', null, null);
 INSERT INTO `t_company` VALUES ('df7387fde8124775b1346562a1c6e312', '河南明泰铝业股份有限公司', '明泰铝业', 'Henan Mingtai Al. Industrial Co.,Ltd.', 'Mtalco', null, null, 'www.hngymt.com', '0', 'root', '2018-11-25 16:16:53', null, null);
 INSERT INTO `t_company` VALUES ('df82d06fefbd40389d99c1a15fb63549', '江苏正丹化学工业股份有限公司', '正丹股份', 'Jiangsu Zhengdan Chemical Industry Co., Ltd.', '', '2017-04-18', null, 'www.zhengdanchem.com', '0', 'root', '2018-11-25 22:14:50', null, null);
@@ -3726,16 +3747,16 @@ INSERT INTO `t_company` VALUES ('ffdf754c22f945ecae0c596c961a05c6', '天津力�
 -- ----------------------------
 DROP TABLE IF EXISTS `t_companystock`;
 CREATE TABLE `t_companystock` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `stockCode` varchar(10) COLLATE utf8_bin DEFAULT NULL,
-  `stockTypeId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `stockCode` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `stockTypeId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `listingTime` date DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `stockExchangeId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `stockExchangeId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -3906,6 +3927,7 @@ INSERT INTO `t_companystock` VALUES ('0b5f8d9bc33647cb9299a3483766914a', '79c36d
 INSERT INTO `t_companystock` VALUES ('0b694e42e7da41ab9ba7b9a1402d1b34', 'c5a6718e12a245dd9cf18c764135db2c', '300080', 'c9d816d0971b4b928ac71ba27098703d', '2010-06-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:22', null, null);
 INSERT INTO `t_companystock` VALUES ('0b767a3c689143e5a75caa61b57cb9f5', '62e14ddeaaa14a4ab47c7bd94e8efc24', '603133', 'c9d816d0971b4b928ac71ba27098703d', '2017-03-20', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:17:43', null, null);
 INSERT INTO `t_companystock` VALUES ('0b8c8f3f89ad47c78d44fb4123c7a897', 'd9ed3d0adc7048e48960fca1d76b9be8', '600732', 'c9d816d0971b4b928ac71ba27098703d', '1996-08-16', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:15:01', null, null);
+INSERT INTO `t_companystock` VALUES ('0b96ca32923c4b4ba623b537d38222a2', 'df655f7bd3e444fd97f904c82bd9f40c', '601298', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-21', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:06', null, null);
 INSERT INTO `t_companystock` VALUES ('0ba199cb182349838bb28b05993b78d5', '21b69d9c7a514f4999bd7bf60238eb3f', '002719', 'c9d816d0971b4b928ac71ba27098703d', '2014-01-28', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:44', null, null);
 INSERT INTO `t_companystock` VALUES ('0bcba6c36b524544aeae454df771c596', '2fcd4c26f24f4e668931a723a6ba4de3', '002138', 'c9d816d0971b4b928ac71ba27098703d', '2007-06-13', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:06:17', null, null);
 INSERT INTO `t_companystock` VALUES ('0bd228f066574ca4a470e06494f8d446', '55e0ce3b905a48f0b6d211d2be565af7', '200725', 'f1cc96ed49d34c3692100776a666cf8c', '1997-06-10', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 18:02:58', null, null);
@@ -3997,6 +4019,7 @@ INSERT INTO `t_companystock` VALUES ('10c9fa6e202749deb017244f8dc80f30', '9a15f8
 INSERT INTO `t_companystock` VALUES ('10ce90d133234da4ba2511971e0ee14f', '5638357761264f028e5f13df65d0f50a', '601231', 'c9d816d0971b4b928ac71ba27098703d', '2012-02-20', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:36', null, null);
 INSERT INTO `t_companystock` VALUES ('10d2f2f16aef42ebb1acfe3dae53d3a0', '145479674bdc45458908df4f0ff3cf9f', '600183', 'c9d816d0971b4b928ac71ba27098703d', '1998-10-28', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:12:26', null, null);
 INSERT INTO `t_companystock` VALUES ('10d62a21b14741d38e791362eea84e2b', 'd86828dc57cf4e32ad36f59c45fd6240', '600897', 'c9d816d0971b4b928ac71ba27098703d', '1996-05-31', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:01', null, null);
+INSERT INTO `t_companystock` VALUES ('110288e960d3460a92f056b45f0826ef', 'b4132462498b42719b5276cece24b73e', '601598', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-18', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:10', null, null);
 INSERT INTO `t_companystock` VALUES ('111822aebed24a308c1049808646f34d', '93b19c96ddcb423a8953a44efc27d773', '002174', 'c9d816d0971b4b928ac71ba27098703d', '2007-09-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:06:30', null, null);
 INSERT INTO `t_companystock` VALUES ('1119182ca94a49e2bc66410ccb2f0270', 'cd69e123adcb4233a005944a5a5331ee', '002277', 'c9d816d0971b4b928ac71ba27098703d', '2009-07-17', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:07:05', null, null);
 INSERT INTO `t_companystock` VALUES ('112995a1f725427c9aaf0b0b130fbdde', 'e83eaa0bf9b54fa6a451515eb9c4d08c', '600179', 'c9d816d0971b4b928ac71ba27098703d', '1998-11-04', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:12:25', null, null);
@@ -4300,6 +4323,7 @@ INSERT INTO `t_companystock` VALUES ('26e32f8191274ff8ab2ca2fa7fc85b0d', 'ef18c5
 INSERT INTO `t_companystock` VALUES ('26ff013ba30c43be8e5561a3fb76c68a', '0996f3622ef84562ab6a351480dbb547', '601258', 'c9d816d0971b4b928ac71ba27098703d', '2011-04-28', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:37', null, null);
 INSERT INTO `t_companystock` VALUES ('27001321e21541fea9e5cfd6b9d860e3', 'be0525da32f9426f99ea0588d7ab1e4d', '300106', 'c9d816d0971b4b928ac71ba27098703d', '2010-08-20', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:29', null, null);
 INSERT INTO `t_companystock` VALUES ('271d81ecf870410d90f8d9f92c7fa13c', '91618dea8acd4720824c99203a1c7ba2', '300526', 'c9d816d0971b4b928ac71ba27098703d', '2016-08-02', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:14:09', null, null);
+INSERT INTO `t_companystock` VALUES ('272f229bb3c94a54a7426110834cdbcd', '21f73d030d6747babf3928ccb2dcfdad', '603332', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-17', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:27', null, null);
 INSERT INTO `t_companystock` VALUES ('2732f32ef716403fb25f47182a1f80e5', 'a264a70a57744d9388c3a9547e590b3b', '601107', 'c9d816d0971b4b928ac71ba27098703d', '2009-07-27', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:23', null, null);
 INSERT INTO `t_companystock` VALUES ('2737cdb1fd074e9293661b7c7cf75ba7', 'cfff2710beb041d0855982c1a586aa33', '300615', 'c9d816d0971b4b928ac71ba27098703d', '2017-02-15', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:14:41', null, null);
 INSERT INTO `t_companystock` VALUES ('273b8028c07c4254947ad98f8f43f168', 'a5552108cb38497f9273d348cbb8806e', '002651', 'c9d816d0971b4b928ac71ba27098703d', '2012-01-06', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:24', null, null);
@@ -4370,6 +4394,8 @@ INSERT INTO `t_companystock` VALUES ('2c2546cfd1df470e8cd814226a122f03', 'ec714d
 INSERT INTO `t_companystock` VALUES ('2c45ce2afffc432d9562686b72a3b35d', '825802efbead4e228f21352d0428c494', '200019', 'f1cc96ed49d34c3692100776a666cf8c', '1992-10-12', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 18:02:50', null, null);
 INSERT INTO `t_companystock` VALUES ('2c63ec8b1ab642489571470dfcf0d95c', 'befe6f5d67534b8a8e082c59655c8303', '002228', 'c9d816d0971b4b928ac71ba27098703d', '2008-05-08', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:06:48', null, null);
 INSERT INTO `t_companystock` VALUES ('2cadece8948640ccadb95148fab3ca03', '65d28efb610b4e289c43d2621abcc651', '300360', 'c9d816d0971b4b928ac71ba27098703d', '2014-01-21', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:13:06', null, null);
+INSERT INTO `t_companystock` VALUES ('2cbafbb737f446fcbf235f19efc1cdd7', 'c732b6a4c9a044e780827ff55294e1c9', '601860', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-03', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:13', null, null);
+INSERT INTO `t_companystock` VALUES ('2cc241783f4f4697b4f0a0ebaaa6eda3', '96055e78f78f4ac58e2df825bfc5d1ad', '603739', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-16', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:38', null, null);
 INSERT INTO `t_companystock` VALUES ('2cc3cd293428412dbea596e1b0c69fa7', '66d7373c7b41440e8c0502282f037191', '600739', 'c9d816d0971b4b928ac71ba27098703d', '1996-08-19', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:15:04', null, null);
 INSERT INTO `t_companystock` VALUES ('2cceab16ad754826b1ec3dce2459962a', 'a65ef70f0323496b8ce962c82207909f', '002680', 'c9d816d0971b4b928ac71ba27098703d', '2012-06-05', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:33', null, null);
 INSERT INTO `t_companystock` VALUES ('2cdf2209fd94492887dd9ce2a88d2c10', 'dd2919e170334cc188f4f1bed4a02cd0', '000156', 'c9d816d0971b4b928ac71ba27098703d', '2000-09-06', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:26', null, null);
@@ -4380,6 +4406,7 @@ INSERT INTO `t_companystock` VALUES ('2d26f38d6a414ea8bad08a8640429d2e', 'c87483
 INSERT INTO `t_companystock` VALUES ('2d2abb026cf147fab61715c2bd180837', '7236a765557042dda6deacede41c19f1', '601319', 'c9d816d0971b4b928ac71ba27098703d', '2018-11-16', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:39', null, null);
 INSERT INTO `t_companystock` VALUES ('2d2d96abbf034d22bec90457ac88c09d', 'b8d500d08c844d7f9edc3bb6b943dce5', '300168', 'c9d816d0971b4b928ac71ba27098703d', '2011-01-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:52', null, null);
 INSERT INTO `t_companystock` VALUES ('2d3c298732d14820a2b236e42297710d', '9e34819e69164fa6a2f2fa31c07111d9', '000573', 'c9d816d0971b4b928ac71ba27098703d', '1994-08-15', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:54', null, null);
+INSERT INTO `t_companystock` VALUES ('2d3f407c264747179a118595044c2c1a', 'd7ecc3206e884c9d952a75d221d6a94d', '600251', 'c9d816d0971b4b928ac71ba27098703d', '2003-06-09', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:08:26', null, null);
 INSERT INTO `t_companystock` VALUES ('2d547bc9860b40f8b696e1a85461371d', 'afad4458ca0247738a78c588e1862b77', '000608', 'c9d816d0971b4b928ac71ba27098703d', '1996-09-19', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:04:01', null, null);
 INSERT INTO `t_companystock` VALUES ('2d5a8a86e2784158a9eb79b7e9b1ef04', '4601e26ec5d84425bba2f5af9c455c5e', '002697', 'c9d816d0971b4b928ac71ba27098703d', '2012-09-05', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:37', null, null);
 INSERT INTO `t_companystock` VALUES ('2d7098c9f2b440228a4553a4359d5f5e', '1af77f6673564e8fb5251e6af16880c9', '000909', 'c9d816d0971b4b928ac71ba27098703d', '1999-05-07', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:06', null, null);
@@ -4945,6 +4972,7 @@ INSERT INTO `t_companystock` VALUES ('55591e0d4072416bb0eef60433ecda01', '488a8a
 INSERT INTO `t_companystock` VALUES ('557668a48917436d86103b34372e5b85', '1ae4f7abf6434154a1e19662cf8d633c', '603818', 'c9d816d0971b4b928ac71ba27098703d', '2015-04-22', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:19:11', null, null);
 INSERT INTO `t_companystock` VALUES ('557722d004b64e5b98dbbe316aa8f9f9', '2fd55b25b30649729c62ce690a997ae3', '300586', 'c9d816d0971b4b928ac71ba27098703d', '2017-01-04', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:14:30', null, null);
 INSERT INTO `t_companystock` VALUES ('557b58ce518a46b4a795247074818729', 'aeb1e941d8c342189c0fa019cdc9c78a', '002556', 'c9d816d0971b4b928ac71ba27098703d', '2011-03-02', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:08:52', null, null);
+INSERT INTO `t_companystock` VALUES ('5581c960852b48a489963a729cf1a27e', '1ef828403f3c450f956f5a0cb13d622a', '201872', 'f1cc96ed49d34c3692100776a666cf8c', '1993-05-05', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2019-02-21 22:16:44', null, null);
 INSERT INTO `t_companystock` VALUES ('55dd8aa4868543eca299ca100b9bec66', '76f985afdd204861af09fe05bc6b0f5a', '300671', 'c9d816d0971b4b928ac71ba27098703d', '2017-07-05', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:15:01', null, null);
 INSERT INTO `t_companystock` VALUES ('55dd94ffece24c7f9ce1ddc7ce737de5', 'aa498041ff274423ac7d762fb9ab73e2', '603536', 'c9d816d0971b4b928ac71ba27098703d', '2017-06-13', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:18:26', null, null);
 INSERT INTO `t_companystock` VALUES ('560c7772e10b414fb8fce2fdd8adae5f', 'df82d06fefbd40389d99c1a15fb63549', '300641', 'c9d816d0971b4b928ac71ba27098703d', '2017-04-18', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:14:50', null, null);
@@ -4975,6 +5003,7 @@ INSERT INTO `t_companystock` VALUES ('580bff0ff9a245fbb360664e48e253e6', '6a5611
 INSERT INTO `t_companystock` VALUES ('583bc940e9ca4da498eab21b4d76210a', '4ff5ca6aea3c48d893cb0d25736d3aad', '600678', 'c9d816d0971b4b928ac71ba27098703d', '1993-10-08', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:14:43', null, null);
 INSERT INTO `t_companystock` VALUES ('5842fe998e124ff3a496382f86e4edcf', '97994d36a104448c9b66c22cc4b4d788', '603936', 'c9d816d0971b4b928ac71ba27098703d', '2015-12-09', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:19:33', null, null);
 INSERT INTO `t_companystock` VALUES ('5852406b3c67413f9e64119c24ce92d8', 'cd11f877e8f84b999dc02e0a2911f8bf', '002329', 'c9d816d0971b4b928ac71ba27098703d', '2010-01-06', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:07:28', null, null);
+INSERT INTO `t_companystock` VALUES ('587e3a14a15540bf82be66c6e391f751', 'cfb8023e073c46ceaddc100e479dc53f', '603185', 'c9d816d0971b4b928ac71ba27098703d', '2018-12-28', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:23', null, null);
 INSERT INTO `t_companystock` VALUES ('5888fae4040e44649f56ed584fc2b2ef', '064eebabcde64036b0c8f080f819e962', '000526', 'c9d816d0971b4b928ac71ba27098703d', '1993-11-01', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:43', null, null);
 INSERT INTO `t_companystock` VALUES ('588d5544674348ffa0d575b7ee6977a5', '95f063b88b7643aeadf3a82fe320d6fe', '603603', 'c9d816d0971b4b928ac71ba27098703d', '2017-02-17', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:18:37', null, null);
 INSERT INTO `t_companystock` VALUES ('58d781e12f714ae681cc0075e6c22566', '3434892e838d43a2a7b4cb922b3177c1', '300233', 'c9d816d0971b4b928ac71ba27098703d', '2011-06-22', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:12:16', null, null);
@@ -5137,6 +5166,7 @@ INSERT INTO `t_companystock` VALUES ('63c89d5498a24632857076671ab0acf6', '02ae52
 INSERT INTO `t_companystock` VALUES ('63fd0857f58040458c9dd2cf7f29b9df', '38fe3d054aa84bed96ba02c9c360ad72', '300737', 'c9d816d0971b4b928ac71ba27098703d', '2018-01-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:15:27', null, null);
 INSERT INTO `t_companystock` VALUES ('6407a67c89d34747b71e79b5f3ae8b7a', '7d621a89163d49b98c68b5f6ec0fc9eb', '600929', 'c9d816d0971b4b928ac71ba27098703d', '2018-03-26', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:05', null, null);
 INSERT INTO `t_companystock` VALUES ('640b462b66544f7fa2c188f80d62c7a6', '18ec8aad7cbc4d07821d1df98df2f2d9', '601333', 'c9d816d0971b4b928ac71ba27098703d', '2006-12-22', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:40', null, null);
+INSERT INTO `t_companystock` VALUES ('641a7e15500f429e8c30f33c6755a67e', '1d20c111c2bf4cd3b910fccfae85f7af', '603351', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-30', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:27', null, null);
 INSERT INTO `t_companystock` VALUES ('6464674c52554443843e7e9c2b7f6c2c', 'df7387fde8124775b1346562a1c6e312', '601677', 'c9d816d0971b4b928ac71ba27098703d', '2011-09-19', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:53', null, null);
 INSERT INTO `t_companystock` VALUES ('64848b27ba5a468bb64009bef47713a4', 'c3decac4c6994e56af0740c8259499b0', '603960', 'c9d816d0971b4b928ac71ba27098703d', '2017-03-14', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:19:36', null, null);
 INSERT INTO `t_companystock` VALUES ('64a716585f5445afbe8d577897c99473', '78b585840e9c431786b42d36d25aefad', '600168', 'c9d816d0971b4b928ac71ba27098703d', '1998-04-27', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:12:23', null, null);
@@ -5457,6 +5487,7 @@ INSERT INTO `t_companystock` VALUES ('7aa92a93f28e4611aeaf4fa8b51814e2', '11a434
 INSERT INTO `t_companystock` VALUES ('7ad2ebe30b1e4d2e838a6bf2c086e976', 'ccf1944b38cb463292d4432668cbae6c', '002385', 'c9d816d0971b4b928ac71ba27098703d', '2010-04-09', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:07:51', null, null);
 INSERT INTO `t_companystock` VALUES ('7ad8bc5a714b4b6ebf3f9ae193d1180a', '23dd2d5762c3421eb0a31726f06d7494', '002740', 'c9d816d0971b4b928ac71ba27098703d', '2015-01-22', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:51', null, null);
 INSERT INTO `t_companystock` VALUES ('7adfeee4ae23449f87a262456a7c9b99', '73de7d0b69f04eff825f087f0f296272', '603636', 'c9d816d0971b4b928ac71ba27098703d', '2014-12-30', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:18:43', null, null);
+INSERT INTO `t_companystock` VALUES ('7ae0cae1d5ef4fdeb6c4655506b91714', 'd9e9f342e04042b9b7af54c059912207', '601615', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-23', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:11', null, null);
 INSERT INTO `t_companystock` VALUES ('7aebd5f9a15246bd80324e2b8851dd4c', '6b01a8040d9f4ab2ae1431a3c279c997', '000561', 'c9d816d0971b4b928ac71ba27098703d', '1994-05-09', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:52', null, null);
 INSERT INTO `t_companystock` VALUES ('7afbbd20c3354b6f9dce5af9a70f0ef9', '059f032590744044b0204be60d65355c', '300203', 'c9d816d0971b4b928ac71ba27098703d', '2011-04-15', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:12:05', null, null);
 INSERT INTO `t_companystock` VALUES ('7b03bc157dc5454481c6fdadee45505f', '6baf1fcd022542e1abbe472764294d54', '002059', 'c9d816d0971b4b928ac71ba27098703d', '2006-08-10', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:52', null, null);
@@ -5564,6 +5595,7 @@ INSERT INTO `t_companystock` VALUES ('815961626e3b4d43af1be930c2926b42', 'e4a10d
 INSERT INTO `t_companystock` VALUES ('816a79ac537945569c32e85db19f3a52', '5e71aa211de540e381efd4142fda8c41', '300109', 'c9d816d0971b4b928ac71ba27098703d', '2010-08-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:29', null, null);
 INSERT INTO `t_companystock` VALUES ('818cfc94e69149e9860b9758369f8f0a', '9bc2fa2a0a754761a70c3bdabe04be08', '000430', 'c9d816d0971b4b928ac71ba27098703d', '1996-08-29', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:35', null, null);
 INSERT INTO `t_companystock` VALUES ('818dbd5097e444789bac56de506d84c7', '78b914ab97a641ce9933a5a7756f3581', '000931', 'c9d816d0971b4b928ac71ba27098703d', '1999-07-12', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:13', null, null);
+INSERT INTO `t_companystock` VALUES ('819b062814e44899ba0a365ef173d319', 'd198a53664ff4eedaebe2a0a15662016', '603366', 'c9d816d0971b4b928ac71ba27098703d', '2012-05-21', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:28', null, null);
 INSERT INTO `t_companystock` VALUES ('819f50e4966743629746267a8df95939', '76b7aebbb2504239af60425b806c87e3', '002853', 'c9d816d0971b4b928ac71ba27098703d', '2017-03-10', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:10:24', null, null);
 INSERT INTO `t_companystock` VALUES ('81b06fa63adb4f2d91537af17d8d89e4', '5ee9b3913d65485185cd830f30e7aee5', '603066', 'c9d816d0971b4b928ac71ba27098703d', '2015-06-11', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:17:30', null, null);
 INSERT INTO `t_companystock` VALUES ('81ef426606b24a4c8e9b70537b631383', '28656ce1ce464fba9621941734bd7797', '002860', 'c9d816d0971b4b928ac71ba27098703d', '2017-04-12', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:10:26', null, null);
@@ -5594,6 +5626,7 @@ INSERT INTO `t_companystock` VALUES ('830ed0ea540e45188bf5ae873a9167f3', '071b7f
 INSERT INTO `t_companystock` VALUES ('8317470d4d5a460c9ab8d4d79d0f1a4d', '3a16ae590e824137a2472ec06b11212f', '300707', 'c9d816d0971b4b928ac71ba27098703d', '2017-10-10', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:15:16', null, null);
 INSERT INTO `t_companystock` VALUES ('831d78077bbc40cea2bd7c788bd3b83a', 'db74c1fb9c5d424f88b953ec1320e948', '002233', 'c9d816d0971b4b928ac71ba27098703d', '2008-05-16', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:06:49', null, null);
 INSERT INTO `t_companystock` VALUES ('833566889640449db4173f87b3ecb3f7', 'c627e6ae335c43c6abe0b0e19196a872', '601015', 'c9d816d0971b4b928ac71ba27098703d', '2014-11-05', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 17:15:43', null, null);
+INSERT INTO `t_companystock` VALUES ('833d7b75a54c4373b9365df9693b7ea7', '875fac6e75a240b680362270134cd20f', '603187', 'c9d816d0971b4b928ac71ba27098703d', '2018-11-29', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:23', null, null);
 INSERT INTO `t_companystock` VALUES ('8342897fd29a4c9f8c6bfc5631410ad1', '4328763a78c94130a80dee721f33e184', '000759', 'c9d816d0971b4b928ac71ba27098703d', '1997-05-19', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:04:36', null, null);
 INSERT INTO `t_companystock` VALUES ('835256ebd9dc4cdba485cf26a1d7ab14', 'd01cc5e817104d649de6a81224033c1a', '000778', 'c9d816d0971b4b928ac71ba27098703d', '1997-06-06', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:04:39', null, null);
 INSERT INTO `t_companystock` VALUES ('835a4ea9f52d4769a36cb3b80e269226', 'a4d23c6c59e04f2d8c35dd55194ba32d', '600715', 'c9d816d0971b4b928ac71ba27098703d', '1996-07-01', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:14:54', null, null);
@@ -5688,6 +5721,7 @@ INSERT INTO `t_companystock` VALUES ('8883bf3cf05249de8f823119f39e0a68', '8ba818
 INSERT INTO `t_companystock` VALUES ('88865b57c86e448885c78d86490410d5', '7ed3ffab71074413acb4a4cd5fe4421b', '000710', 'c9d816d0971b4b928ac71ba27098703d', '1997-04-22', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:04:25', null, null);
 INSERT INTO `t_companystock` VALUES ('88867af945754987839df97749a83535', '38fe771145bc41108a6f5c6af90a7acc', '000911', 'c9d816d0971b4b928ac71ba27098703d', '1999-05-27', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:07', null, null);
 INSERT INTO `t_companystock` VALUES ('888a5214fd8246fbb96d956d2596166b', '2c2bc87cd15f40fba5ee541bd21da3f9', '603192', 'c9d816d0971b4b928ac71ba27098703d', '2018-08-28', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:17:48', null, null);
+INSERT INTO `t_companystock` VALUES ('888b693103074062993c54381d1007cb', '0fcc3105e982491c87ae2ce7549fd8f4', '601975', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-08', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:15', null, null);
 INSERT INTO `t_companystock` VALUES ('889175221b324a72a834a64dbaf1d139', 'bafc10ba18694ec7a2ffc0b62b0ade2f', '601339', 'c9d816d0971b4b928ac71ba27098703d', '2012-06-12', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:40', null, null);
 INSERT INTO `t_companystock` VALUES ('88b498a39dfa492885f2f25b3c32a907', '41ac358729d44df183b9e548f2b29f37', '300665', 'c9d816d0971b4b928ac71ba27098703d', '2017-06-13', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:14:58', null, null);
 INSERT INTO `t_companystock` VALUES ('88b6e25be5b343baab05358051160149', '09303ba2ffd04fdc943fc710ae2910ca', '002258', 'c9d816d0971b4b928ac71ba27098703d', '2008-07-08', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:06:57', null, null);
@@ -5854,6 +5888,7 @@ INSERT INTO `t_companystock` VALUES ('9317e42ac0d44c2889d22e24ac9e2822', '52e029
 INSERT INTO `t_companystock` VALUES ('93225c45ee6f4518a86c8fa5a0519703', '467bf8ce6c074a46886f154f9006b6e3', '600667', 'c9d816d0971b4b928ac71ba27098703d', '1993-07-28', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:14:38', null, null);
 INSERT INTO `t_companystock` VALUES ('9325dfc9435142319952ab3df4e443f4', 'b68c341e69c44274a63064eee3098d05', '200037', 'f1cc96ed49d34c3692100776a666cf8c', '1994-11-28', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 18:02:52', null, null);
 INSERT INTO `t_companystock` VALUES ('932652b8d89a494aa9c7783f35b88142', '69af207d00e54ab9846c3c0b4918a45b', '000518', 'c9d816d0971b4b928ac71ba27098703d', '1993-09-08', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:41', null, null);
+INSERT INTO `t_companystock` VALUES ('933fb4827c84415bae729be2f4283fb7', 'c6ae76613b3841789b3887977a283a67', '200553', 'f1cc96ed49d34c3692100776a666cf8c', '1997-05-15', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2019-02-21 22:16:43', null, null);
 INSERT INTO `t_companystock` VALUES ('93549b238e5743958f80dbcf655a5078', 'e622e78c7b2646be89de2f837e8063fd', '000599', 'c9d816d0971b4b928ac71ba27098703d', '1996-04-30', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:59', null, null);
 INSERT INTO `t_companystock` VALUES ('935baa6b8a674ae1a89e4f02f9daf1a1', '9fd71df24d3d429db2119e7b37da3234', '600072', 'c9d816d0971b4b928ac71ba27098703d', '1997-06-03', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:11:58', null, null);
 INSERT INTO `t_companystock` VALUES ('9365257729144b5baa6b758de28b0f8e', '2172d57478704680bbc4cd1671ed9ac7', '002378', 'c9d816d0971b4b928ac71ba27098703d', '2010-03-31', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:07:48', null, null);
@@ -6284,6 +6319,7 @@ INSERT INTO `t_companystock` VALUES ('b0f15b33811e47d88b3fc87f38016916', 'ee9187
 INSERT INTO `t_companystock` VALUES ('b0f4743ef4134f23be5a84cc40aacf37', 'ea615b8bf6ec486bbdf9820bc824d7d4', '000413', 'c9d816d0971b4b928ac71ba27098703d', '1996-09-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:03:31', null, null);
 INSERT INTO `t_companystock` VALUES ('b0f7e65ef81c43ec8af1264a8b8a4970', '71f76475aba34219bbf1484233f7be8f', '002313', 'c9d816d0971b4b928ac71ba27098703d', '2009-12-03', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:07:17', null, null);
 INSERT INTO `t_companystock` VALUES ('b11219d726ab4af99824517c621f5836', '88878185de9441e5b0d125d3998e8a25', '600097', 'c9d816d0971b4b928ac71ba27098703d', '1997-06-19', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:12:03', null, null);
+INSERT INTO `t_companystock` VALUES ('b1135b1c42d54518b37bd7996f63b86d', '4422af7f800f447a937df4cc506918bf', '603700', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-22', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:36', null, null);
 INSERT INTO `t_companystock` VALUES ('b124178236774c1fb8e8c23aaca0bb4a', '9f1027e874bc4d29afffcc84e74dd87b', '300527', 'c9d816d0971b4b928ac71ba27098703d', '2016-08-05', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:14:09', null, null);
 INSERT INTO `t_companystock` VALUES ('b1243c5403d7429aafeea126de221b7f', 'e7e228622be64ff1b71883c6ec5121be', '600269', 'c9d816d0971b4b928ac71ba27098703d', '2000-05-18', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:12:50', null, null);
 INSERT INTO `t_companystock` VALUES ('b12aa224d568406e998286c03858ec01', '2c03fb2eea154abb9b31b4fdd53378bc', '603055', 'c9d816d0971b4b928ac71ba27098703d', '2017-09-21', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:17:28', null, null);
@@ -6396,6 +6432,7 @@ INSERT INTO `t_companystock` VALUES ('b84c7f7a83a6435784cac99daf7acd80', 'a1fbda
 INSERT INTO `t_companystock` VALUES ('b84f9bd9559c4232b230451ce4037ed7', '567d132b05024ea6988c3f1fcc22ad05', '600477', 'c9d816d0971b4b928ac71ba27098703d', '2003-11-10', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:13:39', null, null);
 INSERT INTO `t_companystock` VALUES ('b854390469b74b64ac65cc57d2060a75', '220f3196acdb4d17b17c9f237d9303bd', '300457', 'c9d816d0971b4b928ac71ba27098703d', '2015-05-14', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:13:41', null, null);
 INSERT INTO `t_companystock` VALUES ('b865d92cc3444de0b72da76b19597c8a', '46c3ea6f9acb41f4a72e7fbb8846191c', '300312', 'c9d816d0971b4b928ac71ba27098703d', '2012-05-08', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:12:48', null, null);
+INSERT INTO `t_companystock` VALUES ('b876fb138e0f44f995154f76852de603', 'd7e17ae1c2f64d90bc6d55f7ec64376c', '601865', 'c9d816d0971b4b928ac71ba27098703d', '2019-02-15', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:13', null, null);
 INSERT INTO `t_companystock` VALUES ('b87a3a45a3d34aadacd8c5030b50c1c4', '03f42ece0c174f629514cbaeed66330a', '600131', 'c9d816d0971b4b928ac71ba27098703d', '1998-04-02', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:12:10', null, null);
 INSERT INTO `t_companystock` VALUES ('b87f5b8404594ebe9dd514dcc957980d', 'bbc63e79e1034d7e83f0a752ac5d71b8', '002707', 'c9d816d0971b4b928ac71ba27098703d', '2014-01-23', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:40', null, null);
 INSERT INTO `t_companystock` VALUES ('b88f9722c4444d00924181bd4d674038', '8761f8e232e5480e8fead2c680bf74bc', '300290', 'c9d816d0971b4b928ac71ba27098703d', '2012-02-16', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:12:40', null, null);
@@ -6568,8 +6605,10 @@ INSERT INTO `t_companystock` VALUES ('c4e62cbd34da44ed9aa290854ac03eb1', 'e31155
 INSERT INTO `t_companystock` VALUES ('c4ef8dacf09a42dc896fc008b999399f', 'ba3bc4b86fe942059d2f24701406f891', '603308', 'c9d816d0971b4b928ac71ba27098703d', '2014-01-22', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:18:02', null, null);
 INSERT INTO `t_companystock` VALUES ('c504ecca281b4c92bbf54ee64391f9ab', '57de091ddd8347acb00acaa65698ea82', '002009', 'c9d816d0971b4b928ac71ba27098703d', '2004-06-29', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:35', null, null);
 INSERT INTO `t_companystock` VALUES ('c544ed7a0bb94bb7b4c6056187cf9fe5', 'cdfa4600ffec4ef69b06c1d7ee96c35d', '600467', 'c9d816d0971b4b928ac71ba27098703d', '2004-04-05', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:13:37', null, null);
+INSERT INTO `t_companystock` VALUES ('c546b12dbe0b428cab46792b47b45164', 'b052454f43d440e4a60c97c3833f76fc', '603121', 'c9d816d0971b4b928ac71ba27098703d', '2019-01-11', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:20', null, null);
 INSERT INTO `t_companystock` VALUES ('c5490b6333f9494bb8f7d1673678793d', '84dc3d7bf2254228a3dc77db442be561', '300251', 'c9d816d0971b4b928ac71ba27098703d', '2011-08-03', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:12:25', null, null);
 INSERT INTO `t_companystock` VALUES ('c54f46b57d324533877f28ea39746d24', '98d4682d80044db4b54731a5e355695a', '002534', 'c9d816d0971b4b928ac71ba27098703d', '2011-01-10', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:08:45', null, null);
+INSERT INTO `t_companystock` VALUES ('c54fdb6c14e647a4b1c889049eee6a18', '6d7002af90dc4b188fe48242259d6868', '603629', 'c9d816d0971b4b928ac71ba27098703d', '2018-12-24', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:34', null, null);
 INSERT INTO `t_companystock` VALUES ('c5554961c3ef447a9fba9e667920acd8', '4c052c7299cd4175945bcf8d24adc57e', '002781', 'c9d816d0971b4b928ac71ba27098703d', '2015-12-22', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:10:00', null, null);
 INSERT INTO `t_companystock` VALUES ('c57d5bbc7de94128a978475aff657078', '4367ec99cedc405a9bc318fcd01c7a09', '300069', 'c9d816d0971b4b928ac71ba27098703d', '2010-04-21', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:18', null, null);
 INSERT INTO `t_companystock` VALUES ('c5925891e55b4194a47672697558d6d2', '659a4add0dc949b88ad470dd04f2cbb4', '600419', 'c9d816d0971b4b928ac71ba27098703d', '2001-06-28', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:13:28', null, null);
@@ -6583,6 +6622,7 @@ INSERT INTO `t_companystock` VALUES ('c6072b48596a4a0580645e5802515310', '9222a9
 INSERT INTO `t_companystock` VALUES ('c614f1e70cc247f9a026f4b8ee2d82ff', 'f1f09eaabf7045c5ac52433f1007010d', '000969', 'c9d816d0971b4b928ac71ba27098703d', '2000-05-29', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:22', null, null);
 INSERT INTO `t_companystock` VALUES ('c6188bc42f014ece9a70797972d2e6d0', '99ff396e206442eeaafc67ff98076976', '300135', 'c9d816d0971b4b928ac71ba27098703d', '2010-10-26', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:40', null, null);
 INSERT INTO `t_companystock` VALUES ('c620c6745daf4ebfad169f7fc931385b', 'ac66dba52db840b699588c62560a4250', '300421', 'c9d816d0971b4b928ac71ba27098703d', '2015-02-17', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:13:28', null, null);
+INSERT INTO `t_companystock` VALUES ('c62c7fd523da4d058c3d0cf4c6c0285a', 'd109b6779a3c4b2eb51a0a28568595ee', '600373', 'c9d816d0971b4b928ac71ba27098703d', '2002-03-04', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:08:32', null, null);
 INSERT INTO `t_companystock` VALUES ('c63cc63690e24e77931647966717ae93', '937624f98aaf4e35a36f5c7e1af20c85', '000780', 'c9d816d0971b4b928ac71ba27098703d', '1997-06-06', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:04:39', null, null);
 INSERT INTO `t_companystock` VALUES ('c679a1b6b0eb4cf5a2c786a816482d04', '3d09af035f6642728a03e4335ff78c0c', '900941', 'f1cc96ed49d34c3692100776a666cf8c', '1996-11-26', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 18:01:08', null, null);
 INSERT INTO `t_companystock` VALUES ('c68656bc86b3459d95077b3fe5e8275d', '380c597b2cc24e17b7e78df7e0a99c5d', '600593', 'c9d816d0971b4b928ac71ba27098703d', '2002-07-11', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:14:16', null, null);
@@ -6812,6 +6852,7 @@ INSERT INTO `t_companystock` VALUES ('d6ddc726051b462e8f2b303169511db5', '371898
 INSERT INTO `t_companystock` VALUES ('d6e55a4cbae24d288483e56e193a3bfe', '733fc72d3cd94005b73bf71aabff2315', '603336', 'c9d816d0971b4b928ac71ba27098703d', '2016-11-24', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:18:07', null, null);
 INSERT INTO `t_companystock` VALUES ('d6ec0cbe101e469a8c19b76647010a4f', '36714dd03cbb49868be72f659ea01caa', '300169', 'c9d816d0971b4b928ac71ba27098703d', '2011-01-25', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:11:52', null, null);
 INSERT INTO `t_companystock` VALUES ('d700140182c641d5b94cdc7d38e32960', '5b792e42969e4055b0e69be0fbc4acfa', '002818', 'c9d816d0971b4b928ac71ba27098703d', '2016-11-09', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:10:14', null, null);
+INSERT INTO `t_companystock` VALUES ('d742bbaaf09446e89f27e93f390513d0', '04a9b2832b7d40419fb70593e306565c', '603299', 'c9d816d0971b4b928ac71ba27098703d', '2015-12-31', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:09:25', null, null);
 INSERT INTO `t_companystock` VALUES ('d7a458ffda564b9aaf58b42500c76bfb', '5fae41c9a731452aa651f5bc80f64e57', '603357', 'c9d816d0971b4b928ac71ba27098703d', '2017-08-01', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:18:10', null, null);
 INSERT INTO `t_companystock` VALUES ('d7b7022cdbcd48139cb67b5e706e1c41', 'c5aa722e6a26443ca5e4521f821983d5', '600403', 'c9d816d0971b4b928ac71ba27098703d', '2003-10-09', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:13:25', null, null);
 INSERT INTO `t_companystock` VALUES ('d7b7884b7d1f492ab9515b15a25afda2', '584fd11d01b1422fa34c3d434aa8d821', '600368', 'c9d816d0971b4b928ac71ba27098703d', '2000-12-21', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:13:18', null, null);
@@ -6927,6 +6968,7 @@ INSERT INTO `t_companystock` VALUES ('de913f1ac9734ccb88dd0c1769fb7e0e', '43b6e5
 INSERT INTO `t_companystock` VALUES ('de99792d1dd34566bbd22ec61dbb4559', '18aa7d2fb02845f3b4e35bc751653c15', '600612', 'c9d816d0971b4b928ac71ba27098703d', '1992-08-14', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:14:22', null, null);
 INSERT INTO `t_companystock` VALUES ('dea9164b154d4d4ca6c4686ebff2860a', 'b48d68d1f1984005bb3e988c72aa7747', '600901', 'c9d816d0971b4b928ac71ba27098703d', '2018-03-01', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 16:16:02', null, null);
 INSERT INTO `t_companystock` VALUES ('debb03c5b91f49bbaec6307460d0c683', '098f02a5832e4bbda43d5a9dd5c01b44', '002767', 'c9d816d0971b4b928ac71ba27098703d', '2015-06-12', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:09:57', null, null);
+INSERT INTO `t_companystock` VALUES ('debc7522c69a4c0e823c0f008668503f', '1fe04f926baa46419a156caa2af4aca2', '600227', 'c9d816d0971b4b928ac71ba27098703d', '2000-02-21', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2019-02-21 22:08:25', null, null);
 INSERT INTO `t_companystock` VALUES ('dec63a3040fe417db96b4e14d1334e7c', '3cfd657127654568a69652e0fe8a1422', '002058', 'c9d816d0971b4b928ac71ba27098703d', '2006-08-02', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:05:52', null, null);
 INSERT INTO `t_companystock` VALUES ('dee0c20dd7b0475fbd8633a2543a28b8', '2547801ab7584e759aa3db032f3861d5', '002093', 'c9d816d0971b4b928ac71ba27098703d', '2006-12-15', '0', 'cd4ddbef1f2e47c08a5a5dbffadacea9', 'root', '2018-11-25 22:06:01', null, null);
 INSERT INTO `t_companystock` VALUES ('dee246994394442da016f3f6ba973a31', 'c24360a72ee34562818a843706191dfa', '601007', 'c9d816d0971b4b928ac71ba27098703d', '2007-04-06', '0', '41e4f30340b34529b56238e7cd229ce8', 'root', '2018-11-25 17:15:42', null, null);
@@ -7407,28 +7449,28 @@ INSERT INTO `t_companystock` VALUES ('ffe1632aea644f72a32aa6f4127e9c62', '6a20f6
 -- ----------------------------
 DROP TABLE IF EXISTS `t_currentassets`;
 CREATE TABLE `t_currentassets` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `moneyFunds` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `wof` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `bbrfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `billReceivable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `accountsReceivable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `prepayments` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `interestReceivable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dividendReceivable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `otherReceivables` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `stock` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncadwoy` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `oca` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tca` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `moneyFunds` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `wof` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `bbrfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `billReceivable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `accountsReceivable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `prepayments` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `interestReceivable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dividendReceivable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `otherReceivables` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `stock` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncadwoy` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `oca` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tca` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7443,29 +7485,29 @@ INSERT INTO `t_currentassets` VALUES ('374bb2b1919848bb9ac7f1c7b8cc8389', '67486
 -- ----------------------------
 DROP TABLE IF EXISTS `t_currentliabilities`;
 CREATE TABLE `t_currentliabilities` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `stl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `uf` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tfl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dfl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `srfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `billsPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `accountsPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `advancePayment` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `payrollPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `taxesPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `interestPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dividendPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `otherPayables` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `nldwoy` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ocl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tcl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `stl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `uf` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tfl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dfl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `srfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `billsPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `accountsPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `advancePayment` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `payrollPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `taxesPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `interestPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dividendPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `otherPayables` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `nldwoy` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ocl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tcl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7518,31 +7560,31 @@ INSERT INTO `t_industry` VALUES ('fe72e566fa054564b7863d04de6d7e3f', '00018', '�
 -- ----------------------------
 DROP TABLE IF EXISTS `t_noncurrentassets`;
 CREATE TABLE `t_noncurrentassets` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `afsfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `haei` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ltr` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ltbi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ire` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `fixedAssets` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cap` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `engineerMaterial` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `fac` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `pba` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `gasolineAssets` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `intangibleAssets` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `de` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `goodwill` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ltpe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dta` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `onca` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tnca` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `afsfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `haei` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ltr` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ltbi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ire` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `fixedAssets` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cap` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `engineerMaterial` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `fac` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `pba` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `gasolineAssets` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `intangibleAssets` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `de` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `goodwill` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ltpe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dta` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `onca` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tnca` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7557,22 +7599,22 @@ INSERT INTO `t_noncurrentassets` VALUES ('80e5f7bd92124a379cb3c399f90cd84b', '67
 -- ----------------------------
 DROP TABLE IF EXISTS `t_noncurrentliabilities`;
 CREATE TABLE `t_noncurrentliabilities` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `ltl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `bondsPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ltp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `specialPayable` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `estimatedLiabilities` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `deferredIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ditl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dncl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tncl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `ltl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `bondsPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ltp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `specialPayable` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `estimatedLiabilities` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deferredIncome` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ditl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dncl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tncl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7587,25 +7629,25 @@ INSERT INTO `t_noncurrentliabilities` VALUES ('2c7f72e4d1dd4feeb93ab8e89728ac1c'
 -- ----------------------------
 DROP TABLE IF EXISTS `t_ownersequity`;
 CREATE TABLE `t_ownersequity` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `pic` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `oei` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `capitalReserve` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `oci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `lts` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `specialReserves` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `surplusReserve` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `grp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `undistributedProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `toeattpc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `mse` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `toe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `pic` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `oei` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `capitalReserve` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `oci` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `lts` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `specialReserves` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `surplusReserve` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `grp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `undistributedProfit` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `toeattpc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `mse` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `toe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7620,44 +7662,44 @@ INSERT INTO `t_ownersequity` VALUES ('62ab4ed253614477bc03c58096dff093', '674861
 -- ----------------------------
 DROP TABLE IF EXISTS `t_ownersequitychange`;
 CREATE TABLE `t_ownersequitychange` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `yebateoly` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `apc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `eec` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `batboty` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `aoioditcy` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `np` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `galdiioe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ncifvoafsfa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tiociooraioiuuem` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `itrtoei` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `other1` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `oiarc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `cibo` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `oeihi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `taospiitoe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `other2` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `pd` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `esr` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `egrp` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `dooos` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `other3` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `itooe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `csicocs` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ssticocs` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `sstmufl` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `other4` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `specialReserves` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `currentExtraction` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `currentUse` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `other5` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `bateoty` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `yebateoly` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `apc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `eec` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `batboty` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `aoioditcy` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `np` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `galdiioe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ncifvoafsfa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tiociooraioiuuem` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `itrtoei` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `other1` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `oiarc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cibo` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `oeihi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `taospiitoe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `other2` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `pd` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `esr` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `egrp` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `dooos` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `other3` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `itooe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `csicocs` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ssticocs` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sstmufl` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `other4` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `specialReserves` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `currentExtraction` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `currentUse` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `other5` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `bateoty` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7665,49 +7707,50 @@ CREATE TABLE `t_ownersequitychange` (
 -- ----------------------------
 -- Records of t_ownersequitychange
 -- ----------------------------
+INSERT INTO `t_ownersequitychange` VALUES ('448afa839de8488786cf96ed044e8b33', '6748615f42494d1994132493e11e533c', '2017-12-31', '10633946041.21', '0.00', '0.00', '10633946041.21', '3767495755.89', '1244807177.17', '0.00', '0.00', '0.00', '0.00', '0.00', '2584504658.13', '2583985845.72', '0.00', '0.00', '518812.41', '-208045714.30', '0.00', '0.00', '-208045714.30', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '66773472.92', '405913199.53', '-339139726.61', '79456161.97', '14401441797.10', '0', 'root', '2019-02-21 21:31:11', null, null);
 
 -- ----------------------------
 -- Table structure for t_profit
 -- ----------------------------
 DROP TABLE IF EXISTS `t_profit`;
 CREATE TABLE `t_profit` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `companyStockId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `companyStockId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `dataTime` date DEFAULT NULL,
-  `businessIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `interestIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `earnedPremium` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `faci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `toi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `operatingCost` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `btaa` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `sellingExpenses` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `managementCost` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `financialCost` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ail` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `toc` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `fvci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `adi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ifi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `iiojvajv` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `oii` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `exchangeGains` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `otherIncome` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `operatingProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `noi` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `noe` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `totalProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `ite` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `netProfit` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `natfoci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `tci` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `eps` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `beps` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `deps` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `businessIncome` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `interestIncome` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `earnedPremium` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `faci` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `toi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `operatingCost` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `btaa` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `sellingExpenses` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `managementCost` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `financialCost` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ail` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `toc` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `fvci` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `adi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ifi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `iiojvajv` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `oii` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `exchangeGains` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `otherIncome` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `operatingProfit` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `noi` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `noe` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `totalProfit` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `ite` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `netProfit` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `natfoci` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `tci` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `eps` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `beps` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `deps` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7722,13 +7765,13 @@ INSERT INTO `t_profit` VALUES ('276db4ddae4f421d8dd14efe289ce227', '6748615f4249
 -- ----------------------------
 DROP TABLE IF EXISTS `t_stockexchange`;
 CREATE TABLE `t_stockexchange` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `name` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `url` varchar(200) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `url` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7745,12 +7788,12 @@ INSERT INTO `t_stockexchange` VALUES ('f5e8bb66de944cb89c36ab7ed967a476', '香�
 -- ----------------------------
 DROP TABLE IF EXISTS `t_stocktype`;
 CREATE TABLE `t_stocktype` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `name` varchar(10) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -7768,13 +7811,13 @@ INSERT INTO `t_stocktype` VALUES ('f1cc96ed49d34c3692100776a666cf8c', 'B 股', '
 -- ----------------------------
 DROP TABLE IF EXISTS `t_user`;
 CREATE TABLE `t_user` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `username` varchar(20) COLLATE utf8_bin DEFAULT NULL,
-  `password` varchar(30) COLLATE utf8_bin DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `username` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `password` varchar(30) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
