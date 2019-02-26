@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-02-25 17:57:03
+Date: 2019-02-26 18:03:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -48,6 +48,7 @@ INSERT INTO `db_business_order` VALUES ('132821c74dc2444fae84', '2019-02-01 16:3
 INSERT INTO `db_business_order` VALUES ('1dacc4ab99e046b58d31', '2019-02-22 20:15:16', 'c65bed6e57684b0bba9606489d6e98', '2', null, '343c4ea74f4f4fc0b00a', null, '0', null, '', '', '新增加往来账户数据，增加往来金额0元', '0', '', '2019-02-22 20:15:16', null, null);
 INSERT INTO `db_business_order` VALUES ('2ebbcecfba794debbfec', '2018-12-31 09:51:33', 'd9990bc19bf24af99b38d6aabf03b7', '1', '1', null, '2278469d550c42c6bbce', '3221.42', null, '1d3d3a4df23f48e48480', '', '新增加往来账户数据，增加往来金额3221.42元', '0', '', '2019-02-01 09:51:34', null, null);
 INSERT INTO `db_business_order` VALUES ('2fb3f1f1fb3b4af8af06', '2018-12-31 09:22:39', '73ae17b31668475db9bd4fb53ea3dd', '1', '1', null, '77377f3e15054476920b', '2528.99', null, '1d3d3a4df23f48e48480', '', '新增加往来账户数据，增加往来金额2528.99元', '0', '', '2019-02-01 09:22:39', null, null);
+INSERT INTO `db_business_order` VALUES ('33d12605010f482faf90', '2019-02-24 16:51:42', 'a848022d342c4568b517cb560e2125', '1', '1', null, 'f56d7922273d4aa5bf20', '230', null, '55c9cba712ee4676bb31', null, '购买被褥和床垫。', '0', '', '2019-02-26 16:52:48', null, null);
 INSERT INTO `db_business_order` VALUES ('40c518c3787c48bdb735', '2019-02-21 19:20:46', '4f5ce3fa33c14ba0bba41e34fdc783', '1', '1', null, '40e16fe4990f4ec4828f', '1500.00', null, '84e4f28994ae4caa8251', null, '3个月房子费用', '0', '', '2019-02-21 19:21:47', null, null);
 INSERT INTO `db_business_order` VALUES ('492376aeafa74fc2a225', '2019-03-21 19:20:46', '036c9be768d74120890523c519d226', '1', '1', null, '40e16fe4990f4ec4828f', '1500.00', null, '84e4f28994ae4caa8251', null, '3个月房子费用', '0', '', '2019-02-21 19:21:47', null, null);
 INSERT INTO `db_business_order` VALUES ('4b1c7077935043d9932b', '2018-12-31 16:50:18', 'd2de80cf0a084e10a18c06a218c93b', '2', '2', '7bff2309924d4901b04f', null, '2504.44', null, 'dd7a1197c1d548899eeb', '', '新增加普通账户数据，增加期初账户余额2504.44元', '0', '', '2019-01-31 16:50:19', null, null);
@@ -89,8 +90,6 @@ CREATE TABLE `db_classification` (
   `id` varchar(50) COLLATE utf8_bin NOT NULL,
   `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
   `kind` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `accountType` varchar(2) COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
   `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
   `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
@@ -103,31 +102,33 @@ CREATE TABLE `db_classification` (
 -- ----------------------------
 -- Records of db_classification
 -- ----------------------------
-INSERT INTO `db_classification` VALUES ('08d7420d4ef949f4b929', '普通借款', '4wvbwptevrnwq9m2qd7e', '2', null, '3', '0', '', '2019-01-26 23:02:51', null, null);
-INSERT INTO `db_classification` VALUES ('0cf95580345647dbb3c7', '其它分类', '4wvbwptevrnwq9m2qd7e', '2', null, '5', '0', '', '2019-02-01 10:45:48', null, null);
-INSERT INTO `db_classification` VALUES ('1052f38dcbfb482e877c', '同事', 'wvrr4ax8uimvmtlo0p50', '3', '', '4', '0', '', '2019-02-24 00:11:11', null, null);
-INSERT INTO `db_classification` VALUES ('22f3e35708eb4c9bb20e', '人情往来', 'ils5hnlfbysciwppvvpk', '1', null, '8', '0', '', '2019-01-26 23:07:07', null, null);
-INSERT INTO `db_classification` VALUES ('2647dee3e3fb464cb056', '衣服饰品', 'ils5hnlfbysciwppvvpk', '1', null, '1', '0', '', '2019-01-26 23:05:40', null, null);
-INSERT INTO `db_classification` VALUES ('2c18b356a06645479aec', '普通账户', '4wvbwptevrnwq9m2qd7e', '2', null, '1', '0', '', '2019-01-26 22:07:44', null, null);
-INSERT INTO `db_classification` VALUES ('3a8acff20b2f411ca7a3', '亲戚', 'wvrr4ax8uimvmtlo0p50', '3', null, '2', '0', '', '2019-02-23 21:29:38', null, null);
-INSERT INTO `db_classification` VALUES ('3ccf613441a546c9a355', '信用贷款', '4wvbwptevrnwq9m2qd7e', '2', null, '4', '0', '', '2019-01-26 22:09:34', null, null);
-INSERT INTO `db_classification` VALUES ('4a0a77d7743242da94b3', '食品酒水', 'ils5hnlfbysciwppvvpk', '1', null, '2', '0', '', '2019-01-26 23:05:53', null, null);
-INSERT INTO `db_classification` VALUES ('4b0315a18006436b89a7', '休闲娱乐', 'ils5hnlfbysciwppvvpk', '1', null, '6', '0', '', '2019-01-26 23:06:39', null, null);
-INSERT INTO `db_classification` VALUES ('56d399ca295849ad8eca', '交流通信', 'ils5hnlfbysciwppvvpk', '1', null, '5', '0', '', '2019-01-26 23:06:28', null, null);
-INSERT INTO `db_classification` VALUES ('639b61a6783a4f1eb419', '其它收入', 'wvrr4ax8uimvmtlo0p5p', '1', null, '3', '0', '', '2019-01-26 23:08:34', null, null);
-INSERT INTO `db_classification` VALUES ('6c9ccc681599478c9d45', '信用借款', '4wvbwptevrnwq9m2qd7e', '2', null, '2', '0', '', '2019-01-26 22:09:23', null, null);
-INSERT INTO `db_classification` VALUES ('7069dde92b3c47aebf33', '家人', 'wvrr4ax8uimvmtlo0p50', '3', null, '1', '0', '', '2019-02-23 21:29:30', null, null);
-INSERT INTO `db_classification` VALUES ('96d34403a8f24910997e', '投资账户', '4wvbwptevrnwq9m2qd7e', '2', '1', '4', '0', '', '2019-02-25 00:48:46', null, null);
-INSERT INTO `db_classification` VALUES ('97691135bad4461a8d20', '其他', 'wvrr4ax8uimvmtlo0p50', '3', null, '5', '0', '', '2019-02-23 21:45:08', null, null);
-INSERT INTO `db_classification` VALUES ('a56d1fbca3da4d2b9b26', '其它杂项', 'ils5hnlfbysciwppvvpk', '1', null, '11', '0', '', '2019-01-26 23:07:43', null, null);
-INSERT INTO `db_classification` VALUES ('b3ed48eda5cc4b8bb6c6', '朋友', 'wvrr4ax8uimvmtlo0p50', '3', null, '3', '0', '', '2019-02-23 21:33:02', null, null);
-INSERT INTO `db_classification` VALUES ('b591d0830ee34565af1e', '家居物业', 'ils5hnlfbysciwppvvpk', '1', null, '3', '0', '', '2019-01-26 23:06:04', null, null);
-INSERT INTO `db_classification` VALUES ('b89ebb011e454bc79ff1', '医疗保健', 'ils5hnlfbysciwppvvpk', '1', null, '9', '0', '', '2019-01-26 23:07:18', null, null);
-INSERT INTO `db_classification` VALUES ('bc79fb479cea4fdd8520', '行车交通', 'ils5hnlfbysciwppvvpk', '1', null, '4', '0', '', '2019-01-26 23:06:15', null, null);
-INSERT INTO `db_classification` VALUES ('bf3bb2797a8a42e3946e', '金融保险', 'ils5hnlfbysciwppvvpk', '1', null, '10', '0', '', '2019-01-26 23:07:32', null, null);
-INSERT INTO `db_classification` VALUES ('c1a3d0407ec6489a91da', '投资收益', 'wvrr4ax8uimvmtlo0p5p', '1', null, '2', '0', '', '2019-01-26 23:08:09', null, null);
-INSERT INTO `db_classification` VALUES ('d3c07bd7e04047aa9040', '职业收入', 'wvrr4ax8uimvmtlo0p5p', '1', null, '1', '0', '', '2019-01-26 23:07:58', null, null);
-INSERT INTO `db_classification` VALUES ('f0a1e7c490c64f4a9ee2', '学习进修', 'ils5hnlfbysciwppvvpk', '1', null, '7', '0', '', '2019-01-26 23:06:53', null, null);
+INSERT INTO `db_classification` VALUES ('08d7420d4ef949f4b929', '普通借款', '4wvbwptevrnwq9m2qd7e', '3', '0', '', '2019-01-26 23:02:51', null, null);
+INSERT INTO `db_classification` VALUES ('0cf95580345647dbb3c7', '其它分类', '4wvbwptevrnwq9m2qd7e', '5', '0', '', '2019-02-01 10:45:48', null, null);
+INSERT INTO `db_classification` VALUES ('1052f38dcbfb482e877c', '同事', 'wvrr4ax8uimvmtlo0p50', '4', '0', '', '2019-02-24 00:11:11', null, null);
+INSERT INTO `db_classification` VALUES ('22f3e35708eb4c9bb20e', '人情往来', 'ils5hnlfbysciwppvvpk', '8', '0', '', '2019-01-26 23:07:07', null, null);
+INSERT INTO `db_classification` VALUES ('2647dee3e3fb464cb056', '衣服饰品', 'ils5hnlfbysciwppvvpk', '1', '0', '', '2019-01-26 23:05:40', null, null);
+INSERT INTO `db_classification` VALUES ('2c18b356a06645479aec', '普通账户', '4wvbwptevrnwq9m2qd7e', '1', '0', '', '2019-01-26 22:07:44', null, null);
+INSERT INTO `db_classification` VALUES ('3a8acff20b2f411ca7a3', '亲戚', 'wvrr4ax8uimvmtlo0p50', '2', '0', '', '2019-02-23 21:29:38', null, null);
+INSERT INTO `db_classification` VALUES ('3ccf613441a546c9a355', '信用贷款', '4wvbwptevrnwq9m2qd7e', '4', '0', '', '2019-01-26 22:09:34', null, null);
+INSERT INTO `db_classification` VALUES ('3d27db0542c149f8aae3', '测试1', 'ils5hnlfbysciwppvvpk', '13', '-1', '', '2019-02-26 09:53:18', '', '2019-02-26 10:12:20');
+INSERT INTO `db_classification` VALUES ('4a0a77d7743242da94b3', '食品酒水', 'ils5hnlfbysciwppvvpk', '2', '0', '', '2019-01-26 23:05:53', null, null);
+INSERT INTO `db_classification` VALUES ('4b0315a18006436b89a7', '休闲娱乐', 'ils5hnlfbysciwppvvpk', '6', '0', '', '2019-01-26 23:06:39', null, null);
+INSERT INTO `db_classification` VALUES ('56d399ca295849ad8eca', '交流通信', 'ils5hnlfbysciwppvvpk', '5', '0', '', '2019-01-26 23:06:28', null, null);
+INSERT INTO `db_classification` VALUES ('639b61a6783a4f1eb419', '其它收入', 'wvrr4ax8uimvmtlo0p5p', '3', '0', '', '2019-01-26 23:08:34', null, null);
+INSERT INTO `db_classification` VALUES ('6c9ccc681599478c9d45', '信用借款', '4wvbwptevrnwq9m2qd7e', '2', '0', '', '2019-01-26 22:09:23', null, null);
+INSERT INTO `db_classification` VALUES ('7069dde92b3c47aebf33', '家人', 'wvrr4ax8uimvmtlo0p50', '1', '0', '', '2019-02-23 21:29:30', null, null);
+INSERT INTO `db_classification` VALUES ('96d34403a8f24910997e', '投资账户', '4wvbwptevrnwq9m2qd7e', '4', '0', '', '2019-02-25 00:48:46', null, null);
+INSERT INTO `db_classification` VALUES ('97691135bad4461a8d20', '其他', 'wvrr4ax8uimvmtlo0p50', '5', '0', '', '2019-02-23 21:45:08', null, null);
+INSERT INTO `db_classification` VALUES ('a56d1fbca3da4d2b9b26', '其它杂项', 'ils5hnlfbysciwppvvpk', '11', '0', '', '2019-01-26 23:07:43', null, null);
+INSERT INTO `db_classification` VALUES ('b3ed48eda5cc4b8bb6c6', '朋友', 'wvrr4ax8uimvmtlo0p50', '3', '0', '', '2019-02-23 21:33:02', null, null);
+INSERT INTO `db_classification` VALUES ('b591d0830ee34565af1e', '家居物业', 'ils5hnlfbysciwppvvpk', '3', '0', '', '2019-01-26 23:06:04', null, null);
+INSERT INTO `db_classification` VALUES ('b89ebb011e454bc79ff1', '医疗保健', 'ils5hnlfbysciwppvvpk', '9', '0', '', '2019-01-26 23:07:18', null, null);
+INSERT INTO `db_classification` VALUES ('bc79fb479cea4fdd8520', '行车交通', 'ils5hnlfbysciwppvvpk', '4', '0', '', '2019-01-26 23:06:15', null, null);
+INSERT INTO `db_classification` VALUES ('bf3bb2797a8a42e3946e', '金融保险', 'ils5hnlfbysciwppvvpk', '10', '0', '', '2019-01-26 23:07:32', null, null);
+INSERT INTO `db_classification` VALUES ('c1a3d0407ec6489a91da', '投资收益', 'wvrr4ax8uimvmtlo0p5p', '2', '0', '', '2019-01-26 23:08:09', null, null);
+INSERT INTO `db_classification` VALUES ('d3c07bd7e04047aa9040', '职业收入', 'wvrr4ax8uimvmtlo0p5p', '1', '0', '', '2019-01-26 23:07:58', null, null);
+INSERT INTO `db_classification` VALUES ('e882f14d7c514d8baad2', '测试', 'ils5hnlfbysciwppvvpk', '12', '-1', '', '2019-02-26 09:51:44', '', '2019-02-26 10:12:23');
+INSERT INTO `db_classification` VALUES ('f0a1e7c490c64f4a9ee2', '学习进修', 'ils5hnlfbysciwppvvpk', '7', '0', '', '2019-01-26 23:06:53', null, null);
 
 -- ----------------------------
 -- Table structure for db_classification_value
@@ -153,16 +154,17 @@ INSERT INTO `db_classification_value` VALUES ('1d3d3a4df23f48e48480', 'a56d1fbca
 INSERT INTO `db_classification_value` VALUES ('2141cb43d7c04737af8d', 'b591d0830ee34565af1e', '维修费', '6', '0', '', '2019-02-13 14:25:10', null, null);
 INSERT INTO `db_classification_value` VALUES ('309f3db68ac04c519475', 'b591d0830ee34565af1e', '电费', '4', '0', '', '2019-02-13 14:24:31', null, null);
 INSERT INTO `db_classification_value` VALUES ('3e368fc6667a4d0cbad8', 'd3c07bd7e04047aa9040', '工资奖金', '2', '0', '', '2019-01-26 23:16:04', null, null);
+INSERT INTO `db_classification_value` VALUES ('55c9cba712ee4676bb31', 'b591d0830ee34565af1e', '日用家纺', '7', '0', '', '2019-02-26 16:51:19', '', '2019-02-26 16:51:33');
 INSERT INTO `db_classification_value` VALUES ('55e56245d55d46f09305', 'd3c07bd7e04047aa9040', '公司福利', '5', '0', '', '2019-01-26 23:16:50', null, null);
 INSERT INTO `db_classification_value` VALUES ('71bfaf34b290471286b6', 'd3c07bd7e04047aa9040', '加班收入', '3', '0', '', '2019-01-26 23:16:18', null, null);
 INSERT INTO `db_classification_value` VALUES ('84e4f28994ae4caa8251', 'b591d0830ee34565af1e', '房租', '1', '0', '', '2019-02-13 14:23:32', null, null);
-INSERT INTO `db_classification_value` VALUES ('8d9b1858b4a44d6b9b23', 'a56d1fbca3da4d2b9b26', '照片拍摄', '2', '0', '', '2019-02-23 17:37:23', null, null);
+INSERT INTO `db_classification_value` VALUES ('8d9b1858b4a44d6b9b23', 'a56d1fbca3da4d2b9b26', '照片拍摄', '2', '0', '', '2019-02-23 17:37:23', '', '2019-02-26 13:23:39');
 INSERT INTO `db_classification_value` VALUES ('90e40aa63b9b4fbdb235', 'b591d0830ee34565af1e', '物管费', '2', '0', '', '2019-02-13 14:23:53', null, null);
 INSERT INTO `db_classification_value` VALUES ('92232c69f6f7447e8c02', '639b61a6783a4f1eb419', '正常退款', '1', '0', '', '2019-02-01 15:01:29', null, null);
 INSERT INTO `db_classification_value` VALUES ('c36e0925a8914c58bdf0', '4a0a77d7743242da94b3', '餐饮支出', '1', '0', '', '2019-02-01 16:21:10', null, null);
 INSERT INTO `db_classification_value` VALUES ('d5c1e7be05de4df783b4', 'b591d0830ee34565af1e', '水费', '3', '0', '', '2019-02-13 14:24:14', null, null);
 INSERT INTO `db_classification_value` VALUES ('dd7a1197c1d548899eeb', '639b61a6783a4f1eb419', '添加历史数据', '2', '0', '', '2019-02-12 14:28:17', null, null);
-INSERT INTO `db_classification_value` VALUES ('e06fda09b9dd4508a0c3', '639b61a6783a4f1eb419', '人情往来', '3', '0', '', '2019-02-15 09:36:24', null, null);
+INSERT INTO `db_classification_value` VALUES ('e06fda09b9dd4508a0c3', '639b61a6783a4f1eb419', '人情往来', '3', '0', '', '2019-02-15 09:36:24', '', '2019-02-26 13:24:48');
 INSERT INTO `db_classification_value` VALUES ('ecc81f7794f64078a3fb', 'd3c07bd7e04047aa9040', '兼职收入', '4', '0', '', '2019-01-26 23:16:29', null, null);
 INSERT INTO `db_classification_value` VALUES ('f685de082fbf491cbca2', 'd3c07bd7e04047aa9040', '工资收入', '1', '0', '', '2019-01-26 23:15:50', null, null);
 INSERT INTO `db_classification_value` VALUES ('f6a747778e474313a0ba', 'b591d0830ee34565af1e', '燃气费', '5', '0', '', '2019-02-13 14:24:55', null, null);
@@ -191,24 +193,24 @@ CREATE TABLE `db_contacts_account` (
 -- ----------------------------
 -- Records of db_contacts_account
 -- ----------------------------
-INSERT INTO `db_contacts_account` VALUES ('13d9423e7d7e43ff9cb5', '3ccf613441a546c9a355', '1', '蜡笔分期', '', '', '-9784.38', '1', '0', null, '2019-01-31 17:31:54', null, null);
-INSERT INTO `db_contacts_account` VALUES ('2278469d550c42c6bbce', '3ccf613441a546c9a355', '1', '支付宝借呗（蒲）', '', '', '-3221.42', '3', '0', null, '2019-02-01 09:51:34', null, null);
+INSERT INTO `db_contacts_account` VALUES ('13d9423e7d7e43ff9cb5', '3ccf613441a546c9a355', '0', '蜡笔分期', '', '', '-9784.38', '1', '0', null, '2019-01-31 17:31:54', null, null);
+INSERT INTO `db_contacts_account` VALUES ('2278469d550c42c6bbce', '3ccf613441a546c9a355', '0', '支付宝借呗（蒲）', '', '', '-3221.42', '3', '0', null, '2019-02-01 09:51:34', null, null);
 INSERT INTO `db_contacts_account` VALUES ('32d03305f76842debe3f', '7069dde92b3c47aebf33', '1', '蒲艳梅', '', '', '-10000', '1', '0', null, '2019-01-31 15:17:03', null, null);
 INSERT INTO `db_contacts_account` VALUES ('343c4ea74f4f4fc0b00a', '3a8acff20b2f411ca7a3', '1', '唐建梅（二嬢）', '', '', '0', '3', '0', null, '2019-02-22 20:15:16', null, null);
 INSERT INTO `db_contacts_account` VALUES ('40e16fe4990f4ec4828f', '2c18b356a06645479aec', '0', '中信银行储蓄卡（蒲）', '中信银行', '', '1218.3398', '4', '0', null, '2019-02-01 16:38:02', '', '2019-02-21 19:21:47');
-INSERT INTO `db_contacts_account` VALUES ('59a97c012052470d9c9d', '6c9ccc681599478c9d45', '1', '中信银行信用卡（蒲）', '中信银行', '', '-24071.38', '2', '0', null, '2019-02-01 10:17:52', null, null);
-INSERT INTO `db_contacts_account` VALUES ('77377f3e15054476920b', '3ccf613441a546c9a355', '1', '京东金条（蒲）', '', '', '-2528.99', '2', '0', null, '2019-02-01 09:22:39', null, null);
-INSERT INTO `db_contacts_account` VALUES ('7a9a9f774f3540009185', '7069dde92b3c47aebf33', '1', '唐国辉', '', '', '60000', '2', '0', null, '2019-02-01 10:32:58', null, null);
+INSERT INTO `db_contacts_account` VALUES ('59a97c012052470d9c9d', '6c9ccc681599478c9d45', '0', '中信银行信用卡（蒲）', '中信银行', '', '-24071.38', '2', '0', null, '2019-02-01 10:17:52', null, null);
+INSERT INTO `db_contacts_account` VALUES ('77377f3e15054476920b', '3ccf613441a546c9a355', '0', '京东金条（蒲）', '', '', '-2528.99', '2', '0', null, '2019-02-01 09:22:39', null, null);
+INSERT INTO `db_contacts_account` VALUES ('7a9a9f774f3540009185', '7069dde92b3c47aebf33', '1', '唐国辉', '', '', '60000', '2', '0', null, '2019-02-01 10:32:58', '', '2019-02-26 14:05:23');
 INSERT INTO `db_contacts_account` VALUES ('7bff2309924d4901b04f', '2c18b356a06645479aec', '0', '招商银行储蓄卡（蒲）', '中国招商银行', '', '2686.44', '2', '0', null, '2019-01-31 16:50:19', '', '2019-02-13 17:07:49');
 INSERT INTO `db_contacts_account` VALUES ('9d6bfa4cbb8144feb7a0', '97691135bad4461a8d20', '1', '房东', '', '', '1500', '1', '0', null, '2019-02-01 10:46:31', null, null);
 INSERT INTO `db_contacts_account` VALUES ('ab6eb76596b445e8945e', '2c18b356a06645479aec', '0', '现金（蒲）', '', '', '15.5', '1', '0', null, '2019-01-31 15:15:48', '', '2019-02-15 17:15:05');
 INSERT INTO `db_contacts_account` VALUES ('c792e443655746ae9092', '1052f38dcbfb482e877c', '1', '罗洪春', '', '', '3449.82', '3', '0', null, '2019-02-01 10:35:01', null, null);
-INSERT INTO `db_contacts_account` VALUES ('d396ccb5b98348539589', '6c9ccc681599478c9d45', '1', '交通银行信用卡（蒲）', '交通银行', '', '-9018.19', '3', '0', null, '2019-02-01 10:20:44', null, null);
+INSERT INTO `db_contacts_account` VALUES ('d396ccb5b98348539589', '6c9ccc681599478c9d45', '0', '交通银行信用卡（蒲）', '交通银行', '', '-9018.19', '3', '0', null, '2019-02-01 10:20:44', null, null);
 INSERT INTO `db_contacts_account` VALUES ('da2a75ada2ba47d5869e', '2c18b356a06645479aec', '0', '微信余额（蒲）', '', '', '176.0', '3', '0', null, '2019-02-01 09:17:05', '', '2019-02-13 14:20:57');
-INSERT INTO `db_contacts_account` VALUES ('e090b22cc2674c81b22b', '6c9ccc681599478c9d45', '1', '招商银行信用卡（蒲）', '招商银行', '', '-65287.99', '4', '0', null, '2019-02-01 10:31:48', null, null);
+INSERT INTO `db_contacts_account` VALUES ('e090b22cc2674c81b22b', '6c9ccc681599478c9d45', '0', '招商银行信用卡（蒲）', '招商银行', '', '-65287.99', '4', '0', null, '2019-02-01 10:31:48', null, null);
 INSERT INTO `db_contacts_account` VALUES ('e88966f96b4140399120', '3a8acff20b2f411ca7a3', '1', '李林华（二孃）', '', '', '0', '2', '0', null, '2019-02-15 09:25:15', null, null);
-INSERT INTO `db_contacts_account` VALUES ('f497490396f043388c96', '6c9ccc681599478c9d45', '1', '支付宝花呗（蒲）', '', '', '-154.85', '1', '0', null, '2019-02-01 09:50:30', '', '2019-02-15 17:15:05');
-INSERT INTO `db_contacts_account` VALUES ('f56d7922273d4aa5bf20', '2c18b356a06645479aec', '0', '微信余额（唐）', '', '', '631.0', '5', '0', null, '2019-02-15 09:24:25', '', '2019-02-23 17:38:18');
+INSERT INTO `db_contacts_account` VALUES ('f497490396f043388c96', '6c9ccc681599478c9d45', '0', '支付宝花呗（蒲）', '', '', '-154.85', '1', '0', null, '2019-02-01 09:50:30', '', '2019-02-15 17:15:05');
+INSERT INTO `db_contacts_account` VALUES ('f56d7922273d4aa5bf20', '2c18b356a06645479aec', '0', '微信余额（唐）', '', '', '401.0', '5', '0', null, '2019-02-15 09:24:25', '', '2019-02-26 16:52:48');
 
 -- ----------------------------
 -- Table structure for db_kind
@@ -234,31 +236,3 @@ INSERT INTO `db_kind` VALUES ('4wvbwptevrnwq9m2qd7e', '账户管理', '2', '3', 
 INSERT INTO `db_kind` VALUES ('ils5hnlfbysciwppvvpk', '支出分类管理', '1', '1', '0', null, null, null, null);
 INSERT INTO `db_kind` VALUES ('wvrr4ax8uimvmtlo0p50', '成员管理', '3', '4', '0', null, null, null, null);
 INSERT INTO `db_kind` VALUES ('wvrr4ax8uimvmtlo0p5p', '收入分类管理', '1', '2', '0', null, null, null, null);
-
--- ----------------------------
--- Table structure for db_member
--- ----------------------------
-DROP TABLE IF EXISTS `db_member`;
-CREATE TABLE `db_member` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `balance` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `updateTime` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- ----------------------------
--- Records of db_member
--- ----------------------------
-INSERT INTO `db_member` VALUES ('32d03305f76842debe3f', '08d7420d4ef949f4b929', '蒲艳梅', '-10000', '1', '0', null, '2019-01-31 15:17:03', null, null);
-INSERT INTO `db_member` VALUES ('343c4ea74f4f4fc0b00a', '0cf95580345647dbb3c7', '唐建梅（二嬢）', '0', '3', '0', null, '2019-02-22 20:15:16', null, null);
-INSERT INTO `db_member` VALUES ('7a9a9f774f3540009185', '08d7420d4ef949f4b929', '唐国辉', '60000', '2', '0', null, '2019-02-01 10:32:58', null, null);
-INSERT INTO `db_member` VALUES ('9d6bfa4cbb8144feb7a0', '0cf95580345647dbb3c7', '房东', '1500', '1', '0', null, '2019-02-01 10:46:31', null, null);
-INSERT INTO `db_member` VALUES ('c792e443655746ae9092', '08d7420d4ef949f4b929', '罗洪春', '3449.82', '3', '0', null, '2019-02-01 10:35:01', null, null);
-INSERT INTO `db_member` VALUES ('e88966f96b4140399120', '0cf95580345647dbb3c7', '李林华（二孃）', '0', '2', '0', null, '2019-02-15 09:25:15', null, null);
