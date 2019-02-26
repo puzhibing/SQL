@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 127.0.0.1
-Source Server Version : 50637
+Source Server         : localhost
+Source Server Version : 80013
 Source Host           : localhost:3306
 Source Database       : familymanager
 
 Target Server Type    : MYSQL
-Target Server Version : 50637
+Target Server Version : 80013
 File Encoding         : 65001
 
-Date: 2019-02-26 18:03:24
+Date: 2019-02-27 00:41:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -23,7 +23,7 @@ CREATE TABLE `db_business_order` (
   `id` varchar(50) NOT NULL,
   `documentDate` datetime DEFAULT NULL,
   `documentNumber` varchar(50) DEFAULT NULL,
-  `documentType` varchar(1) DEFAULT NULL,
+  `documentType` varchar(2) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `businessType` varchar(2) DEFAULT NULL,
   `income` varchar(50) DEFAULT NULL,
   `expenditure` varchar(50) DEFAULT NULL,
@@ -87,14 +87,14 @@ INSERT INTO `db_business_order` VALUES ('ff78770cd9f44637aadb', '2018-12-31 10:4
 -- ----------------------------
 DROP TABLE IF EXISTS `db_classification`;
 CREATE TABLE `db_classification` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `kind` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kind` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -102,8 +102,8 @@ CREATE TABLE `db_classification` (
 -- ----------------------------
 -- Records of db_classification
 -- ----------------------------
-INSERT INTO `db_classification` VALUES ('08d7420d4ef949f4b929', '普通借款', '4wvbwptevrnwq9m2qd7e', '3', '0', '', '2019-01-26 23:02:51', null, null);
-INSERT INTO `db_classification` VALUES ('0cf95580345647dbb3c7', '其它分类', '4wvbwptevrnwq9m2qd7e', '5', '0', '', '2019-02-01 10:45:48', null, null);
+INSERT INTO `db_classification` VALUES ('08d7420d4ef949f4b929', '普通借款', '4wvbwptevrnwq9m2qd7e', '3', '-1', '', '2019-01-26 23:02:51', null, null);
+INSERT INTO `db_classification` VALUES ('0cf95580345647dbb3c7', '其它分类', '4wvbwptevrnwq9m2qd7e', '5', '-1', '', '2019-02-01 10:45:48', null, null);
 INSERT INTO `db_classification` VALUES ('1052f38dcbfb482e877c', '同事', 'wvrr4ax8uimvmtlo0p50', '4', '0', '', '2019-02-24 00:11:11', null, null);
 INSERT INTO `db_classification` VALUES ('22f3e35708eb4c9bb20e', '人情往来', 'ils5hnlfbysciwppvvpk', '8', '0', '', '2019-01-26 23:07:07', null, null);
 INSERT INTO `db_classification` VALUES ('2647dee3e3fb464cb056', '衣服饰品', 'ils5hnlfbysciwppvvpk', '1', '0', '', '2019-01-26 23:05:40', null, null);
@@ -135,14 +135,14 @@ INSERT INTO `db_classification` VALUES ('f0a1e7c490c64f4a9ee2', '学习进修', 
 -- ----------------------------
 DROP TABLE IF EXISTS `db_classification_value`;
 CREATE TABLE `db_classification_value` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `classification` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -150,42 +150,76 @@ CREATE TABLE `db_classification_value` (
 -- ----------------------------
 -- Records of db_classification_value
 -- ----------------------------
+INSERT INTO `db_classification_value` VALUES ('09d1dfe53072487b9fed', '2647dee3e3fb464cb056', '护肤品', '5', '0', '', '2019-02-27 00:17:51', '', '2019-02-27 00:18:43');
+INSERT INTO `db_classification_value` VALUES ('0d62cab1ecb7474ca405', '4b0315a18006436b89a7', '娱乐', '4', '0', '', '2019-02-27 00:15:52', '', '2019-02-27 00:22:29');
+INSERT INTO `db_classification_value` VALUES ('1783be5168a649a6806f', '4b0315a18006436b89a7', '休闲', '3', '0', '', '2019-02-27 00:15:42', '', '2019-02-27 00:22:25');
+INSERT INTO `db_classification_value` VALUES ('192538daa57040079b37', '2647dee3e3fb464cb056', '其它', '7', '0', '', '2019-02-27 00:19:18', '', '2019-02-27 00:19:28');
 INSERT INTO `db_classification_value` VALUES ('1d3d3a4df23f48e48480', 'a56d1fbca3da4d2b9b26', '添加历史数据', '1', '0', '', '2019-02-12 14:27:55', null, null);
 INSERT INTO `db_classification_value` VALUES ('2141cb43d7c04737af8d', 'b591d0830ee34565af1e', '维修费', '6', '0', '', '2019-02-13 14:25:10', null, null);
+INSERT INTO `db_classification_value` VALUES ('22d08892be5142ce85ae', 'bc79fb479cea4fdd8520', '车辆保养', '6', '-1', '', '2019-02-27 00:03:35', '', '2019-02-27 00:03:54');
 INSERT INTO `db_classification_value` VALUES ('309f3db68ac04c519475', 'b591d0830ee34565af1e', '电费', '4', '0', '', '2019-02-13 14:24:31', null, null);
+INSERT INTO `db_classification_value` VALUES ('3348ffe80de6416db542', '56d399ca295849ad8eca', '其它', '7', '0', '', '2019-02-27 00:13:46', '', '2019-02-27 00:22:09');
 INSERT INTO `db_classification_value` VALUES ('3e368fc6667a4d0cbad8', 'd3c07bd7e04047aa9040', '工资奖金', '2', '0', '', '2019-01-26 23:16:04', null, null);
+INSERT INTO `db_classification_value` VALUES ('40aa5a5f5a7543438b2c', '56d399ca295849ad8eca', '购买设备', '4', '0', '', '2019-02-27 00:12:21', '', '2019-02-27 00:20:57');
+INSERT INTO `db_classification_value` VALUES ('44b5a2d49d3b467ea257', '56d399ca295849ad8eca', '购买手机', '3', '0', '', '2019-02-27 00:07:19', '', '2019-02-27 00:12:08');
+INSERT INTO `db_classification_value` VALUES ('4678cb3d993b4b668411', 'bc79fb479cea4fdd8520', '车辆燃油', '7', '0', '', '2019-02-27 00:05:05', null, null);
 INSERT INTO `db_classification_value` VALUES ('55c9cba712ee4676bb31', 'b591d0830ee34565af1e', '日用家纺', '7', '0', '', '2019-02-26 16:51:19', '', '2019-02-26 16:51:33');
 INSERT INTO `db_classification_value` VALUES ('55e56245d55d46f09305', 'd3c07bd7e04047aa9040', '公司福利', '5', '0', '', '2019-01-26 23:16:50', null, null);
+INSERT INTO `db_classification_value` VALUES ('5691956ba3b747e2bc12', 'f0a1e7c490c64f4a9ee2', '参加培训', '2', '0', '', '2019-02-27 00:23:37', null, null);
+INSERT INTO `db_classification_value` VALUES ('56e9980e6b9c4da28518', 'bc79fb479cea4fdd8520', '其它', '8', '0', '', '2019-02-27 00:06:00', '', '2019-02-27 00:20:21');
+INSERT INTO `db_classification_value` VALUES ('5b55f02bee2749dfad51', 'bc79fb479cea4fdd8520', '修车', '2', '0', '', '2019-02-27 00:02:34', '', '2019-02-27 00:19:57');
+INSERT INTO `db_classification_value` VALUES ('5fd7ff646f9649f1a357', 'bc79fb479cea4fdd8520', '乘车', '1', '0', '', '2019-02-27 00:01:52', '', '2019-02-27 00:19:54');
+INSERT INTO `db_classification_value` VALUES ('652d320d3b6b4849ae57', '56d399ca295849ad8eca', '维修设备', '5', '0', '', '2019-02-27 00:21:26', null, null);
 INSERT INTO `db_classification_value` VALUES ('71bfaf34b290471286b6', 'd3c07bd7e04047aa9040', '加班收入', '3', '0', '', '2019-01-26 23:16:18', null, null);
+INSERT INTO `db_classification_value` VALUES ('76511d21917445f88640', '4b0315a18006436b89a7', '旅游', '1', '0', '', '2019-02-27 00:14:09', '', '2019-02-27 00:22:17');
+INSERT INTO `db_classification_value` VALUES ('7b2f9b7983b0494cacb8', '4a0a77d7743242da94b3', '烟酒', '2', '0', '', '2019-02-27 00:00:32', '', '2019-02-27 00:00:44');
+INSERT INTO `db_classification_value` VALUES ('800a69417b2747519157', '56d399ca295849ad8eca', '网费充值', '2', '0', '', '2019-02-27 00:06:43', '', '2019-02-27 00:11:49');
 INSERT INTO `db_classification_value` VALUES ('84e4f28994ae4caa8251', 'b591d0830ee34565af1e', '房租', '1', '0', '', '2019-02-13 14:23:32', null, null);
+INSERT INTO `db_classification_value` VALUES ('87081c1260e94b078e11', '2647dee3e3fb464cb056', '饰品', '2', '0', '', '2019-02-26 23:58:54', '', '2019-02-27 00:18:29');
+INSERT INTO `db_classification_value` VALUES ('8799e1e07f7940c8977a', 'f0a1e7c490c64f4a9ee2', '购买书籍', '1', '0', '', '2019-02-27 00:22:51', null, null);
+INSERT INTO `db_classification_value` VALUES ('888cff99cc1246589bb9', '56d399ca295849ad8eca', '购买电脑', '6', '0', '', '2019-02-27 00:21:54', null, null);
 INSERT INTO `db_classification_value` VALUES ('8d9b1858b4a44d6b9b23', 'a56d1fbca3da4d2b9b26', '照片拍摄', '2', '0', '', '2019-02-23 17:37:23', '', '2019-02-26 13:23:39');
 INSERT INTO `db_classification_value` VALUES ('90e40aa63b9b4fbdb235', 'b591d0830ee34565af1e', '物管费', '2', '0', '', '2019-02-13 14:23:53', null, null);
 INSERT INTO `db_classification_value` VALUES ('92232c69f6f7447e8c02', '639b61a6783a4f1eb419', '正常退款', '1', '0', '', '2019-02-01 15:01:29', null, null);
-INSERT INTO `db_classification_value` VALUES ('c36e0925a8914c58bdf0', '4a0a77d7743242da94b3', '餐饮支出', '1', '0', '', '2019-02-01 16:21:10', null, null);
+INSERT INTO `db_classification_value` VALUES ('931c19dc7b9047e6a2c4', '4b0315a18006436b89a7', '聚会', '2', '0', '', '2019-02-27 00:14:53', '', '2019-02-27 00:22:21');
+INSERT INTO `db_classification_value` VALUES ('a9077752306646e7b078', 'bc79fb479cea4fdd8520', '停车', '6', '0', '', '2019-02-27 00:04:26', '', '2019-02-27 00:20:04');
+INSERT INTO `db_classification_value` VALUES ('abe5742461b548f58fe4', '4a0a77d7743242da94b3', '零食', '3', '0', '', '2019-02-27 00:01:12', '', '2019-02-27 00:01:28');
+INSERT INTO `db_classification_value` VALUES ('aedb3a56ef64453ebe82', '56d399ca295849ad8eca', '话费充值', '1', '0', '', '2019-02-27 00:06:23', '', '2019-02-27 00:08:19');
+INSERT INTO `db_classification_value` VALUES ('b1a59439ba5345059f70', '4a0a77d7743242da94b3', '其它 ', '4', '0', '', '2019-02-27 00:20:36', null, null);
+INSERT INTO `db_classification_value` VALUES ('b60dfd82fef541e28001', '4b0315a18006436b89a7', '其它', '5', '0', '', '2019-02-27 00:16:02', '', '2019-02-27 00:22:37');
+INSERT INTO `db_classification_value` VALUES ('b749acf56ef1421c888d', '2647dee3e3fb464cb056', '鞋帽', '3', '0', '', '2019-02-26 23:59:08', '', '2019-02-27 00:18:34');
+INSERT INTO `db_classification_value` VALUES ('bf27664d2c9443dab887', 'bc79fb479cea4fdd8520', '购买车辆', '4', '0', '', '2019-02-27 00:03:07', null, null);
+INSERT INTO `db_classification_value` VALUES ('c36e0925a8914c58bdf0', '4a0a77d7743242da94b3', '餐饮', '1', '0', '', '2019-02-01 16:21:10', '', '2019-02-27 00:00:51');
+INSERT INTO `db_classification_value` VALUES ('c58d06b2a6354825a47c', 'bc79fb479cea4fdd8520', '车辆保险', '5', '0', '', '2019-02-27 00:03:24', null, null);
 INSERT INTO `db_classification_value` VALUES ('d5c1e7be05de4df783b4', 'b591d0830ee34565af1e', '水费', '3', '0', '', '2019-02-13 14:24:14', null, null);
+INSERT INTO `db_classification_value` VALUES ('d9b7cb9186a34118a648', 'b591d0830ee34565af1e', '其它', '8', '0', '', '2019-02-27 00:19:47', null, null);
+INSERT INTO `db_classification_value` VALUES ('dc5c800745404d01bd8e', '2647dee3e3fb464cb056', '服装', '1', '0', '', '2019-02-26 23:58:38', '', '2019-02-27 00:18:25');
 INSERT INTO `db_classification_value` VALUES ('dd7a1197c1d548899eeb', '639b61a6783a4f1eb419', '添加历史数据', '2', '0', '', '2019-02-12 14:28:17', null, null);
 INSERT INTO `db_classification_value` VALUES ('e06fda09b9dd4508a0c3', '639b61a6783a4f1eb419', '人情往来', '3', '0', '', '2019-02-15 09:36:24', '', '2019-02-26 13:24:48');
+INSERT INTO `db_classification_value` VALUES ('e71bf81e0f4f4c9f9079', 'bc79fb479cea4fdd8520', '车辆保养', '3', '0', '', '2019-02-27 00:02:52', '', '2019-02-27 00:04:04');
 INSERT INTO `db_classification_value` VALUES ('ecc81f7794f64078a3fb', 'd3c07bd7e04047aa9040', '兼职收入', '4', '0', '', '2019-01-26 23:16:29', null, null);
+INSERT INTO `db_classification_value` VALUES ('f08eeceab47c44adbfae', '2647dee3e3fb464cb056', '箱包', '4', '0', '', '2019-02-26 23:59:46', '', '2019-02-27 00:18:38');
 INSERT INTO `db_classification_value` VALUES ('f685de082fbf491cbca2', 'd3c07bd7e04047aa9040', '工资收入', '1', '0', '', '2019-01-26 23:15:50', null, null);
 INSERT INTO `db_classification_value` VALUES ('f6a747778e474313a0ba', 'b591d0830ee34565af1e', '燃气费', '5', '0', '', '2019-02-13 14:24:55', null, null);
+INSERT INTO `db_classification_value` VALUES ('fb42e2ca7ee343328da7', '2647dee3e3fb464cb056', '化妆品', '6', '0', '', '2019-02-27 00:18:52', null, null);
 
 -- ----------------------------
 -- Table structure for db_contacts_account
 -- ----------------------------
 DROP TABLE IF EXISTS `db_contacts_account`;
 CREATE TABLE `db_contacts_account` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(1) COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `agency` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `accountNumber` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `balance` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `classification` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `agency` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `accountNumber` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `balance` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -217,14 +251,14 @@ INSERT INTO `db_contacts_account` VALUES ('f56d7922273d4aa5bf20', '2c18b356a0664
 -- ----------------------------
 DROP TABLE IF EXISTS `db_kind`;
 CREATE TABLE `db_kind` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
