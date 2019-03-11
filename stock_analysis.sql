@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80013
 File Encoding         : 65001
 
-Date: 2019-02-21 22:25:39
+Date: 2019-03-11 21:24:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -7536,24 +7536,6 @@ CREATE TABLE `t_industry` (
 -- ----------------------------
 -- Records of t_industry
 -- ----------------------------
-INSERT INTO `t_industry` VALUES ('19535f62e1cf4407b61990e44797b379', '00001', '采掘业', '0', 'root', '2018-12-08 17:13:26', null, null);
-INSERT INTO `t_industry` VALUES ('196f28deb63b47e8affadf77d18f1e4d', '00014', '信息传输、软件和信息技术服务业', '0', 'root', '2018-12-08 17:20:04', null, null);
-INSERT INTO `t_industry` VALUES ('1af4e737ef514896b0d48844a8a2d4b6', '00012', '卫生和社会工作', '0', 'root', '2018-12-08 17:19:42', null, null);
-INSERT INTO `t_industry` VALUES ('1edc53130aa64ce9a5cdfd00bd3937c1', '00003', '建筑业', '0', 'root', '2018-12-08 17:14:11', null, null);
-INSERT INTO `t_industry` VALUES ('2093c1e5f5b94ccd805cb904dc70e643', '00005', '电力、热力、燃气及水生产和供应业', '0', 'root', '2018-12-08 17:18:05', null, null);
-INSERT INTO `t_industry` VALUES ('26108583815b46b9ae81062cef81ef2e', '00006', '交通运输、仓储和邮政业', '0', 'root', '2018-12-08 17:18:34', null, null);
-INSERT INTO `t_industry` VALUES ('28008a18c6144781ad6bf834fd8b7f44', '00015', '制造业', '0', 'root', '2018-12-08 17:20:23', null, null);
-INSERT INTO `t_industry` VALUES ('4107ac34c4cb400e90ef93eb20787aac', '00009', '农 林 牧 渔业', '0', 'root', '2018-12-08 17:19:07', null, null);
-INSERT INTO `t_industry` VALUES ('44d00e53452547aa9172d14a13bb1c82', '00002', '金融业', '0', 'root', '2018-12-06 20:18:19', 'root', '2018-12-08 17:13:41');
-INSERT INTO `t_industry` VALUES ('4d48aacff64f4edc93184ba6dd542d1a', '00013', '文化、体育和娱乐业', '0', 'root', '2018-12-08 17:19:53', null, null);
-INSERT INTO `t_industry` VALUES ('5bb2398f16ee4bca91f97511ae7d4b22', '00010', '批发零售业', '0', 'root', '2018-12-08 17:19:18', null, null);
-INSERT INTO `t_industry` VALUES ('5dd753fc17fe4c6cba5a8fa60d2408ea', '00011', '水利、环境和公共设施管理业', '0', 'root', '2018-12-08 17:19:31', null, null);
-INSERT INTO `t_industry` VALUES ('756dbc9ae2da46e583ef324e37dafada', '00004', '房地产业', '0', 'root', '2018-12-08 17:15:06', null, null);
-INSERT INTO `t_industry` VALUES ('7ac3e1b12cba4097abee56af7fb5cb17', '00017', '综合', '0', 'root', '2018-12-08 17:20:44', null, null);
-INSERT INTO `t_industry` VALUES ('845536325cde4cc0890a50c4e499e24d', '00007', '教育', '0', 'root', '2018-12-08 17:18:44', null, null);
-INSERT INTO `t_industry` VALUES ('c9da7e5b73604575bf83e67323184954', '00016', '住宿和餐饮业', '0', 'root', '2018-12-08 17:20:34', null, null);
-INSERT INTO `t_industry` VALUES ('d28a1363374141b8a9076f1793fc9015', '00008', '科学研究和技术服务业', '0', 'root', '2018-12-08 17:18:56', null, null);
-INSERT INTO `t_industry` VALUES ('fe72e566fa054564b7863d04de6d7e3f', '00018', '租赁和商务服务业', '0', 'root', '2018-12-08 17:20:55', null, null);
 
 -- ----------------------------
 -- Table structure for t_noncurrentassets

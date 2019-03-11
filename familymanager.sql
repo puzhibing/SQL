@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 127.0.0.1
-Source Server Version : 50637
+Source Server         : localhost
+Source Server Version : 80013
 Source Host           : localhost:3306
 Source Database       : familymanager
 
 Target Server Type    : MYSQL
-Target Server Version : 50637
+Target Server Version : 80013
 File Encoding         : 65001
 
-Date: 2019-03-08 17:11:41
+Date: 2019-03-11 21:24:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -122,15 +122,15 @@ INSERT INTO `db_business_order` VALUES ('ff78770cd9f44637aadb', '2018-12-31 10:4
 -- ----------------------------
 DROP TABLE IF EXISTS `db_classification`;
 CREATE TABLE `db_classification` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `kind` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `notdel` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `kind` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `notdel` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -170,15 +170,15 @@ INSERT INTO `db_classification` VALUES ('ff06063870d54fa2b7f0', '工作相关', 
 -- ----------------------------
 DROP TABLE IF EXISTS `db_classification_value`;
 CREATE TABLE `db_classification_value` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `notdel` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `classification` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `notdel` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -249,19 +249,19 @@ INSERT INTO `db_classification_value` VALUES ('fb42e2ca7ee343328da7', '2647dee3e
 -- ----------------------------
 DROP TABLE IF EXISTS `db_contacts_account`;
 CREATE TABLE `db_contacts_account` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(1) COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `agency` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `accountNumber` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `balance` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `notdel` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `classification` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `agency` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `accountNumber` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `balance` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `notdel` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -303,14 +303,14 @@ INSERT INTO `db_contacts_account` VALUES ('f56d7922273d4aa5bf20', '2c18b356a0664
 -- ----------------------------
 DROP TABLE IF EXISTS `db_kind`;
 CREATE TABLE `db_kind` (
-  `id` varchar(50) COLLATE utf8_bin NOT NULL,
-  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
