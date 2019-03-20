@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-03-18 17:32:43
+Date: 2019-03-20 18:02:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -1586,7 +1586,7 @@ INSERT INTO `t_company` VALUES ('67d8dbc5538842da88de1db6cd929f56', '内蒙古�
 INSERT INTO `t_company` VALUES ('6814a3aceedf4f2f8f2b18c07062b38f', '山东华泰纸业股份有限公司', '华泰股份', 'SHANDONG HUATAI PAPER INDUSTRY SHAREHOLDING CO.,LTD', 'SDHT', null, null, 'www.huataipaper.com', '0', 'root', '2018-11-25 16:13:00', null, null);
 INSERT INTO `t_company` VALUES ('682292370250452c80c31a9a67266300', '安徽德力日用玻璃股份有限公司', '德力股份', 'Anhui Deli Household Glass Co.,Ltd.', '', '2011-04-12', null, 'www.deliglass.com', '0', 'root', '2018-11-25 22:08:56', null, null);
 INSERT INTO `t_company` VALUES ('68352faf369d4df79373ef55e7df21b0', '深圳市证通电子股份有限公司', '证通电子', 'SZZT Electronics  CO., LTD.', '', '2007-12-18', null, 'www.szzt.com.cn', '0', 'root', '2018-11-25 22:06:37', null, null);
-INSERT INTO `t_company` VALUES ('683749ad7d334d2a83f6375baed45421', '四川路桥建设集团股份有限公司', '四川路桥', 'SICHUAN ROAD & BRIDGE CO.,LTD', 'SRBC', '2018-12-08', '00003', 'www.scrbc.com.cn', '0', 'root', '2018-11-25 16:11:12', 'root', '2018-12-08 19:42:27');
+INSERT INTO `t_company` VALUES ('683749ad7d334d2a83f6375baed45421', '四川路桥建设集团股份有限公司', '四川路桥', 'SICHUAN ROAD & BRIDGE CO.,LTD', 'SRBC', '2019-03-20', 'c87d09186e304b82a11009d6b08b6e47', 'www.scrbc.com.cn', '0', 'root', '2018-11-25 16:11:12', 'root', '2019-03-20 14:32:17');
 INSERT INTO `t_company` VALUES ('68399189dba0419c9d11e17bde17d752', '江苏安靠智能输电工程科技股份有限公司', '安靠智电', 'Jiangsu Ankura Smart Transmission Engineering Technology Co.,Ltd.', '', '2017-02-28', null, 'www.ankura.com.cn', '0', 'root', '2018-11-25 22:14:41', null, null);
 INSERT INTO `t_company` VALUES ('683f24c3c0e54181a75bd655111651c5', '天津环球磁卡股份有限公司', '天津磁卡', 'TIAN JIN GLOBAL MAGNETIC CARD CO.,LTD', 'GMCC', null, null, 'HTTP://www.gmcc.com.cn', '0', 'root', '2018-11-25 16:15:27', null, null);
 INSERT INTO `t_company` VALUES ('68811e657f654bd4aa9c0f80ed8ff0f5', '成都硅宝科技股份有限公司', '硅宝科技', 'Chengdu Guibao Science & Technology Co.,Ltd', '', '2009-10-30', null, 'www.cnguibao.com', '0', 'root', '2018-11-25 22:11:01', null, null);
@@ -7523,6 +7523,7 @@ INSERT INTO `t_currentliabilities` VALUES ('140d357c6bfe40c7832f60c0671c4b51', '
 DROP TABLE IF EXISTS `t_industry`;
 CREATE TABLE `t_industry` (
   `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `parentId` varchar(50) DEFAULT NULL,
   `code` varchar(20) DEFAULT NULL,
   `name` varchar(20) DEFAULT NULL,
   `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
@@ -7536,6 +7537,123 @@ CREATE TABLE `t_industry` (
 -- ----------------------------
 -- Records of t_industry
 -- ----------------------------
+INSERT INTO `t_industry` VALUES ('01b47a6d0b8c4b7faafd4281526b218e', 'd5a104838d7f432993a7cb4eba5e1913', '23', '印刷和记录媒介复制业', '0', 'root', '2019-03-19 15:18:04', null, null);
+INSERT INTO `t_industry` VALUES ('02e05d20e451441295be935912011d69', 'd5a104838d7f432993a7cb4eba5e1913', '41', '其他制造业', '0', 'root', '2019-03-19 15:22:04', null, null);
+INSERT INTO `t_industry` VALUES ('058f3f048af24fa2885a15136d6bcb44', '85ae665feabd42c0a9fefeed0fab47a6', '97', '国际组织', '0', 'root', '2019-03-19 15:36:52', null, null);
+INSERT INTO `t_industry` VALUES ('068a4b105eb743fbb82cfe6e5f514152', '8f1bb3a4908e4b3493ed1684386d4fd6', '93', '人民政协、民主党派', '0', 'root', '2019-03-19 15:36:17', null, null);
+INSERT INTO `t_industry` VALUES ('073dd07aa4dc4d509326537029eed0f5', 'e4600605a44445baa7447ace0ed6d6f4', '60', '邮政业', '0', 'root', '2019-03-19 15:24:53', null, null);
+INSERT INTO `t_industry` VALUES ('080e709071104806ae117c4965e5808f', 'd5a104838d7f432993a7cb4eba5e1913', '22', '造纸和纸制品业', '0', 'root', '2019-03-19 15:17:56', null, null);
+INSERT INTO `t_industry` VALUES ('0886bf5c4b514108856abc88a21c3376', 'dedaf0446a08437782c96fbd375b5490', '04', '渔业', '0', 'root', '2019-03-19 14:58:53', null, null);
+INSERT INTO `t_industry` VALUES ('090def74c6a2405ab10ba86d2e254458', 'e0a6a229cc92464093f96b01ca6e0592', '69', '其他金融业', '0', 'root', '2019-03-19 15:29:21', null, null);
+INSERT INTO `t_industry` VALUES ('0bb7aada2672481ba934a10b7de6aebc', '8f1bb3a4908e4b3493ed1684386d4fd6', '92', '国家机构', '0', 'root', '2019-03-19 15:36:09', null, null);
+INSERT INTO `t_industry` VALUES ('0c5843654ba4464e9894e557a25cbd00', 'd5a104838d7f432993a7cb4eba5e1913', '35', '专用设备制造业', '0', 'root', '2019-03-19 15:19:52', null, null);
+INSERT INTO `t_industry` VALUES ('0c59879f89884651811933b1bcd7da9c', '8f1bb3a4908e4b3493ed1684386d4fd6', '94', '社会保障', '0', 'root', '2019-03-19 15:36:25', null, null);
+INSERT INTO `t_industry` VALUES ('0c9d8ef526d2498997be702e895be3f1', '0', 'I', '信息传输、软件和信息技术服务业', '0', 'root', '2019-03-19 15:53:53', null, null);
+INSERT INTO `t_industry` VALUES ('0e1aa607721b49abab7cac526c20249c', 'd5a104838d7f432993a7cb4eba5e1913', '20', '木材加工和木、竹、藤、棕、草制品业', '0', 'root', '2019-03-19 15:17:37', null, null);
+INSERT INTO `t_industry` VALUES ('0e424156a8294b1595771fa33805a6a4', '0', 'K', '房地产业', '0', 'root', '2019-03-19 15:54:08', null, null);
+INSERT INTO `t_industry` VALUES ('17648413e6f44a4fbd851bf7157e83ac', '4f160f577c4241c88333cbeb401b5cdf', '90', '娱乐业', '0', 'root', '2019-03-19 15:35:51', null, null);
+INSERT INTO `t_industry` VALUES ('1807b3b6c99e4f29935363645f49f80a', 'e4600605a44445baa7447ace0ed6d6f4', '55', '水上运输业', '0', 'root', '2019-03-19 15:24:12', null, null);
+INSERT INTO `t_industry` VALUES ('1991f43f993e455c91f004b4a5bd0f94', 'd5a104838d7f432993a7cb4eba5e1913', '33', '金属制品业', '0', 'root', '2019-03-19 15:19:36', null, null);
+INSERT INTO `t_industry` VALUES ('1af60bcf774d4e8090cf29599072c5b4', 'dedaf0446a08437782c96fbd375b5490', '03', '畜牧业', '0', 'root', '2019-03-19 14:58:39', null, null);
+INSERT INTO `t_industry` VALUES ('1b5850a5f53449b49a36ff92e7c9e6b2', '474ac081c4c54a638e03511a7614f1b5', '11', '开采专业及辅助性活动', '0', 'root', '2019-03-19 15:03:16', null, null);
+INSERT INTO `t_industry` VALUES ('1b8d5c6155ce4e2f88a6ae32e1f99212', '474ac081c4c54a638e03511a7614f1b5', '08', '黑色金属矿采选业', '0', 'root', '2019-03-19 15:01:36', null, null);
+INSERT INTO `t_industry` VALUES ('1c98a44911a84591a5a4bd1a597f4b13', '0c9d8ef526d2498997be702e895be3f1', '64', '互联网和相关服务', '0', 'root', '2019-03-19 15:25:31', null, null);
+INSERT INTO `t_industry` VALUES ('2239fec6ae5f40ed83918b795652e301', 'd5a104838d7f432993a7cb4eba5e1913', '38', '电气机械和器材制造业', '0', 'root', '2019-03-19 15:20:22', null, null);
+INSERT INTO `t_industry` VALUES ('23e611d997114c8ba42f32806a01564e', 'd5a104838d7f432993a7cb4eba5e1913', '15', '酒、饮料和精制茶制造业', '0', 'root', '2019-03-19 15:06:15', null, null);
+INSERT INTO `t_industry` VALUES ('27b89429bc1d42c897aaff3654c1b70f', '0', 'H', '住宿和餐饮业', '0', 'root', '2019-03-19 15:53:44', null, null);
+INSERT INTO `t_industry` VALUES ('2842825cbb7e460c9754c785be55177d', '474ac081c4c54a638e03511a7614f1b5', '12', '其他开采业', '0', 'root', '2019-03-19 15:03:37', null, null);
+INSERT INTO `t_industry` VALUES ('2c12f69a510243b79262a1c3d49a769a', '0c9d8ef526d2498997be702e895be3f1', '65', '软件和信息技术服务业', '0', 'root', '2019-03-19 15:25:51', null, null);
+INSERT INTO `t_industry` VALUES ('2ceeeef7f7c54da5b2e034dd8b5b9521', 'e0a6a229cc92464093f96b01ca6e0592', '68', '保险业', '0', 'root', '2019-03-19 15:29:12', null, null);
+INSERT INTO `t_industry` VALUES ('2e1023426c2f431690568f1e681bea8c', 'e4600605a44445baa7447ace0ed6d6f4', '54', '道路运输业', '0', 'root', '2019-03-19 15:24:03', null, null);
+INSERT INTO `t_industry` VALUES ('343dc5d9747f417aa3b92ae96292be26', '27b89429bc1d42c897aaff3654c1b70f', '62', '餐饮业', '0', 'root', '2019-03-19 15:25:12', null, null);
+INSERT INTO `t_industry` VALUES ('35acf9aecfed483da5fb9f7d2376d32b', 'd5a104838d7f432993a7cb4eba5e1913', '40', '仪器仪表制造业', '0', 'root', '2019-03-19 15:21:55', null, null);
+INSERT INTO `t_industry` VALUES ('3758f9c94f8f46ea8f6d31fe9e9d292b', '8da939c180f74e0cb37490d5555750ac', '73', '研究和试验发展', '0', 'root', '2019-03-19 15:30:11', null, null);
+INSERT INTO `t_industry` VALUES ('38e59539f53b488582c9ec0692c19e76', '474ac081c4c54a638e03511a7614f1b5', '09', '有色金属矿采选业', '0', 'root', '2019-03-19 15:02:12', null, null);
+INSERT INTO `t_industry` VALUES ('3ca99586bf7244529eea4b82bc2330e2', '8da939c180f74e0cb37490d5555750ac', '75', '科技推广和应用服务业', '0', 'root', '2019-03-19 15:30:27', null, null);
+INSERT INTO `t_industry` VALUES ('3d150d4fc6054e8eadfc3a5a2b993938', 'e4600605a44445baa7447ace0ed6d6f4', '57', '管道运输业', '0', 'root', '2019-03-19 15:24:27', null, null);
+INSERT INTO `t_industry` VALUES ('43b1adc84a594473964b97886c779b05', 'f66566e7c819496ca0dbeccb31dba0a3', '78', '公共设施管理业', '0', 'root', '2019-03-19 15:30:51', null, null);
+INSERT INTO `t_industry` VALUES ('474ac081c4c54a638e03511a7614f1b5', '0', 'B', '采矿业', '0', 'root', '2019-03-19 15:52:55', null, null);
+INSERT INTO `t_industry` VALUES ('49eb53e2db444c4b810d7a2c82a80319', '0', 'O', '居民服务、修理和其他服务业', '0', 'root', '2019-03-19 15:54:41', null, null);
+INSERT INTO `t_industry` VALUES ('4a4fe00de0594e38ba655bf5bf25602e', 'dedaf0446a08437782c96fbd375b5490', '01', '农业', '0', 'root', '2019-03-19 14:58:00', null, null);
+INSERT INTO `t_industry` VALUES ('4d17f6516d7a40b49396fb8bf390da35', 'd5a104838d7f432993a7cb4eba5e1913', '28', '化学纤维制造业', '0', 'root', '2019-03-19 15:18:54', null, null);
+INSERT INTO `t_industry` VALUES ('4d555705ae7a45fe8a6b29c404494ec8', '4f160f577c4241c88333cbeb401b5cdf', '88', '文化艺术业', '0', 'root', '2019-03-19 15:34:00', null, null);
+INSERT INTO `t_industry` VALUES ('4f160f577c4241c88333cbeb401b5cdf', '0', 'R', '文化、体育和娱乐业', '0', 'root', '2019-03-19 15:55:04', null, null);
+INSERT INTO `t_industry` VALUES ('4ff5a161d71c4dbbbcc1ed637cde8fc5', '8f1bb3a4908e4b3493ed1684386d4fd6', '91', '中国共产党机关', '0', 'root', '2019-03-19 15:36:01', null, null);
+INSERT INTO `t_industry` VALUES ('50bf497464a14e0aba8d28f2dec7bc1a', '8f1bb3a4908e4b3493ed1684386d4fd6', '95', '群众团体、社会团体和其他成员组织', '0', 'root', '2019-03-19 15:36:33', null, null);
+INSERT INTO `t_industry` VALUES ('5743faa3d2cb49b09ff0f383f4e63913', '818ca455ca044f798471a7e0789b8e57', '72', '商务服务业', '0', 'root', '2019-03-19 15:29:50', null, null);
+INSERT INTO `t_industry` VALUES ('5bf2fa68ece344c782878759ce82678d', '7257d3d728634fc18ada969775010db1', '44', '电力、热力生产和供应业', '0', 'root', '2019-03-19 15:22:30', null, null);
+INSERT INTO `t_industry` VALUES ('5e74fdacb2b844d09d1c7711e67cfc1c', '0e424156a8294b1595771fa33805a6a4', '70', '房地产业', '0', 'root', '2019-03-19 15:29:33', null, null);
+INSERT INTO `t_industry` VALUES ('6030284f9bed4985b2baf9c1e2ca15d4', '4f160f577c4241c88333cbeb401b5cdf', '89', '体育', '0', 'root', '2019-03-19 15:35:43', null, null);
+INSERT INTO `t_industry` VALUES ('634b30faa5334784b74c7358421a4ba7', 'd5a104838d7f432993a7cb4eba5e1913', '25', '石油、煤炭及其他燃料加工业', '0', 'root', '2019-03-19 15:18:25', null, null);
+INSERT INTO `t_industry` VALUES ('65b9d4ffc5024bd1ade38fbc14138bf9', '7257d3d728634fc18ada969775010db1', '46', '水的生产和供应业', '0', 'root', '2019-03-19 15:22:49', null, null);
+INSERT INTO `t_industry` VALUES ('6624a467ff7448a1b655580228282e9c', 'c7a80bfb7fe24388aeec0e9a0eb27489', '85', '社会工作', '0', 'root', '2019-03-19 15:31:47', null, null);
+INSERT INTO `t_industry` VALUES ('69baab6678b54c2b8cb43366fea3e7fb', 'ac60fea064a54d0cad4fb2e6f9f201bd', '49', '建筑安装业', '0', 'root', '2019-03-19 15:23:18', null, null);
+INSERT INTO `t_industry` VALUES ('6b63858257cf4b938dbdee86285ff792', 'd5a104838d7f432993a7cb4eba5e1913', '36', '汽车制造业', '0', 'root', '2019-03-19 15:20:00', null, null);
+INSERT INTO `t_industry` VALUES ('70c2679a1bdd4b38b1fa0e34a48fc012', 'd5a104838d7f432993a7cb4eba5e1913', '43', '金属制品、机械和设备修理业', '0', 'root', '2019-03-19 15:22:21', null, null);
+INSERT INTO `t_industry` VALUES ('70f4fd49abb047a0a17a5f50733f392a', 'd5a104838d7f432993a7cb4eba5e1913', '26', '化学原料和化学制品制造业', '0', 'root', '2019-03-19 15:18:37', null, null);
+INSERT INTO `t_industry` VALUES ('7257d3d728634fc18ada969775010db1', '0', 'D', '电力、热力、燃气及水生产和供应业', '0', 'root', '2019-03-19 15:53:13', null, null);
+INSERT INTO `t_industry` VALUES ('753f7b76059d41cb87530ddbef5ce426', '49eb53e2db444c4b810d7a2c82a80319', '80', '居民服务业', '0', 'root', '2019-03-19 15:31:07', null, null);
+INSERT INTO `t_industry` VALUES ('78f2297e973d4fc29fd792198bf8d7dd', 'd5a104838d7f432993a7cb4eba5e1913', '14', '食品制造业', '0', 'root', '2019-03-19 15:05:21', null, null);
+INSERT INTO `t_industry` VALUES ('818ca455ca044f798471a7e0789b8e57', '0', 'L', '租赁和商务服务业', '0', 'root', '2019-03-19 15:54:18', null, null);
+INSERT INTO `t_industry` VALUES ('81e5f4362e5c434088d150f169cdf4b8', 'e4600605a44445baa7447ace0ed6d6f4', '59', '装卸搬运和仓储业', '0', 'root', '2019-03-19 15:24:44', null, null);
+INSERT INTO `t_industry` VALUES ('85976ca083ec410983a14b2baf82c2e2', 'd5a104838d7f432993a7cb4eba5e1913', '39', '计算机、通信和其他电子设备制造业', '0', 'root', '2019-03-19 15:21:46', null, null);
+INSERT INTO `t_industry` VALUES ('85ae665feabd42c0a9fefeed0fab47a6', '0', 'T', '国际组织', '0', 'root', '2019-03-19 15:55:23', null, null);
+INSERT INTO `t_industry` VALUES ('86bb14c34201487ea786e24169fa7c5c', '9c6b06fa28214848903da358df5e1f60', '52', '零售业', '0', 'root', '2019-03-19 15:23:46', null, null);
+INSERT INTO `t_industry` VALUES ('88757a5a02df4f7590f72a40c401b641', 'f66566e7c819496ca0dbeccb31dba0a3', '77', '生态保护和环境治理业', '0', 'root', '2019-03-19 15:30:43', null, null);
+INSERT INTO `t_industry` VALUES ('8a21140ad3374d1abcdd5494d80e5266', '474ac081c4c54a638e03511a7614f1b5', '06', '煤炭开采及洗选业', '0', 'root', '2019-03-19 15:00:32', null, null);
+INSERT INTO `t_industry` VALUES ('8da939c180f74e0cb37490d5555750ac', '0', 'M', '科学研究和技术服务业', '0', 'root', '2019-03-19 15:54:25', null, null);
+INSERT INTO `t_industry` VALUES ('8f1bb3a4908e4b3493ed1684386d4fd6', '0', 'S', '公共管理、社会保障和社会组织', '0', 'root', '2019-03-19 15:55:14', null, null);
+INSERT INTO `t_industry` VALUES ('8fde8780357446f3bdaf70336bf8cf50', 'd5a104838d7f432993a7cb4eba5e1913', '29', '橡胶和塑料制品业', '0', 'root', '2019-03-19 15:19:02', null, null);
+INSERT INTO `t_industry` VALUES ('914a585f16ce4a268aa9febb174e8910', 'dedaf0446a08437782c96fbd375b5490', '02', '林业', '0', 'root', '2019-03-19 14:58:25', null, null);
+INSERT INTO `t_industry` VALUES ('91c4674b9f714b04a55c5d6212b0262b', '8f1bb3a4908e4b3493ed1684386d4fd6', '96', '基层群众自治组织', '0', 'root', '2019-03-19 15:36:42', null, null);
+INSERT INTO `t_industry` VALUES ('966941c8702545e499c439aeff77467b', '27b89429bc1d42c897aaff3654c1b70f', '61', '住宿业', '0', 'root', '2019-03-19 15:25:02', null, null);
+INSERT INTO `t_industry` VALUES ('98d5db26debf4bd1b19dde80bb1ab7d7', 'd5a104838d7f432993a7cb4eba5e1913', '24', '文教、工美、体育和娱乐用品制造业', '0', 'root', '2019-03-19 15:18:17', null, null);
+INSERT INTO `t_industry` VALUES ('9a5946586ee54dac80852e677bf2ac78', 'd5a104838d7f432993a7cb4eba5e1913', '42', '废弃资源综合利用业', '0', 'root', '2019-03-19 15:22:12', null, null);
+INSERT INTO `t_industry` VALUES ('9c6b06fa28214848903da358df5e1f60', '0', 'F', '批发和零售业', '0', 'root', '2019-03-19 15:53:28', null, null);
+INSERT INTO `t_industry` VALUES ('9c741acf003b4e8a9759039a24baf29f', 'd5a104838d7f432993a7cb4eba5e1913', '19', '皮革、毛皮、羽毛及其制品和制鞋业', '0', 'root', '2019-03-19 15:14:19', null, null);
+INSERT INTO `t_industry` VALUES ('9caf82275edf49ed83bfa75d421b3c41', 'f66566e7c819496ca0dbeccb31dba0a3', '76', '水利管理业', '0', 'root', '2019-03-19 15:30:35', null, null);
+INSERT INTO `t_industry` VALUES ('9cfa97fb052245e4a7341173c72723b7', 'd5a104838d7f432993a7cb4eba5e1913', '13', '农副食品加工业', '0', 'root', '2019-03-19 15:05:00', null, null);
+INSERT INTO `t_industry` VALUES ('9f5107be06fd47ea8abda64c7f9ea3fd', '8da939c180f74e0cb37490d5555750ac', '74', '专业技术服务业', '0', 'root', '2019-03-19 15:30:19', null, null);
+INSERT INTO `t_industry` VALUES ('a1a9b1851ee543ee88398ade0d408380', 'dedaf0446a08437782c96fbd375b5490', '05', '农、林、牧、渔专业及辅助性活动', '0', 'root', '2019-03-19 14:59:54', null, null);
+INSERT INTO `t_industry` VALUES ('a4230a82a77c40bb94b36b967b9ae90c', 'e0a6a229cc92464093f96b01ca6e0592', '66', '货币金融服务', '0', 'root', '2019-03-19 15:26:00', null, null);
+INSERT INTO `t_industry` VALUES ('a622113a68da4ad9b72a6d1a053aefcb', 'd5a104838d7f432993a7cb4eba5e1913', '32', '有色金属冶炼和压延加工业', '0', 'root', '2019-03-19 15:19:29', null, null);
+INSERT INTO `t_industry` VALUES ('a6bbac2403824ac7952e42c0c71a5a3b', 'd5a104838d7f432993a7cb4eba5e1913', '31', '黑色金属冶炼和压延加工业', '0', 'root', '2019-03-19 15:19:19', null, null);
+INSERT INTO `t_industry` VALUES ('a8f1392dd37346309b6b676fc5736a74', '0c9d8ef526d2498997be702e895be3f1', '63', '电信、广播电视和卫星传输服务', '0', 'root', '2019-03-19 15:25:22', null, null);
+INSERT INTO `t_industry` VALUES ('ac60fea064a54d0cad4fb2e6f9f201bd', '0', 'E', '建筑业', '0', 'root', '2019-03-19 15:53:20', null, null);
+INSERT INTO `t_industry` VALUES ('ad50765a0b314fa285d9ad9bf55eed63', 'e4600605a44445baa7447ace0ed6d6f4', '56', '航空运输业', '0', 'root', '2019-03-19 15:24:19', null, null);
+INSERT INTO `t_industry` VALUES ('af01caebde7548969ea9876b08a83942', 'd5a104838d7f432993a7cb4eba5e1913', '16', '烟草制品业', '0', 'root', '2019-03-19 15:12:31', null, null);
+INSERT INTO `t_industry` VALUES ('af8f10d815ff49a2b787c82ddf3eb67f', 'd5a104838d7f432993a7cb4eba5e1913', '18', '纺织服装、服饰业', '0', 'root', '2019-03-19 15:13:23', null, null);
+INSERT INTO `t_industry` VALUES ('b284592217884a6c95528691c63b50d9', 'e4600605a44445baa7447ace0ed6d6f4', '53', '铁路运输业', '0', 'root', '2019-03-19 15:23:55', null, null);
+INSERT INTO `t_industry` VALUES ('b2919404fd1f417eadabe88f5c7de9e0', '474ac081c4c54a638e03511a7614f1b5', '10', '非金属矿采选业', '0', 'root', '2019-03-19 15:02:43', null, null);
+INSERT INTO `t_industry` VALUES ('b2ca7c811daf441ba28fd0f91781dd7a', 'd5a104838d7f432993a7cb4eba5e1913', '34', '通用设备制造业', '0', 'root', '2019-03-19 15:19:45', null, null);
+INSERT INTO `t_industry` VALUES ('b397f6398d91467da126d1450507b244', '4f160f577c4241c88333cbeb401b5cdf', '86', '新闻和出版业', '0', 'root', '2019-03-19 15:31:57', null, null);
+INSERT INTO `t_industry` VALUES ('b56b8e97fc5f49cd8fb1f38b5585614e', 'd5a104838d7f432993a7cb4eba5e1913', '37', '铁路、船舶、航空航天和其他运输设备制造业', '0', 'root', '2019-03-19 15:20:10', null, null);
+INSERT INTO `t_industry` VALUES ('b58e377d50c0484ea9b32c74471a4e76', 'f66566e7c819496ca0dbeccb31dba0a3', '79', '土地管理业', '0', 'root', '2019-03-19 15:30:59', null, null);
+INSERT INTO `t_industry` VALUES ('b743edf12bcc48aeb266fb1feca9f3a4', 'e4600605a44445baa7447ace0ed6d6f4', '58', '多式联运和运输代理业', '0', 'root', '2019-03-19 15:24:35', null, null);
+INSERT INTO `t_industry` VALUES ('b850c469a6a64285bb46b13df47eb299', '49eb53e2db444c4b810d7a2c82a80319', '81', '机动车、电子产品和日用产品修理业', '0', 'root', '2019-03-19 15:31:16', null, null);
+INSERT INTO `t_industry` VALUES ('bb7fe2c20c504aea80341d34698103dc', 'd5a104838d7f432993a7cb4eba5e1913', '30', '非金属矿物制品业', '0', 'root', '2019-03-19 15:19:11', null, null);
+INSERT INTO `t_industry` VALUES ('c11ba51d19794f408da91f0d06329dda', 'ec250d642f88483990ff2476b1cdf0c5', '83', '教育', '0', 'root', '2019-03-19 15:31:32', null, null);
+INSERT INTO `t_industry` VALUES ('c6342e3336be4aa1aba919f18510737e', 'd5a104838d7f432993a7cb4eba5e1913', '21', '家具制造业', '0', 'root', '2019-03-19 15:17:46', null, null);
+INSERT INTO `t_industry` VALUES ('c7a80bfb7fe24388aeec0e9a0eb27489', '0', 'Q', '卫生和社会工作', '0', 'root', '2019-03-19 15:54:57', null, null);
+INSERT INTO `t_industry` VALUES ('c87d09186e304b82a11009d6b08b6e47', 'ac60fea064a54d0cad4fb2e6f9f201bd', '48', '土木工程建筑业', '0', 'root', '2019-03-19 15:23:09', null, null);
+INSERT INTO `t_industry` VALUES ('c9aee952141546cd868e3eb89ec3fc36', '474ac081c4c54a638e03511a7614f1b5', '07', '石油和天然气开采业', '0', 'root', '2019-03-19 15:00:57', null, null);
+INSERT INTO `t_industry` VALUES ('d15713063aa94c5bb95154fc985fae9f', 'd5a104838d7f432993a7cb4eba5e1913', '17', '纺织业', '0', 'root', '2019-03-19 15:12:49', null, null);
+INSERT INTO `t_industry` VALUES ('d5a104838d7f432993a7cb4eba5e1913', '0', 'C', '制造业', '0', 'root', '2019-03-19 15:53:03', null, null);
+INSERT INTO `t_industry` VALUES ('da0dad1438d64c1d91a74da372b8683f', '818ca455ca044f798471a7e0789b8e57', '71', '租赁业', '0', 'root', '2019-03-19 15:29:41', null, null);
+INSERT INTO `t_industry` VALUES ('dedaf0446a08437782c96fbd375b5490', '0', 'A', '农、林、牧、渔业', '0', 'root', '2019-03-19 15:52:46', null, null);
+INSERT INTO `t_industry` VALUES ('e0a6a229cc92464093f96b01ca6e0592', '0', 'J', '金融业', '0', 'root', '2019-03-19 15:54:00', null, null);
+INSERT INTO `t_industry` VALUES ('e18facb3ef264423aba7d4bb786c23ed', 'c7a80bfb7fe24388aeec0e9a0eb27489', '84', '卫生', '0', 'root', '2019-03-19 15:31:39', null, null);
+INSERT INTO `t_industry` VALUES ('e4600605a44445baa7447ace0ed6d6f4', '0', 'G', '交通运输、仓储和邮政业', '0', 'root', '2019-03-19 15:53:36', null, null);
+INSERT INTO `t_industry` VALUES ('e8aa49a464db4d84bed4251834546e8b', 'e0a6a229cc92464093f96b01ca6e0592', '67', '资本市场服务', '0', 'root', '2019-03-19 15:26:08', null, null);
+INSERT INTO `t_industry` VALUES ('ea3b490cc3cd4788997fdfdb10bd55da', 'd5a104838d7f432993a7cb4eba5e1913', '27', '医药制造业', '0', 'root', '2019-03-19 15:18:46', null, null);
+INSERT INTO `t_industry` VALUES ('ec250d642f88483990ff2476b1cdf0c5', '0', 'P', '教育', '0', 'root', '2019-03-19 15:54:49', null, null);
+INSERT INTO `t_industry` VALUES ('ec257463e2b4471da59739ff5fc2c473', 'ac60fea064a54d0cad4fb2e6f9f201bd', '50', '建筑装饰、装修和其他建筑业', '0', 'root', '2019-03-19 15:23:27', null, null);
+INSERT INTO `t_industry` VALUES ('edfbee8ef4224dcdac4ea64f014534bb', '4f160f577c4241c88333cbeb401b5cdf', '87', '广播、电视、电影和录音制作业', '0', 'root', '2019-03-19 15:32:16', null, null);
+INSERT INTO `t_industry` VALUES ('f2e7a6ff75a342eebc109647bfa388ff', '49eb53e2db444c4b810d7a2c82a80319', '82', '其他服务业', '0', 'root', '2019-03-19 15:31:23', null, null);
+INSERT INTO `t_industry` VALUES ('f3f2fa55dd0a484dbe7eb2bc81fb2e69', '9c6b06fa28214848903da358df5e1f60', '51', '批发业', '0', 'root', '2019-03-19 15:23:38', null, null);
+INSERT INTO `t_industry` VALUES ('f66566e7c819496ca0dbeccb31dba0a3', '0', 'N', '水利、环境和公共设施管理业', '0', 'root', '2019-03-19 15:54:33', null, null);
+INSERT INTO `t_industry` VALUES ('f9882fe6a63b41608025d151ba0e2449', '7257d3d728634fc18ada969775010db1', '45', '燃气生产和供应业', '0', 'root', '2019-03-19 15:22:39', null, null);
+INSERT INTO `t_industry` VALUES ('fa21fa61b70e43aeb6610dc46f39a4e1', 'ac60fea064a54d0cad4fb2e6f9f201bd', '47', '房屋建筑业', '0', 'root', '2019-03-19 15:23:01', null, null);
 
 -- ----------------------------
 -- Table structure for t_noncurrentassets
