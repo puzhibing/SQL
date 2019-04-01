@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
-Source Server Version : 80013
+Source Server         : 127.0.0.1
+Source Server Version : 50637
 Source Host           : localhost:3306
 Source Database       : familymanager
 
 Target Server Type    : MYSQL
-Target Server Version : 80013
+Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-03-31 23:58:49
+Date: 2019-04-01 13:33:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -57,6 +57,7 @@ INSERT INTO `db_business_order` VALUES ('1bae27d86afe4f039844', '2019-03-31 12:0
 INSERT INTO `db_business_order` VALUES ('1c8fc598631643cba6fe', '2019-03-03 14:00:51', '20190303203251233', '1', '1', null, 'f56d7922273d4aa5bf20', '93', null, 'c36e0925a8914c58bdf0', null, '\n                                ', '0', '', '2019-03-03 20:32:51', null, null);
 INSERT INTO `db_business_order` VALUES ('1dacc4ab99e046b58d31', '2019-02-22 20:15:16', 'c65bed6e57684b0bba9606489d6e98', '2', '0', '343c4ea74f4f4fc0b00a', null, '0', null, '', '', '新增加往来账户数据，增加往来金额0元', '0', '', '2019-02-22 20:15:16', null, null);
 INSERT INTO `db_business_order` VALUES ('20a577633abd4a8cab3c', '2019-02-20 16:00:34', '97c4d1b6974546a689248cbd96e17f', '1', '1', null, '40e16fe4990f4ec4828f', '302.36987', null, '192538daa57040079b37', null, '婴儿用品', '0', '', '2019-03-01 00:38:35', null, null);
+INSERT INTO `db_business_order` VALUES ('2454a47e0025499f881d', '2019-04-01 10:30:36', '20190401133144613', '2', '2', '40e16fe4990f4ec4828f', null, '5441.39', '', 'f685de082fbf491cbca2', null, '\n                                ', '0', '', '2019-04-01 13:31:45', null, null);
 INSERT INTO `db_business_order` VALUES ('2ce1945424014820a24f', '2019-03-08 15:45:34', '20190308154638124', '1', '1', null, 'da2a75ada2ba47d5869e', '14', null, '0d9772f547d0493b8868', null, '\n                                ', '0', '', '2019-03-08 15:46:38', null, null);
 INSERT INTO `db_business_order` VALUES ('2ebbcecfba794debbfec', '2018-12-31 09:51:33', 'd9990bc19bf24af99b38d6aabf03b7', '1', '0', null, '2278469d550c42c6bbce', '3221.42', null, '1d3d3a4df23f48e48480', '', '新增加往来账户数据，增加往来金额3221.42元', '0', '', '2019-02-01 09:51:34', null, null);
 INSERT INTO `db_business_order` VALUES ('2f8951d74b3c45c9a03c', '2019-03-31 12:00:09', '20190331235409934', '1', '1', null, 'cf6bc6ceb125444aa8b7', '100', null, 'c36e0925a8914c58bdf0', null, '', '0', '', '2019-03-31 23:54:10', null, null);
@@ -103,6 +104,7 @@ INSERT INTO `db_business_order` VALUES ('8cc026d8e7544b7d9070', '2018-12-31 09:5
 INSERT INTO `db_business_order` VALUES ('8de97a000db945ef9b78', '2019-02-20 16:00:36', 'e12974d7fc3e4b65bebfff3096930f', '1', '1', null, '2278469d550c42c6bbce', '630.58', null, 'dc5c800745404d01bd8e', null, '', '0', '', '2019-03-01 00:37:36', null, null);
 INSERT INTO `db_business_order` VALUES ('8e18b9af50eb44df99e4', '2019-03-16 12:00:46', '20190331232846942', '3', '10', '2278469d550c42c6bbce', 'd604d2909b5841be9f68', '477', null, 'fa5eb829090e4a67a985', null, '', '0', '', '2019-03-31 23:28:47', null, null);
 INSERT INTO `db_business_order` VALUES ('92b2b8491aa6434eac0f', '2019-03-31 12:00:59', '20190331235159407', '1', '1', null, 'f56d7922273d4aa5bf20', '60.92', null, 'd9b7cb9186a34118a648', null, '\n                                ', '0', '', '2019-03-31 23:51:59', null, null);
+INSERT INTO `db_business_order` VALUES ('950f528d72ad48ac9fa6', '2019-04-01 13:30:41', '20190401133049274', '1', '1', null, '7bff2309924d4901b04f', '20', null, '396539ebb32b4edf8061', null, '\n                                ', '0', '', '2019-04-01 13:30:49', null, null);
 INSERT INTO `db_business_order` VALUES ('9755bbf970b14c029a23', '2019-03-02 16:00:17', '20190303091317772', '3', '3', 'f56d7922273d4aa5bf20', '7bff2309924d4901b04f', '200', null, null, null, '', '0', '', '2019-03-03 09:13:18', null, null);
 INSERT INTO `db_business_order` VALUES ('97697bc2980d4a62a6b6', '2019-02-15 16:00:50', '5f2e50a879a4422bb4201fbda8ec51', '3', '10', 'f497490396f043388c96', '40e16fe4990f4ec4828f', '25.07', null, 'fa5eb829090e4a67a985', null, '', '0', '', '2019-03-01 00:30:50', null, null);
 INSERT INTO `db_business_order` VALUES ('99e85bb02263418d9920', '2019-02-13 15:24:05', '2cf7cd2255c54ac39f489c0ad198c6', '1', '1', null, '7bff2309924d4901b04f', '1500.00', null, '84e4f28994ae4caa8251', null, '\n                                ', '-1', '', '2019-02-13 15:26:24', '', '2019-02-13 15:58:17');
@@ -145,15 +147,15 @@ INSERT INTO `db_business_order` VALUES ('ff78770cd9f44637aadb', '2018-12-31 10:4
 -- ----------------------------
 DROP TABLE IF EXISTS `db_classification`;
 CREATE TABLE `db_classification` (
-  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `kind` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `notdel` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) COLLATE utf8_bin NOT NULL,
+  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `kind` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `notdel` varchar(2) COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -193,15 +195,15 @@ INSERT INTO `db_classification` VALUES ('ff06063870d54fa2b7f0', '工作相关', 
 -- ----------------------------
 DROP TABLE IF EXISTS `db_classification_value`;
 CREATE TABLE `db_classification_value` (
-  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `notdel` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) COLLATE utf8_bin NOT NULL,
+  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `notdel` varchar(2) COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -273,19 +275,19 @@ INSERT INTO `db_classification_value` VALUES ('fb42e2ca7ee343328da7', '2647dee3e
 -- ----------------------------
 DROP TABLE IF EXISTS `db_contacts_account`;
 CREATE TABLE `db_contacts_account` (
-  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `classification` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(1) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `agency` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `accountNumber` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `balance` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `notdel` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) COLLATE utf8_bin NOT NULL,
+  `classification` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(1) COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `agency` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `accountNumber` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `balance` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `notdel` varchar(2) COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -301,12 +303,12 @@ INSERT INTO `db_contacts_account` VALUES ('1bdfd7ce06f14cce89f0', '2c18b356a0664
 INSERT INTO `db_contacts_account` VALUES ('2278469d550c42c6bbce', '3ccf613441a546c9a355', '0', '支付宝-借呗（蒲）', '', '', '-3375.00', '1', '3', '0', null, '2019-02-01 09:51:34', '', '2019-03-31 23:28:47');
 INSERT INTO `db_contacts_account` VALUES ('32d03305f76842debe3f', '7069dde92b3c47aebf33', '1', '蒲艳梅', '', '', '-10000', '1', '1', '0', null, '2019-01-31 15:17:03', null, null);
 INSERT INTO `db_contacts_account` VALUES ('343c4ea74f4f4fc0b00a', '3a8acff20b2f411ca7a3', '1', '唐建梅（二嬢）', '', '', '0', '1', '3', '0', null, '2019-02-22 20:15:16', null, null);
-INSERT INTO `db_contacts_account` VALUES ('40e16fe4990f4ec4828f', '2c18b356a06645479aec', '0', '中信银行储蓄卡（蒲）', '中信银行', '', '0.16', '1', '6', '0', null, '2019-02-01 16:38:02', '', '2019-03-03 09:12:30');
+INSERT INTO `db_contacts_account` VALUES ('40e16fe4990f4ec4828f', '2c18b356a06645479aec', '0', '中信银行储蓄卡（蒲）', '中信银行', '', '5441.55', '1', '6', '0', null, '2019-02-01 16:38:02', '', '2019-04-01 13:31:45');
 INSERT INTO `db_contacts_account` VALUES ('59a97c012052470d9c9d', '6c9ccc681599478c9d45', '0', '中信银行信用卡（蒲）', '中信银行', '', '-24737.25', '1', '3', '0', null, '2019-02-01 10:17:52', '', '2019-03-31 23:45:49');
 INSERT INTO `db_contacts_account` VALUES ('6e3d918693e34da88d71', '2c18b356a06645479aec', '0', '支付宝-余额宝（唐）', '阿里巴巴', '', '0.5', '1', '5', '0', null, '2019-02-28 23:47:34', '', '2019-02-28 23:53:15');
 INSERT INTO `db_contacts_account` VALUES ('77377f3e15054476920b', '3ccf613441a546c9a355', '0', '京东-金条（蒲）', '', '', '0.00', '1', '2', '0', null, '2019-02-01 09:22:39', '', '2019-03-31 23:27:46');
 INSERT INTO `db_contacts_account` VALUES ('7a9a9f774f3540009185', '7069dde92b3c47aebf33', '1', '唐国辉', '', '', '10000.00', '1', '2', '0', null, '2019-02-01 10:32:58', '', '2019-03-08 15:48:08');
-INSERT INTO `db_contacts_account` VALUES ('7bff2309924d4901b04f', '2c18b356a06645479aec', '0', '招商银行储蓄卡（蒲）', '中国招商银行', '', '48.22', '1', '6', '0', null, '2019-01-31 16:50:19', '', '2019-03-31 23:44:41');
+INSERT INTO `db_contacts_account` VALUES ('7bff2309924d4901b04f', '2c18b356a06645479aec', '0', '招商银行储蓄卡（蒲）', '中国招商银行', '', '28.22', '1', '6', '0', null, '2019-01-31 16:50:19', '', '2019-04-01 13:30:49');
 INSERT INTO `db_contacts_account` VALUES ('88c08c717fff49c6acdb', '2c18b356a06645479aec', '0', '成都银行储蓄卡（蒲）', '成都银行', '', '7.45', '1', '6', '0', null, '2019-02-28 23:43:04', '', '2019-02-28 23:44:53');
 INSERT INTO `db_contacts_account` VALUES ('9d6bfa4cbb8144feb7a0', '97691135bad4461a8d20', '1', '房东', '', '', '1500', '1', '1', '0', null, '2019-02-01 10:46:31', null, null);
 INSERT INTO `db_contacts_account` VALUES ('ab6eb76596b445e8945e', '2c18b356a06645479aec', '0', '现金（蒲）', '', '', '0.0', '1', '1', '0', null, '2019-01-31 15:15:48', '', '2019-03-01 00:18:44');
@@ -328,14 +330,14 @@ INSERT INTO `db_contacts_account` VALUES ('f56d7922273d4aa5bf20', '2c18b356a0664
 -- ----------------------------
 DROP TABLE IF EXISTS `db_kind`;
 CREATE TABLE `db_kind` (
-  `id` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `type` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `id` varchar(50) COLLATE utf8_bin NOT NULL,
+  `name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `type` varchar(2) COLLATE utf8_bin DEFAULT NULL,
   `sort` int(10) DEFAULT NULL,
-  `del` varchar(2) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `insertUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `del` varchar(2) COLLATE utf8_bin DEFAULT NULL,
+  `insertUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `insertTime` datetime DEFAULT NULL,
-  `updateUserId` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `updateUserId` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `updateTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
