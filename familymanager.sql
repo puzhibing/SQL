@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2019-04-23 16:26:34
+Date: 2019-04-26 17:02:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -46,6 +46,7 @@ CREATE TABLE `db_business_order` (
 INSERT INTO `db_business_order` VALUES ('0162d897511b43e5af99', '2019-02-28 23:59:55', '44e1f3c010dd4a239f5e50b0646eeb', '2', '0', '', '17543dae6ce047be9bcd', '1956', null, '', '', '新增加支付宝-借呗（唐）账户数据，增加期初余额1956元', '0', '', '2019-02-28 23:59:55', null, null);
 INSERT INTO `db_business_order` VALUES ('04f2160825724e74bd4b', '2019-03-04 19:14:37', '20190306141540125', '1', '1', null, '0eca568c472b4a009114', '20', null, '5fd7ff646f9649f1a357', null, '\n                                ', '0', '', '2019-03-06 14:15:40', null, null);
 INSERT INTO `db_business_order` VALUES ('0e295a6debb54c0aa0cf', '2019-02-28 23:45:53', 'a65b637866c94fb0838cac99c94b5a', '2', '0', 'cf6bc6ceb125444aa8b7', null, '100.19', null, '', '', '新增加建设银行储蓄卡（唐）账户数据，增加期初余额100.19元', '0', '', '2019-02-28 23:45:53', null, null);
+INSERT INTO `db_business_order` VALUES ('0e3bbda5a7a5420192e3', '2019-04-26 16:58:37', '20190426165837251', '2', '0', 'bbab233180fc49e6ab9d', null, '0', null, '', '', '新增加“蒲文（老爸）”成员数据，增加欠款余额【0.0】元', '0', '', '2019-04-26 16:58:37', null, null);
 INSERT INTO `db_business_order` VALUES ('0e698beabe974d2ca5b8', '2019-03-06 15:47:04', '20190308154807512', '3', '11', 'd604d2909b5841be9f68', '7a9a9f774f3540009185', '50000', null, 'd79e5553c02945568a43', null, '\n                                ', '0', '', '2019-03-08 15:48:08', null, null);
 INSERT INTO `db_business_order` VALUES ('0fe57900abaa413bad70', '2018-12-31 17:31:55', '72db30ba1b3a443d9fd9d59bbb1fac', '1', '0', null, '13d9423e7d7e43ff9cb5', '9784.38', null, '1d3d3a4df23f48e48480', '', '新增加往来账户数据，增加往来金额9784.38元', '0', '', '2019-01-31 17:31:57', null, null);
 INSERT INTO `db_business_order` VALUES ('129172ca20aa4418b91f', '2019-03-28 12:00:04', '20190331231304721', '3', '11', 'd604d2909b5841be9f68', '0eca568c472b4a009114', '920', null, 'd79e5553c02945568a43', null, '', '-1', '', '2019-03-31 23:13:05', '', '2019-03-31 23:21:49');
@@ -81,9 +82,12 @@ INSERT INTO `db_business_order` VALUES ('5378eff4a699475e95c7', '2019-02-28 23:5
 INSERT INTO `db_business_order` VALUES ('558f816a2db847ab92b4', '2019-02-28 16:00:45', '0d76c65817fd49ddbcf8516f5400d3', '3', '10', '13d9423e7d7e43ff9cb5', '7bff2309924d4901b04f', '1630.73', null, 'fa5eb829090e4a67a985', null, '还贷款', '0', '', '2019-02-28 23:41:45', null, null);
 INSERT INTO `db_business_order` VALUES ('564908b3d77b482b8474', '2019-03-31 12:00:41', '20190331234441239', '1', '1', null, '7bff2309924d4901b04f', '284.05', null, 'c36e0925a8914c58bdf0', null, '', '0', '', '2019-03-31 23:44:41', null, null);
 INSERT INTO `db_business_order` VALUES ('5aa2ec1ddd2d48a4b446', '2019-03-05 12:00:46', '20190331233946614', '3', '10', 'e090b22cc2674c81b22b', 'd604d2909b5841be9f68', '280.36', null, 'fa5eb829090e4a67a985', null, '', '0', '', '2019-03-31 23:39:47', null, null);
+INSERT INTO `db_business_order` VALUES ('5ca3d82b9adb4334b232', '2019-04-24 16:59:00', '20190426170001492', '2', '2', '0eca568c472b4a009114', null, '2000', 'bbab233180fc49e6ab9d', 'e06fda09b9dd4508a0c3', null, '生娃娃礼金', '0', '', '2019-04-26 17:00:01', null, null);
 INSERT INTO `db_business_order` VALUES ('5e4f59b98be045be9ff0', '2019-02-13 13:56:16', '5749b40532734209a06f05b2fdda0e', '1', '1', null, 'da2a75ada2ba47d5869e', '13', null, 'c36e0925a8914c58bdf0', null, '', '0', '', '2019-02-13 14:20:54', null, null);
 INSERT INTO `db_business_order` VALUES ('5e716a5c7f2a40e3b769', '2019-03-31 12:00:21', '20190331234321506', '1', '1', null, 'd604d2909b5841be9f68', '340', null, 'dc5c800745404d01bd8e', null, '买裤子', '0', '', '2019-03-31 23:43:22', null, null);
 INSERT INTO `db_business_order` VALUES ('61f33dc4fac742cabc16', '2019-02-15 09:45:23', '9854fb17eaa14281b45d51c07dbfda', '2', '2', 'f56d7922273d4aa5bf20', null, '300', 'e88966f96b4140399120', 'e06fda09b9dd4508a0c3', null, '坐月子，礼金。', '0', '', '2019-02-15 09:46:29', null, null);
+INSERT INTO `db_business_order` VALUES ('65d052c5fb8c4ba0b3ab', '2019-04-26 17:00:12', '20190426170112873', '2', '2', 'da2a75ada2ba47d5869e', null, '500', '021b0a86fd1041dcbdc3', 'e06fda09b9dd4508a0c3', null, '生娃娃礼金', '0', '', '2019-04-26 17:01:13', null, null);
+INSERT INTO `db_business_order` VALUES ('66f61b7a7f9a450d961f', '2019-04-26 16:59:11', '2019042616591150', '2', '0', 'b66363c21d314d59bcb4', null, '0', null, '', '', '新增加“蒲朝银（爷爷）”成员数据，增加欠款余额【0.0】元', '0', '', '2019-04-26 16:59:11', null, null);
 INSERT INTO `db_business_order` VALUES ('6827630be09f46b0940b', '2019-02-23 17:37:17', 'bfe7c8d621ff4675b2f3ff9166b27c', '1', '1', null, 'f56d7922273d4aa5bf20', '388', null, '8d9b1858b4a44d6b9b23', null, '拍摄孕妇照', '0', '', '2019-02-23 17:38:18', null, null);
 INSERT INTO `db_business_order` VALUES ('69af178606244342b776', '2019-04-13 16:28:06', 'c86d4692fa5a48d8863238d4448c94', '1', '1', null, '7bff2309924d4901b04f', '1500.00', null, '84e4f28994ae4caa8251', null, '\n                                ', '-1', '', '2019-02-13 16:46:11', '', '2019-02-13 17:07:11');
 INSERT INTO `db_business_order` VALUES ('6c8250b2148b49d88300', '2019-02-28 23:44:00', '6af0ba68ec414c45b8f2b6ad9b1e89', '2', '0', '1bdfd7ce06f14cce89f0', null, '76.61', null, '', '', '新增加农业银行储蓄卡账户数据，增加期初余额76.61元', '0', '', '2019-02-28 23:44:00', null, null);
@@ -132,7 +136,9 @@ INSERT INTO `db_business_order` VALUES ('d6a5ef05da8e432bb2fb', '2019-03-31 12:0
 INSERT INTO `db_business_order` VALUES ('dc13807691114e6da37b', '2018-12-31 10:20:44', '4d16a3de2fb74da5bfba3397f4e392', '1', '0', null, 'd396ccb5b98348539589', '9018.19', null, '1d3d3a4df23f48e48480', '', '新增加往来账户数据，增加往来金额9018.19元', '0', '', '2019-02-01 10:20:44', null, null);
 INSERT INTO `db_business_order` VALUES ('ddc1d3363be74b398f7e', '2019-04-23 16:21:43', '20190423162143195', '2', '0', '274c472a1b8a4ced8b15', null, '0', null, '', '', '新增加“玉琼幺孃”成员数据，增加欠款余额【0.0】元', '0', '', '2019-04-23 16:21:43', null, null);
 INSERT INTO `db_business_order` VALUES ('e270a93f108d4075b251', '2019-02-28 16:00:52', '57455e8e41f34cf1b5991570d69c34', '1', '1', null, 'e090b22cc2674c81b22b', '5140.883', null, 'c36e0925a8914c58bdf0', null, '', '0', '', '2019-03-01 00:35:53', null, null);
+INSERT INTO `db_business_order` VALUES ('e3d71a68b117430895ef', '2019-04-24 17:00:33', '20190426170034410', '2', '2', '0eca568c472b4a009114', null, '400', 'b66363c21d314d59bcb4', 'e06fda09b9dd4508a0c3', null, '生娃娃礼金', '0', '', '2019-04-26 17:00:34', null, null);
 INSERT INTO `db_business_order` VALUES ('e47d820d6f324335a283', '2018-12-31 15:17:03', 'c8ec35a5186e4392ba385ed47d34ae', '1', '0', '', '32d03305f76842debe3f', '10000', null, '1d3d3a4df23f48e48480', '', '新增加往来账户数据，增加往来金额10000元', '0', '', '2019-01-31 15:17:03', null, null);
+INSERT INTO `db_business_order` VALUES ('ec76955e8627483db205', '2019-04-26 16:58:02', '20190426165801683', '2', '0', '021b0a86fd1041dcbdc3', null, '0', null, '', '', '新增加“蒲丽琴（二孃）”成员数据，增加欠款余额【0.0】元', '0', '', '2019-04-26 16:58:02', null, null);
 INSERT INTO `db_business_order` VALUES ('ed6ccfcf357d49fab21e', '2019-02-05 16:00:44', '83a93378cd4842289c76bdc72987c5', '3', '10', 'e090b22cc2674c81b22b', 'ab6eb76596b445e8945e', '15.5', null, 'fa5eb829090e4a67a985', null, '', '0', '', '2019-03-01 00:18:44', null, null);
 INSERT INTO `db_business_order` VALUES ('ee0081f48f3f42398e79', '2019-03-29 12:00:45', '20190331232745535', '3', '10', '77377f3e15054476920b', '7bff2309924d4901b04f', '2400', null, 'fa5eb829090e4a67a985', null, '', '0', '', '2019-03-31 23:27:46', null, null);
 INSERT INTO `db_business_order` VALUES ('eeac237dc6ae4573b59a', '2019-02-15 09:25:15', 'e1981597db1d4f3587edac745d75b3', '2', '0', 'e88966f96b4140399120', null, '0', null, '', '', '新增加往来账户数据，增加往来金额0元', '0', '', '2019-02-15 09:25:15', null, null);
@@ -297,8 +303,9 @@ CREATE TABLE `db_contacts_account` (
 -- ----------------------------
 -- Records of db_contacts_account
 -- ----------------------------
+INSERT INTO `db_contacts_account` VALUES ('021b0a86fd1041dcbdc3', '3a8acff20b2f411ca7a3', '1', '蒲丽琴（二孃）', '', '', '0', '1', '4', '0', null, '2019-04-26 16:58:02', null, null);
 INSERT INTO `db_contacts_account` VALUES ('03566f657bfc41469563', '6c9ccc681599478c9d45', '0', '平安银行信用卡（唐）', '中国平安银行', '', '-2759.00', '1', '6', '0', null, '2019-02-28 23:57:14', '', '2019-03-31 23:07:55');
-INSERT INTO `db_contacts_account` VALUES ('0eca568c472b4a009114', '2c18b356a06645479aec', '0', '现金（唐）', '', '', '540.00', '1', '2', '0', null, '2019-02-28 23:48:22', '', '2019-03-31 23:23:38');
+INSERT INTO `db_contacts_account` VALUES ('0eca568c472b4a009114', '2c18b356a06645479aec', '0', '现金（唐）', '', '', '2940.00', '1', '2', '0', null, '2019-02-28 23:48:22', '', '2019-04-26 17:00:34');
 INSERT INTO `db_contacts_account` VALUES ('13d9423e7d7e43ff9cb5', '3ccf613441a546c9a355', '0', '蜡笔分期', '', '', '-6522.92', '1', '1', '0', null, '2019-01-31 17:31:54', '', '2019-03-31 23:26:35');
 INSERT INTO `db_contacts_account` VALUES ('17543dae6ce047be9bcd', '3ccf613441a546c9a355', '0', '支付宝-借呗（唐）', '阿里巴巴', '', '0.00', '1', '4', '0', null, '2019-02-28 23:59:55', '', '2019-03-31 23:06:22');
 INSERT INTO `db_contacts_account` VALUES ('1bdfd7ce06f14cce89f0', '2c18b356a06645479aec', '0', '农业银行储蓄卡（蒲）', '中国农业银行', '', '76.61', '1', '7', '0', null, '2019-02-28 23:44:00', '', '2019-02-28 23:45:01');
@@ -315,12 +322,14 @@ INSERT INTO `db_contacts_account` VALUES ('7bff2309924d4901b04f', '2c18b356a0664
 INSERT INTO `db_contacts_account` VALUES ('88c08c717fff49c6acdb', '2c18b356a06645479aec', '0', '成都银行储蓄卡（蒲）', '成都银行', '', '7.45', '1', '6', '0', null, '2019-02-28 23:43:04', '', '2019-02-28 23:44:53');
 INSERT INTO `db_contacts_account` VALUES ('9d6bfa4cbb8144feb7a0', '97691135bad4461a8d20', '1', '房东', '', '', '1500', '1', '1', '0', null, '2019-02-01 10:46:31', null, null);
 INSERT INTO `db_contacts_account` VALUES ('ab6eb76596b445e8945e', '2c18b356a06645479aec', '0', '现金（蒲）', '', '', '0.0', '1', '1', '0', null, '2019-01-31 15:15:48', '', '2019-03-01 00:18:44');
+INSERT INTO `db_contacts_account` VALUES ('b66363c21d314d59bcb4', '7069dde92b3c47aebf33', '1', '蒲朝银（爷爷）', '', '', '0', '1', '4', '0', null, '2019-04-26 16:59:11', null, null);
+INSERT INTO `db_contacts_account` VALUES ('bbab233180fc49e6ab9d', '7069dde92b3c47aebf33', '1', '蒲文（老爸）', '', '', '0', '1', '3', '0', null, '2019-04-26 16:58:37', null, null);
 INSERT INTO `db_contacts_account` VALUES ('c792e443655746ae9092', '1052f38dcbfb482e877c', '1', '罗洪春', '', '', '3449.82', '1', '3', '0', null, '2019-02-01 10:35:01', null, null);
 INSERT INTO `db_contacts_account` VALUES ('cf6bc6ceb125444aa8b7', '2c18b356a06645479aec', '0', '建设银行储蓄卡（唐）', '中国建设银行', '', '0.19', '1', '8', '0', null, '2019-02-28 23:45:53', '', '2019-03-31 23:54:10');
 INSERT INTO `db_contacts_account` VALUES ('d396ccb5b98348539589', '6c9ccc681599478c9d45', '0', '交通银行信用卡（蒲）', '交通银行', '', '-7363.94', '1', '5', '0', null, '2019-02-01 10:20:44', '', '2019-03-31 23:38:25');
 INSERT INTO `db_contacts_account` VALUES ('d604d2909b5841be9f68', '2c18b356a06645479aec', '0', '农业银行储蓄卡（唐）', '中国农业银行', '', '0.00', '1', '9', '0', null, '2019-02-28 23:46:35', '', '2019-03-31 23:54:55');
 INSERT INTO `db_contacts_account` VALUES ('d9d5c8275a8e4ca9bf4d', '2c18b356a06645479aec', '0', '成都银行储蓄卡（唐）', '成都银行', '', '38331.63', '1', '12', '0', null, '2019-03-31 23:30:53', '', '2019-03-31 23:31:39');
-INSERT INTO `db_contacts_account` VALUES ('da2a75ada2ba47d5869e', '2c18b356a06645479aec', '0', '微信-余额（蒲）', '', '', '666.00', '1', '3', '0', null, '2019-02-01 09:17:05', '', '2019-04-23 16:23:40');
+INSERT INTO `db_contacts_account` VALUES ('da2a75ada2ba47d5869e', '2c18b356a06645479aec', '0', '微信-余额（蒲）', '', '', '1166.00', '1', '3', '0', null, '2019-02-01 09:17:05', '', '2019-04-26 17:01:13');
 INSERT INTO `db_contacts_account` VALUES ('e090b22cc2674c81b22b', '6c9ccc681599478c9d45', '0', '招商银行信用卡（蒲）', '招商银行', '', '-69151.00', '1', '4', '0', null, '2019-02-01 10:31:48', '', '2019-03-31 23:39:47');
 INSERT INTO `db_contacts_account` VALUES ('e5603e537f034aef8e26', '2c18b356a06645479aec', '0', '微信-余额（唐）', '腾讯', '', '6.23', '1', '12', '-1', null, '2019-02-28 23:49:38', '', '2019-02-28 23:51:31');
 INSERT INTO `db_contacts_account` VALUES ('e88966f96b4140399120', '3a8acff20b2f411ca7a3', '1', '李林华（二孃）', '', '', '0', '1', '2', '0', null, '2019-02-15 09:25:15', null, null);
